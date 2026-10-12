@@ -1,0 +1,21 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const root=new URL('../',import.meta.url);
+const e=JSON.parse(fs.readFileSync(new URL('src/data/giftcard-episode.json',root),'utf8'));
+const f=e.financials;
+assert.equal(f.purchase-f.redeemed,f.balance,'Card balance must reconcile');
+assert.equal(f.purchase,20);assert.equal(f.redeemed,14);assert.equal(f.balance,6);
+assert.equal(f.reportedBreakageFloorMillions,222);assert.equal(f.fiscalYear,2025);
+assert.ok(f.illustrativeRedemptionFraction>=0&&f.illustrativeRedemptionFraction<=1);
+assert.equal(e.scenes.length,11);assert.equal(e.scenes[0].start,0);
+e.scenes.forEach((s,i)=>{assert.ok(s.end>s.start);assert.equal(s.end,e.scenes[i+1]?.start??e.durationSeconds);});
+assert.equal(e.width,1080);assert.equal(e.height,1920);assert.equal(e.fps,30);
+e.captions.forEach((c,i)=>{assert.ok(c.start>=0&&c.end>c.start&&c.end<=e.durationSeconds);assert.ok(c.start>=(e.captions[i-1]?.end??0));});
+const flatten=s=>s.replace(/\s+/g,' ').trim();
+assert.equal(flatten(e.captions.map(c=>c.text).join(' ')),flatten(e.narration.text));
+assert.equal(flatten(e.narration.sentences.map(c=>c.text).join(' ')),flatten(e.narration.text));
+assert.equal(Object.keys(e.characters).length,5);
+assert.notEqual(e.narration.src,'audio/narration.wav','Do not use the original T-shirt narration');
+assert.ok(fs.existsSync(new URL(`public/${e.assets.music}`,root)));
+for(const s of e.soundEvents){assert.ok(s.at>=0&&s.at<e.durationSeconds);assert.ok(fs.existsSync(new URL(`public/audio/giftcard/${s.sound}.wav`,root)));}
+console.log(`Gift-card episode: ${e.scenes.length} scenes, ${e.durationSeconds}s, ${e.captions.length} exact-transcript captions. $20 − $14 = $6. Source status: ${e.source.status}.`);
