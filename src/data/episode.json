@@ -1,0 +1,60 @@
+{
+  "id": "tshirt-preorders",
+  "title": "He Sold 50 Shirts Without Owning One!",
+  "brand": "MONEY, EXPLAINED",
+  "series": "THE $100 CHALLENGE",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "scenes": [
+    {
+      "type": "hook", "seconds": 8,
+      "eyebrow": "THE $100 CHALLENGE", "headline": "SAME $100.\nDIFFERENT GAME.",
+      "narration": "Two friends. One hundred dollars each. Same product. Very different strategy.",
+      "captions": [
+        {"at": 0.5, "text": "TWO FRIENDS. $100 EACH."},
+        {"at": 3.8, "text": "SAME PRODUCT. DIFFERENT STRATEGY."}
+      ]
+    },
+    {
+      "type": "inventory", "seconds": 11,
+      "eyebrow": "FRIEND 01 / ALEX", "headline": "BUY FIRST.\nSELL LATER.",
+      "narration": "Alex spent all his money buying five T-shirts for twenty dollars each. He sold them for thirty. That's fifty dollars gross margin.",
+      "captions": [
+        {"at": 0.5, "text": "5 SHIRTS × $20 = $100"},
+        {"at": 5.0, "text": "SELL FOR $30 EACH"},
+        {"at": 8.5, "text": "$50 GROSS MARGIN"}
+      ]
+    },
+    {
+      "type": "preorder", "seconds": 14,
+      "eyebrow": "FRIEND 02 / MAYA", "headline": "SELL FIRST.\nMAKE LATER.",
+      "narration": "Maya did the opposite. She showed buyers a sample and collected fifty paid preorders. Only after confirming demand did she place the production order.",
+      "captions": [
+        {"at": 0.5, "text": "JUST ONE SAMPLE"},
+        {"at": 4.9, "text": "50 PAID PREORDERS"},
+        {"at": 9.8, "text": "THEN SHE ORDERS PRODUCTION"}
+      ]
+    },
+    {
+      "type": "math", "seconds": 13,
+      "eyebrow": "FOLLOW THE CASH", "headline": "HERE'S THE MATH.",
+      "narration": "Fifty orders at thirty dollars brought in fifteen hundred dollars. Production cost one thousand. That leaves five hundred dollars gross margin, before sample costs, shipping, fees, and refunds.",
+      "captions": [
+        {"at": 0.4, "text": "50 × $30 = $1,500 COLLECTED"},
+        {"at": 5.2, "text": "MINUS $1,000 PRODUCTION"},
+        {"at": 9.2, "text": "$500 GROSS MARGIN*"}
+      ]
+    },
+    {
+      "type": "compare", "seconds": 12,
+      "eyebrow": "THE REAL LESSON", "headline": "DEMAND BEFORE\nINVENTORY.",
+      "narration": "Same starting cash. Ten times the shirts sold. Preorders reduced inventory risk, but finding fifty buyers was the hard part. Which approach would you choose?",
+      "captions": [
+        {"at": 0.5, "text": "$50 VS $500 GROSS MARGIN"},
+        {"at": 5.0, "text": "10× AS MANY SHIRTS SOLD"},
+        {"at": 9.1, "text": "WHICH APPROACH WOULD YOU TAKE?"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "finance-motion-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reusable flat 2D finance explainer generator using Remotion",
+  "scripts": {
+    "studio": "remotion studio src/index.tsx",
+    "render": "remotion render src/index.tsx FinanceExplainer out/tshirt-explainer.mp4 --codec h264 --crf 18",
+    "still": "remotion still src/index.tsx FinanceExplainer out/thumbnail.png --frame 1500",
+    "typecheck": "tsc --noEmit",
+    "check:story": "node tools/check-story.mjs"
+  },
+  "dependencies": {
+    "remotion": "^4.0.534",
+    "@remotion/cli": "^4.0.534",
+    "@remotion/media": "^4.0.534",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0"
+  }
+}
