@@ -1,0 +1,457 @@
+{
+  "notice": "Editorial estimates, not audio-aligned. Replace timings after recording the exact script.",
+  "duration": 90,
+  "scenes": [
+    {
+      "id": "setup",
+      "start": 0,
+      "end": 15,
+      "label": "01 / THE SAME START",
+      "heading": "Same street.\nSame $600."
+    },
+    {
+      "id": "mystery",
+      "start": 15,
+      "end": 26,
+      "label": "02 / THE NEXT MORNING",
+      "heading": "One opens.\nOne can’t."
+    },
+    {
+      "id": "oliver",
+      "start": 26,
+      "end": 45,
+      "label": "03 / OLIVER’S BAKERY",
+      "heading": "Paid today.\nBaking tomorrow."
+    },
+    {
+      "id": "noah",
+      "start": 45,
+      "end": 59,
+      "label": "04 / NOAH’S BAKERY",
+      "heading": "A sale today.\nCash in 60 days."
+    },
+    {
+      "id": "compare",
+      "start": 59,
+      "end": 78,
+      "label": "05 / FOLLOW THE MONEY",
+      "heading": "Same profit.\nDifferent cash."
+    },
+    {
+      "id": "lesson",
+      "start": 78,
+      "end": 90,
+      "label": "06 / THE LESSON",
+      "heading": "Profit ≠\ncash flow."
+    }
+  ],
+  "sentences": [
+    {
+      "start": 0.8,
+      "end": 3.9,
+      "text": "Two bakers opened their shops on the same street."
+    },
+    {
+      "start": 4.15,
+      "end": 6.9,
+      "text": "Both started with exactly six hundred dollars."
+    },
+    {
+      "start": 7.2,
+      "end": 9.3,
+      "text": "Both spent their money making bread."
+    },
+    {
+      "start": 9.6,
+      "end": 14.5,
+      "text": "And by the end of the day, both had sold one thousand dollars' worth of bread."
+    },
+    {
+      "start": 15.4,
+      "end": 18,
+      "text": "But the next morning, something strange happened."
+    },
+    {
+      "start": 18.35,
+      "end": 20.65,
+      "text": "One baker opened his shop like usual."
+    },
+    {
+      "start": 21,
+      "end": 24.1,
+      "text": "The other couldn't even afford to buy flour."
+    },
+    {
+      "start": 24.4,
+      "end": 25.6,
+      "text": "Here's what happened."
+    },
+    {
+      "start": 26.5,
+      "end": 29.9,
+      "text": "The first baker sold his bread directly to customers."
+    },
+    {
+      "start": 30.1,
+      "end": 32.1,
+      "text": "Every customer paid him immediately."
+    },
+    {
+      "start": 32.4,
+      "end": 37.1,
+      "text": "So by the end of the day, he had one thousand dollars in cash."
+    },
+    {
+      "start": 37.5,
+      "end": 41.2,
+      "text": "He used six hundred dollars to prepare the next batch."
+    },
+    {
+      "start": 41.7,
+      "end": 44.1,
+      "text": "And the business kept running."
+    },
+    {
+      "start": 45.3,
+      "end": 47.7,
+      "text": "But the second baker did something different."
+    },
+    {
+      "start": 48,
+      "end": 52.3,
+      "text": "Instead of selling to customers, he sold all his bread to a supermarket."
+    },
+    {
+      "start": 52.6,
+      "end": 56.1,
+      "text": "The supermarket agreed to pay him one thousand dollars..."
+    },
+    {
+      "start": 57.2,
+      "end": 58.6,
+      "text": "Sixty days later."
+    },
+    {
+      "start": 59.2,
+      "end": 60.55,
+      "text": "Now think about that."
+    },
+    {
+      "start": 60.8,
+      "end": 62.85,
+      "text": "Both bakers made the same sales."
+    },
+    {
+      "start": 63.1,
+      "end": 67.05,
+      "text": "Both had four hundred dollars in gross profit, before other expenses."
+    },
+    {
+      "start": 67.3,
+      "end": 69.7,
+      "text": "But one had a thousand dollars in cash."
+    },
+    {
+      "start": 70,
+      "end": 72.5,
+      "text": "And the other had a thousand dollars on paper."
+    },
+    {
+      "start": 72.75,
+      "end": 75.1,
+      "text": "He had to wait sixty days to collect it."
+    },
+    {
+      "start": 75.25,
+      "end": 78,
+      "text": "And without additional cash, he couldn't afford to make another batch."
+    },
+    {
+      "start": 78.7,
+      "end": 83.2,
+      "text": "You see, making a profit and having cash are two different things."
+    },
+    {
+      "start": 83.6,
+      "end": 88.4,
+      "text": "Because a business can look profitable on paper... and still run out of money."
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.8,
+      "end": 2.522,
+      "text": "Two bakers opened their shops"
+    },
+    {
+      "start": 2.522,
+      "end": 3.9,
+      "text": "on the same street."
+    },
+    {
+      "start": 4.15,
+      "end": 5.721,
+      "text": "Both started with exactly"
+    },
+    {
+      "start": 5.721,
+      "end": 6.9,
+      "text": "six hundred dollars."
+    },
+    {
+      "start": 7.2,
+      "end": 8.25,
+      "text": "Both spent their"
+    },
+    {
+      "start": 8.25,
+      "end": 9.3,
+      "text": "money making bread."
+    },
+    {
+      "start": 9.6,
+      "end": 10.825,
+      "text": "And by the end"
+    },
+    {
+      "start": 10.825,
+      "end": 12.05,
+      "text": "of the day, both"
+    },
+    {
+      "start": 12.05,
+      "end": 13.275,
+      "text": "had sold one thousand"
+    },
+    {
+      "start": 13.275,
+      "end": 14.5,
+      "text": "dollars' worth of bread."
+    },
+    {
+      "start": 15.4,
+      "end": 16.886,
+      "text": "But the next morning,"
+    },
+    {
+      "start": 16.886,
+      "end": 18,
+      "text": "something strange happened."
+    },
+    {
+      "start": 18.35,
+      "end": 19.664,
+      "text": "One baker opened his"
+    },
+    {
+      "start": 19.664,
+      "end": 20.65,
+      "text": "shop like usual."
+    },
+    {
+      "start": 21,
+      "end": 22.55,
+      "text": "The other couldn't even"
+    },
+    {
+      "start": 22.55,
+      "end": 24.1,
+      "text": "afford to buy flour."
+    },
+    {
+      "start": 24.4,
+      "end": 25.6,
+      "text": "Here's what happened."
+    },
+    {
+      "start": 26.5,
+      "end": 28.389,
+      "text": "The first baker sold his"
+    },
+    {
+      "start": 28.389,
+      "end": 29.9,
+      "text": "bread directly to customers."
+    },
+    {
+      "start": 30.1,
+      "end": 32.1,
+      "text": "Every customer paid him immediately."
+    },
+    {
+      "start": 32.4,
+      "end": 34.079,
+      "text": "So by the end of"
+    },
+    {
+      "start": 34.079,
+      "end": 35.757,
+      "text": "the day, he had one"
+    },
+    {
+      "start": 35.757,
+      "end": 37.1,
+      "text": "thousand dollars in cash."
+    },
+    {
+      "start": 37.5,
+      "end": 39.35,
+      "text": "He used six hundred dollars"
+    },
+    {
+      "start": 39.35,
+      "end": 41.2,
+      "text": "to prepare the next batch."
+    },
+    {
+      "start": 41.7,
+      "end": 44.1,
+      "text": "And the business kept running."
+    },
+    {
+      "start": 45.3,
+      "end": 46.671,
+      "text": "But the second baker"
+    },
+    {
+      "start": 46.671,
+      "end": 47.7,
+      "text": "did something different."
+    },
+    {
+      "start": 48,
+      "end": 49.654,
+      "text": "Instead of selling to customers,"
+    },
+    {
+      "start": 49.654,
+      "end": 51.308,
+      "text": "he sold all his bread"
+    },
+    {
+      "start": 51.308,
+      "end": 52.3,
+      "text": "to a supermarket."
+    },
+    {
+      "start": 52.6,
+      "end": 54.544,
+      "text": "The supermarket agreed to pay"
+    },
+    {
+      "start": 54.544,
+      "end": 56.1,
+      "text": "him one thousand dollars..."
+    },
+    {
+      "start": 57.2,
+      "end": 58.6,
+      "text": "Sixty days later."
+    },
+    {
+      "start": 59.2,
+      "end": 60.55,
+      "text": "Now think about that."
+    },
+    {
+      "start": 60.8,
+      "end": 61.825,
+      "text": "Both bakers made"
+    },
+    {
+      "start": 61.825,
+      "end": 62.85,
+      "text": "the same sales."
+    },
+    {
+      "start": 63.1,
+      "end": 64.536,
+      "text": "Both had four hundred"
+    },
+    {
+      "start": 64.536,
+      "end": 65.973,
+      "text": "dollars in gross profit,"
+    },
+    {
+      "start": 65.973,
+      "end": 67.05,
+      "text": "before other expenses."
+    },
+    {
+      "start": 67.3,
+      "end": 68.5,
+      "text": "But one had a"
+    },
+    {
+      "start": 68.5,
+      "end": 69.7,
+      "text": "thousand dollars in cash."
+    },
+    {
+      "start": 70,
+      "end": 71.389,
+      "text": "And the other had a"
+    },
+    {
+      "start": 71.389,
+      "end": 72.5,
+      "text": "thousand dollars on paper."
+    },
+    {
+      "start": 72.75,
+      "end": 74.056,
+      "text": "He had to wait sixty"
+    },
+    {
+      "start": 74.056,
+      "end": 75.1,
+      "text": "days to collect it."
+    },
+    {
+      "start": 75.25,
+      "end": 76.25,
+      "text": "And without additional cash,"
+    },
+    {
+      "start": 76.25,
+      "end": 77.25,
+      "text": "he couldn't afford to"
+    },
+    {
+      "start": 77.25,
+      "end": 78,
+      "text": "make another batch."
+    },
+    {
+      "start": 78.7,
+      "end": 80.2,
+      "text": "You see, making a"
+    },
+    {
+      "start": 80.2,
+      "end": 81.7,
+      "text": "profit and having cash"
+    },
+    {
+      "start": 81.7,
+      "end": 83.2,
+      "text": "are two different things."
+    },
+    {
+      "start": 83.6,
+      "end": 85.314,
+      "text": "Because a business can look"
+    },
+    {
+      "start": 85.314,
+      "end": 87.029,
+      "text": "profitable on paper... and still"
+    },
+    {
+      "start": 87.029,
+      "end": 88.4,
+      "text": "run out of money."
+    }
+  ]
+}

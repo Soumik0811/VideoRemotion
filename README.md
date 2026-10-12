@@ -1,5 +1,16 @@
 # Finance Motion Engine (Remotion + TypeScript)
 
+## New: Episode 01 — The Bakery That Ran Out of Money
+
+The latest composition is **BakeryEpisode01**, a 90-second vertical animation about cash flow versus gross profit. It includes expressive SVG bakers, a continuous pastel neighborhood, six scenes, exact-script captions, original music and sound effects. The preview has no narration; a real voiceover can be added later.
+
+```bash
+npm run check:bakery
+npm run render -- --browser-executable=/usr/bin/chromium
+```
+
+Output: `out/episode-01/bakery-episode-01.mp4`. See [EPISODE-01.md](EPISODE-01.md) for assets, narration replacement, timing, and how to create another episode. The original T-shirt composition and its legacy render scripts remain available below.
+
 Reusable minimalist 2D money/business explainer format for YouTube Shorts. First episode: **He Sold 50 Shirts Without Owning One!** (58 seconds, 1080 × 1920, 30 FPS).
 
 ## Architecture
@@ -29,12 +40,12 @@ npm install
 npm run check:story
 npm run typecheck
 npm run studio
-npm run render
+npm run render:legacy
 ```
 
 - `npm run studio` opens the video editor/preview and lets you inspect exact frames.
-- `npm run render` produces `out/tshirt-explainer.mp4` (1080 × 1920, H.264).
-- `npm run still` creates a frame for a thumbnail. You can select other frames with Remotion CLI `--frame`.
+- `npm run render:legacy` produces `out/tshirt-explainer.mp4` (1080 × 1920, H.264).
+- `npm run still:legacy` creates a frame for a thumbnail. You can select other frames with Remotion CLI `--frame`.
 
 To create other episodes, duplicate/edit `src/data/episode.json` and keep scenes in a supported `type` among `hook`, `inventory`, `preorder`, `math`, and `compare`. Add new scene types in `SceneRenderer.tsx` for additional visual metaphors (pizza, kiosks, vending machines, etc.). The `seconds` fields automatically determine total duration. Scene narration must match the timeline length; regenerate/replace narration if timings change.
 
@@ -45,7 +56,7 @@ To create other episodes, duplicate/edit `src/data/episode.json` and keep scenes
 - `out/captions.srt`: editable timecoded on-screen punchline captions; exported from the episode JSON.
 - `out/elevenlabs-script.txt`: exact script for ElevenLabs replacement.
 
-For publishing, use a clear, warm ElevenLabs voice and export one 58-second WAV at 44.1 or 48 kHz. Keep scene pauses close to the timeline. Replace `public/audio/narration.wav`, then `npm run render`. Preserve a backup of the original file first if needed. For a different story, update `episode.json` and the narration together. Background music and captions are optional and fully editable.
+For publishing, use a clear, warm ElevenLabs voice and export one 58-second WAV at 44.1 or 48 kHz. Keep scene pauses close to the timeline. Replace `public/audio/narration.wav`, then `npm run render:legacy`. Preserve a backup of the original file first if needed. For a different story, update `episode.json` and the narration together. Background music and captions are optional and fully editable.
 
 An offline helper `python tools/make_audio.py` regenerates draft narration, original music and SRT from the scene JSON. It uses the system's `espeak` and Python packages `numpy` plus `scipy` optionally. Running it **overwrites** the supplied narration audio. Do not run it after replacing audio with a better narration unless you have a backup.
 

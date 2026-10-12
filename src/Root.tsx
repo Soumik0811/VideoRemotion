@@ -3,8 +3,14 @@ import {Composition} from 'remotion';
 import episodeJSON from './data/episode.json';
 import {Episode} from './types';
 import {Explainer} from './Explainer';
+import bakeryJSON from './data/bakery-episode.json';
+import {BakeryEpisode} from './bakery/BakeryEpisode';
+import {BakeryEpisode as BakeryEpisodeType} from './bakery/types';
 
 const episode=episodeJSON as Episode;
 const durationInFrames=episode.scenes.reduce((n,s)=>n+Math.round(s.seconds*episode.fps),0);
-export const RemotionRoot:React.FC=()=>
-  <Composition id="FinanceExplainer" component={Explainer} width={episode.width} height={episode.height} fps={episode.fps} durationInFrames={durationInFrames} defaultProps={{episode}}/>;
+const bakery=bakeryJSON as BakeryEpisodeType;
+export const RemotionRoot:React.FC=()=> <>
+  <Composition id="BakeryEpisode01" component={BakeryEpisode} width={bakery.width} height={bakery.height} fps={bakery.fps} durationInFrames={Math.round(bakery.durationSeconds*bakery.fps)} defaultProps={{episode:bakery}} calculateMetadata={({props})=>({durationInFrames:Math.round(props.episode.durationSeconds*props.episode.fps),fps:props.episode.fps,width:props.episode.width,height:props.episode.height})}/>
+  <Composition id="FinanceExplainer" component={Explainer} width={episode.width} height={episode.height} fps={episode.fps} durationInFrames={durationInFrames} defaultProps={{episode}}/>
+</>;
