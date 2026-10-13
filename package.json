@@ -16,7 +16,9 @@
     "render:giftcard": "remotion render src/index.tsx GiftCardBreakage02 out/episode-02/gift-card-breakage-02.mp4 --codec h264 --crf 18 --concurrency 2",
     "still:giftcard": "remotion still src/index.tsx GiftCardBreakage02 out/episode-02/thumbnail.png --frame 2940",
     "check:giftcard": "node tools/check-giftcard.mjs",
-    "export:giftcard": "node tools/export-giftcard.mjs"
+    "export:giftcard": "node tools/export-giftcard.mjs",
+    "check:giftcard:v4": "node tools/check-giftcard-v4.mjs",
+    "review:giftcard": "node tools/review-giftcard.mjs"
   },
   "dependencies": {
     "remotion": "^4.0.534",

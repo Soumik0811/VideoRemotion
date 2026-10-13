@@ -1,12 +1,13 @@
-# Gift-card episode validation
+# Cinematic V4 validation
 
-- Complete 138-second animation: 4,140 frames, 1080 × 1920, 30 FPS, H.264 video and AAC audio.
-- The full MP4 decoded through FFmpeg without errors.
-- TypeScript, gift-card episode checks, existing bakery checks and whitespace checks passed.
-- 11 visual sections; 77 subtitle groups reconstruct the exact supplied 311-word script.
-- The $20 purchase, $14 redemption and $6 remainder reconcile throughout the animated update.
-- Cash receipt is distinguished from revenue. The forgotten balance is not depicted as automatically forfeited.
-- The paired 50% recognition example is labeled illustrative, not a Starbucks breakage rate.
-- Source status: the supplied FY2025 $222M+ figure remains independently unverified; official filing access is blocked by network policy. See source-notes.json and EPISODE-02.md.
-- Major boards, captions and character expressions were visually reviewed. Review PNGs were refreshed from the final export.
-- Audio consists of original music and sound effects. No voice recording was supplied or generated; caption timing is editorial, not verified speech alignment.
+- Final MP4: 138.005 seconds including AAC padding; 4,140 video frames; 1080 × 1920; 30 FPS; H.264 video and AAC audio. The complete video and audio decoded with FFmpeg without errors. `media-info.json` records the exact metadata and SHA-256.
+- 27 cinematic shots across the coffee shop, storefront, home, neighborhood and office, aligned to the existing 11 narration sections. All shot intervals cover the full reference timeline without gaps or overlaps.
+- The finalized narration, sentence timings and all 77 caption groups are unchanged from the previous episode. Narration and captions reconstruct the same 311-word script.
+- TypeScript, gift-card arithmetic/caption checks, V4 choreography checks, previous bakery checks, original T-shirt story checks and whitespace checks passed.
+- Exact production animation functions were sampled to check handoff contact, cup placement/pickup, drawer-handle contact, card insertion, finite hand coordinates and arm reach. Sentence timing mapping was checked across every frame and against a longer recording's simulated timestamps.
+- Representative frames were rendered throughout all 27 shots. Corrections included elbow bend direction, text/face overlap, terminal/cup clearance, neighborhood framing, register framing, foreground drawer arms and the closing title's top crop. Cash/card handoffs and the drawer sequence were reviewed again from the final encoded MP4.
+- Five caption-free review frames cover purchase, redemption, drawer, recognition and reveal. The physical actions and displayed financial data remain visible without captions. Captions occupy their own safe region beneath the illustrated stage.
+- The former repeated full-screen financial panels have been replaced by a continuous physical story. Abstract recognition remains on an office monitor with an active analyst, cursor and proportional counters; large reveal typography is reserved for the hook and fiscal-2025 reveal.
+- $20 received − $14 redeemed = $6 outstanding. The register distinguishes cash, deferred revenue and initial $0 revenue. Closing the drawer does not recognize the $6 as revenue or forfeit it. The 50% recognition example is explicitly illustrative, and the later ledger shows $0 additional cash collected.
+- The displayed FY2025 $222.4M figure comes from the supplied V4 brief. Independent filing verification remains pending under the current network policy. It is compatible with the unchanged narration's “over $222 million.” See `source-notes.json` and `EPISODE-02.md`.
+- Sound consists of original synthesized music and Foley. No voice recording was supplied or generated. Caption/sentence timing is editorial and has not been synchronized to actual speech.

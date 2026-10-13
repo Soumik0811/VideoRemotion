@@ -194,11 +194,12 @@
     "balance": 6,
     "reportedBreakageFloorMillions": 222,
     "fiscalYear": 2025,
-    "illustrativeRedemptionFraction": 0.5
+    "illustrativeRedemptionFraction": 0.5,
+    "reportedBreakageMillions": 222.4
   },
   "source": {
     "status": "User-supplied figure; independent filing verification pending network access",
-    "reportedAmountLabel": "OVER $222 MILLION",
+    "reportedAmountLabel": "$222.4 MILLION (user-supplied V4 brief)",
     "reference": "Starbucks fiscal 2025 annual report / 10-K, stored-value cards and breakage",
     "requestedUrls": [
       "https://investor.starbucks.com/financial-data/annual-reports/default.aspx",
@@ -214,15 +215,15 @@
   "characters": {
     "explainer": {
       "name": "Miles",
-      "color": "#246C65",
+      "color": "#285343",
       "skin": "#E6B48D",
-      "hair": "#654837",
+      "hair": "#332C29",
       "shape": "oliver",
       "costume": "casual"
     },
     "customer": {
       "name": "Ben",
-      "color": "#BD9474",
+      "color": "#658CA2",
       "skin": "#D69D74",
       "hair": "#44372F",
       "shape": "noah",
@@ -329,7 +330,7 @@
       "start": 119,
       "end": 138,
       "label": "ODDLY LOGICAL",
-      "heading": "Who’s really\nreceiving the gift?"
+      "heading": "Who\u2019s really\nreceiving the gift?"
     }
   ],
   "captions": [
@@ -724,119 +725,115 @@
   },
   "soundEvents": [
     {
-      "at": 1,
+      "at": 0.7,
       "sound": "reveal"
     },
     {
-      "at": 6,
+      "at": 21.1,
+      "sound": "door"
+    },
+    {
+      "at": 29.65,
+      "sound": "paper"
+    },
+    {
+      "at": 30.2,
       "sound": "money"
     },
     {
-      "at": 12,
-      "sound": "pop"
-    },
-    {
-      "at": 20,
+      "at": 32.7,
       "sound": "paper"
     },
     {
-      "at": 28,
-      "sound": "pop"
-    },
-    {
-      "at": 32,
+      "at": 33.2,
       "sound": "register"
     },
     {
-      "at": 37,
+      "at": 35.8,
       "sound": "paper"
     },
     {
-      "at": 40,
-      "sound": "reveal"
+      "at": 43.15,
+      "sound": "paper"
     },
     {
-      "at": 46,
-      "sound": "pop"
+      "at": 50.45,
+      "sound": "terminal"
     },
     {
-      "at": 50,
-      "sound": "register"
+      "at": 53,
+      "sound": "cup"
     },
     {
-      "at": 53.2,
-      "sound": "pop"
+      "at": 54.25,
+      "sound": "cup"
     },
     {
-      "at": 57,
+      "at": 56.7,
       "sound": "flip"
     },
     {
-      "at": 58.3,
+      "at": 57.4,
       "sound": "flip"
     },
     {
-      "at": 60,
+      "at": 58.1,
+      "sound": "drawer"
+    },
+    {
+      "at": 58.5,
+      "sound": "flip"
+    },
+    {
+      "at": 59.85,
       "sound": "paper"
     },
     {
-      "at": 64,
-      "sound": "pop"
+      "at": 60.8,
+      "sound": "drawer"
     },
     {
-      "at": 69,
-      "sound": "pop"
-    },
-    {
-      "at": 72,
+      "at": 64.2,
       "sound": "paper"
     },
     {
-      "at": 79,
-      "sound": "reveal"
+      "at": 66.5,
+      "sound": "terminal"
     },
     {
-      "at": 84,
-      "sound": "money"
+      "at": 71.7,
+      "sound": "keyboard"
     },
     {
-      "at": 89,
-      "sound": "pop"
+      "at": 74.6,
+      "sound": "keyboard"
     },
     {
-      "at": 95,
-      "sound": "reveal"
+      "at": 81.3,
+      "sound": "keyboard"
     },
     {
-      "at": 102,
-      "sound": "pop"
+      "at": 86.5,
+      "sound": "keyboard"
     },
     {
-      "at": 106,
-      "sound": "paper"
-    },
-    {
-      "at": 111,
+      "at": 92.3,
       "sound": "register"
     },
     {
-      "at": 114,
-      "sound": "pop"
-    },
-    {
-      "at": 120,
+      "at": 94.5,
       "sound": "reveal"
     },
     {
-      "at": 125,
-      "sound": "pop"
+      "at": 113,
+      "sound": "keyboard"
     },
     {
-      "at": 129,
-      "sound": "pop"
+      "at": 127.4,
+      "sound": "paper"
     },
     {
-      "at": 133.5,
+      "at": 132.8,
       "sound": "reveal"
     }
   ]

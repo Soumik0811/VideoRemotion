@@ -1,65 +1,66 @@
-# Oddly Logical — The $222 Million Gift-Card Secret
+# Oddly Logical — The Gift-Card Secret / Cinematic V4
 
-`GiftCardBreakage02` is a new 1080 × 1920, 30 FPS Remotion composition. The editorial preview is 138 seconds long and preserves the supplied 311-word narration, including the final Oddly Logical call to action.
+`GiftCardBreakage02` is a 138-second, 1080 × 1920, 30 FPS Remotion animation. V4 follows a buyer, recipient and cashier through a physical transaction, then a forgotten card and the accounting process. The finalized 311-word narration and all 77 caption groups are preserved.
 
-## Watch, edit, render
+## Preview and export
 
 ```bash
 npm install
 npm run typecheck
 npm run check:giftcard
-npm run studio -- --no-open
-npm run render:giftcard -- --browser-executable=/usr/bin/chromium
+npm run check:giftcard:v4
+npm run studio
+npm run render:giftcard
 ```
 
-On a local machine, omit the Linux browser path if Remotion manages its browser, or substitute that machine's Chromium path. The output is `out/episode-02/gift-card-breakage-02.mp4`. `npm run still:giftcard` creates the reveal thumbnail. The earlier bakery and T-shirt compositions remain available.
+The MP4 is written to `out/episode-02/gift-card-breakage-02.mp4`. In the cloud environment, append `-- --browser-executable=/usr/bin/chromium`. Locally, let Remotion manage Chrome or supply your installed browser's path. `npm run still:giftcard` exports the fiscal-2025 reveal.
 
-The preview has original instrumental music and subtle effects. It has **no spoken narration**: only narration text was supplied. Caption and action timestamps are editorial estimates, not audio-verified synchronization.
+The preview includes original music and synthesized Foley, with **no spoken voiceover**. No narration recording has been supplied. Existing sentence and caption timings are editorial estimates. Audio synchronization can only be verified after adding a recording.
 
-## Visual system
+## What changed in V4
 
-The episode uses a continuous illustrated cafe, a cream/green/gold palette, large counting boards, chalkboard labels and step arrows. The same jointed SVG character rig supports five consistent cast members:
+The composition uses 27 shots across a layered coffee shop, storefront, home, neighborhood and accounting office. Wide shots establish locations; tracking shots follow customers; close-ups show the wallet, card, terminal and drawer; over-the-shoulder views show the ledger. Camera moves transform the entire shared world. Windows and distant scenery add subtle parallax.
 
-| Role | Character | Appearance |
-| --- | --- | --- |
-| Narrator / explainer | Miles | Teal neutral jacket, rounded face |
-| Customer | Ben | Warm tan jacket, darker swept hair |
-| Business / barista | Alex | Green apron and cafe cap |
-| Gift recipient | Riley | Terracotta jacket |
-| Accounting analyst | Sam | Gold jacket, tie, round glasses |
+Five consistent SVG characters use articulated two-bone arms, walking legs, head tilts, eye lines, blinks, breathing and expressions. The explainer wears a cream shirt, forest-green overshirt and brown trousers; the buyer wears blue; the recipient terracotta; the cashier a green apron and name tag; the analyst a simple professional outfit with glasses. The explainer appears for the hook, explanation and ending rather than every shot.
 
-Characters breathe and blink throughout, blend gestures and expressions, and react to the board reveals. Character placements ease between sections. The boards communicate the accounting independently of a talking character.
+Actions include withdrawing money from a wallet, exchanging cash and a card, gifting the card, tapping the terminal, serving and picking up coffee, opening a drawer, putting the card inside, closing it, and operating a computer. Props and hands share the same position calculations. Drawer geometry, counter layout and register location persist between camera views.
 
-The eleven sections are: $222M+ hook; recognized accounting practice; $20 purchase; cash/liability/revenue comparison; $14 redemption and $6 remainder; forgotten drawer; millions of small balances; proportional recognition; fiscal-2025 reveal; cash-versus-revenue timing; recipient-versus-company question and brand ending.
+Financial values appear on physical register, terminal and computer displays. The full-scale typography is reserved for the main fiscal-2025 reveal. The earlier reusable board components and previous bakery and T-shirt episodes remain available.
 
-## Accounting and source status
+## Reusable implementation
 
-The single-card example reconciles: $20 cash received; initially $20 deferred revenue / liability and $0 revenue. Redeeming $14 leaves a $6 balance. The simplified single-card ledger omits aggregate breakage adjustments.
+| File | Purpose |
+| --- | --- |
+| `src/giftcard/cinematic/CharacterAction.tsx` | Layered SVG rig and shared hand-to-world conversion |
+| `src/giftcard/cinematic/choreography.ts` | Buyer, cashier, recipient and drawer action states |
+| `src/giftcard/cinematic/motion.ts` | Two-bone IK, motion paths and camera interpolation |
+| `src/giftcard/cinematic/EnvironmentCamera.tsx` | Shared camera transform and parallax layers |
+| `src/giftcard/cinematic/Environments.tsx` | Reusable café, exterior, home and office scenery |
+| `src/giftcard/cinematic/Interactions.tsx` | Held props, object transfers, register, terminal, drawer, calendar and reveal |
+| `src/giftcard/cinematic/LedgerMonitor.tsx` | Historical patterns, proportional recognition and cash timing interfaces |
+| `src/giftcard/cinematic/CinematicStory.tsx` | Shot blocking, camera framing and depth ordering |
+| `src/giftcard/cinematic/storyboard.json` | 27-shot audit and reference sentence boundaries |
+| `src/giftcard/cinematic/timing.ts` | Narration-driven mapping for camera/action timing and Foley |
+| `src/data/giftcard-episode.json` | Narration, captions, cast, financial figures and sound cues |
 
-The forgotten balance is not shown as automatically forfeited. Breakage recognition is illustrated using matching percentages of **expected redemptions** and **estimated breakage**, explicitly labeled as illustrative proportions, not Starbucks' breakage rate. Recognition does not collect cash a second time.
+## Narration and timing
 
-**The supplied “over $222 million in fiscal 2025” claim has not been independently verified in this environment.** Requests to the official investor site and candidate filing URL were blocked by the network proxy. The video preserves the user's claim as `$222M+`; no extra decimal precision is invented. Network-domain additions for `investor.starbucks.com`, `s203.q4cdn.com`, and `www.sec.gov` were saved to the environment configuration draft. Draft saving does not activate access or establish verification. Check the fiscal-2025 annual report's stored-value-card/breakage disclosure after access is enabled, and update `source.status` accordingly. The candidate PDF URL in the source notes is an attempted location, not a retrieved source.
+Record the exact script in `out/episode-02/narration.txt` and save the recording under `public/audio/giftcard/`. Set `narration.src` to its path relative to `public`. Update `narration.sentences` with measured start/end timestamps for the same 35 sentences, preserving their order and wording. Update the caption groups, scene boundaries and `durationSeconds` to the real recording.
 
-Real-world recognition also depends on the applicable rules and facts, including amounts required to be remitted under unclaimed-property laws. The animation explains the supplied general mechanism and is not a full accounting-policy treatment.
+The cinematic clock maps all reference sentence boundaries to the updated sentence timestamps. This stretches actions, camera moves and sound-event positions with the delivery, including pauses, rather than forcing equal-length scenes. `soundEvents.at` stays in the reference storyboard's time coordinates. Do not rewrite the reference sentence boundaries when measuring a new recording.
 
-## Editable files
+Set `narration.timing` to `audio-verified` only after listening and checking synchronization. Run `npm run export:giftcard` to regenerate the SRT and timing notes. Regenerate/extend the music for a longer recording. The optional composition prop `showCaptions: false` supports a visual-storytelling audit without subtitles.
 
-- `src/data/giftcard-episode.json`: exact narration, 77 caption groups, financial figures, cast, scene boundaries, audio events, and source status.
-- `src/giftcard/GiftCardEpisode.tsx`: timeline, captions, brand layout and audio tracks.
-- `src/giftcard/components/StoryBoards.tsx`: reusable narrative boards and number reveals.
-- `src/giftcard/components/Boards.tsx`: panel, counter, arrow and chalkboard primitives.
-- `src/giftcard/components/Assets.tsx`: cafe, gift card, coffee cup and drawer SVGs.
-- `src/giftcard/components/Cast.tsx`: recurring cast placements and reactions.
-- `src/bakery/components/BakerCharacter.tsx`: shared character rig, with backward-compatible costume options.
+## Financial data and source status
 
-To make the next episode, duplicate the JSON and composition, replace the script and financial data, and reuse or extend the boards and characters. Scene choreography stretches to configured scene boundaries. Caption, sentence and sound-effect cues must be adjusted to match a real recording.
+The single-card example remains $20 received, $14 redeemed, $6 outstanding. At issue, the register distinguishes $20 cash, $20 deferred revenue / obligation and $0 revenue. The terminal's simplified single-card balance excludes aggregate breakage adjustments. Closing the drawer never recognizes the individual $6 as revenue or marks the card forfeited.
 
-## Add a voiceover
+The monitor demonstrates proportional recognition with matching 50% counters: a share of **expected redemptions** and a share of **estimated breakage**. The proportions are explicitly illustrative, not Starbucks' breakage rate. The later ledger shows **$0 additional cash collected** when revenue is recognized.
 
-Record `out/episode-02/narration.txt`, then place the audio under `public/audio/giftcard/`. Set `narration.src` to its path relative to `public`. Measure the audio, update `durationSeconds`, scene boundaries, sentence/caption times and sound cues, and run `npm run export:giftcard`. Set `narration.timing` to `audio-verified` only after listening and checking the synchronization.
+V4 displays the brief's supplied **$222.4 million for fiscal 2025**, compatible with the unchanged spoken wording “over two hundred and twenty-two million.” This added precision comes from the user's V4 brief, not a retrieved filing. Independent verification remains pending: official Starbucks filing domains are unavailable under the current network policy. `source-notes.json` records that limitation; attempted URLs are not retrieved citations. Real-world recognition also depends on applicable rules, including unclaimed-property obligations.
 
-`python tools/make_giftcard_audio.py` regenerates the episode's original synthesized music and effects using NumPy. It creates no narration. Regenerate the score if the final narration changes the duration.
+## Sound and quality checks
 
-## Validation
+`python tools/make-giftcard-foley.py` synthesizes original door chime, terminal beep, cup, drawer and computer effects. Existing original paper/register/reveal sounds are reused. `python tools/make_giftcard_audio.py` regenerates the original instrumental and six earlier effects. No third-party sound samples or new animation dependencies are required.
 
-`npm run check:giftcard` checks $20 − $14 = $6, figure consistency, scene coverage, exact narration reconstruction from captions, cue bounds and required audio. `tools/review-giftcard.mjs` creates frames for visual inspection. Full MP4 metadata and decoding should be checked after rendering. Passing the local checks does not verify the external annual-report claim.
+`npm run review:giftcard` renders representative frames to `out/episode-02/v4-review/`. Pass seconds after `--` to inspect specific moments. Add `--no-captions` to audit the visual story without subtitles. `check:giftcard:v4` checks continuous shot coverage, sentence-based retiming, world-space handoff distances, cup pickup, drawer-handle contact and arm reach across every action frame. The original episode and TypeScript checks remain part of validation. Full-export metadata and decode results are recorded in `out/episode-02/VALIDATION.md`.

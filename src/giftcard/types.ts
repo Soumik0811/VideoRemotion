@@ -3,7 +3,7 @@ export type CastMember={name:string;color:string;skin:string;hair:string;shape:'
 export type GiftEpisode={
  id:string;title:string;brand:string;fps:number;width:number;height:number;durationSeconds:number;
  narration:{src:string|null;timing:string;text:string;sentences:{start:number;end:number;text:string}[]};
- financials:{purchase:number;redeemed:number;balance:number;reportedBreakageFloorMillions:number;fiscalYear:number;illustrativeRedemptionFraction:number};
+ financials:{purchase:number;redeemed:number;balance:number;reportedBreakageFloorMillions:number;reportedBreakageMillions:number;fiscalYear:number;illustrativeRedemptionFraction:number};
  source:{status:string;reportedAmountLabel:string;reference:string;requestedUrls:string[];accountingNotes:string[]};
  characters:Record<Role,CastMember>;
  scenes:{id:string;start:number;end:number;label:string;heading:string}[];

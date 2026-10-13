@@ -1,0 +1,338 @@
+{
+  "version": 4,
+  "referenceDuration": 138,
+  "timingSource": "narration.sentences; editorial until a recording is supplied",
+  "referenceSentences": [
+    {
+      "start": 0.45,
+      "end": 5.091
+    },
+    {
+      "start": 5.321,
+      "end": 8.535
+    },
+    {
+      "start": 8.765,
+      "end": 10.55
+    },
+    {
+      "start": 11.45,
+      "end": 17.999
+    },
+    {
+      "start": 18.229,
+      "end": 24.779
+    },
+    {
+      "start": 25.009,
+      "end": 26.55
+    },
+    {
+      "start": 27.45,
+      "end": 32.959
+    },
+    {
+      "start": 33.189,
+      "end": 35.55
+    },
+    {
+      "start": 36.45,
+      "end": 39.873
+    },
+    {
+      "start": 40.103,
+      "end": 41.244
+    },
+    {
+      "start": 41.474,
+      "end": 45.277
+    },
+    {
+      "start": 45.507,
+      "end": 48.55
+    },
+    {
+      "start": 49.45,
+      "end": 52.972
+    },
+    {
+      "start": 53.202,
+      "end": 55.55
+    },
+    {
+      "start": 56.45,
+      "end": 57.318
+    },
+    {
+      "start": 57.548,
+      "end": 58.415
+    },
+    {
+      "start": 58.645,
+      "end": 62.55
+    },
+    {
+      "start": 63.45,
+      "end": 66.058
+    },
+    {
+      "start": 66.288,
+      "end": 67.778
+    },
+    {
+      "start": 68.008,
+      "end": 70.615
+    },
+    {
+      "start": 70.845,
+      "end": 77.55
+    },
+    {
+      "start": 78.45,
+      "end": 81.07
+    },
+    {
+      "start": 81.3,
+      "end": 90.47
+    },
+    {
+      "start": 90.7,
+      "end": 92.447
+    },
+    {
+      "start": 92.677,
+      "end": 93.55
+    },
+    {
+      "start": 94.45,
+      "end": 100.767
+    },
+    {
+      "start": 100.997,
+      "end": 104.55
+    },
+    {
+      "start": 105.45,
+      "end": 107.309
+    },
+    {
+      "start": 107.539,
+      "end": 114.231
+    },
+    {
+      "start": 114.461,
+      "end": 118.55
+    },
+    {
+      "start": 119.45,
+      "end": 123.745
+    },
+    {
+      "start": 123.975,
+      "end": 126.123
+    },
+    {
+      "start": 126.353,
+      "end": 128.93
+    },
+    {
+      "start": 129.16,
+      "end": 132.166
+    },
+    {
+      "start": 132.396,
+      "end": 137.55
+    }
+  ],
+  "shots": [
+    {
+      "start": 0,
+      "end": 5.6,
+      "type": "push-in",
+      "location": "cafe",
+      "action": "Gift card, explainer reaction and FY2025 reveal"
+    },
+    {
+      "start": 5.6,
+      "end": 11,
+      "type": "close-up",
+      "location": "cafe",
+      "action": "Explainer examines unused card"
+    },
+    {
+      "start": 11,
+      "end": 20,
+      "type": "wide",
+      "location": "cafe",
+      "action": "Working cashier, steam and accounting-practice tag"
+    },
+    {
+      "start": 20,
+      "end": 27,
+      "type": "tracking",
+      "location": "cafe",
+      "action": "Buyer enters through opening glass door"
+    },
+    {
+      "start": 27,
+      "end": 29,
+      "type": "medium",
+      "location": "cafe",
+      "action": "Buyer approaches the counter"
+    },
+    {
+      "start": 29,
+      "end": 31.3,
+      "type": "close-up",
+      "location": "cafe",
+      "action": "Wallet opens; cash is withdrawn"
+    },
+    {
+      "start": 31.3,
+      "end": 36.7,
+      "type": "medium",
+      "location": "cafe",
+      "action": "Cash handoff, register update and card handoff"
+    },
+    {
+      "start": 36.7,
+      "end": 41,
+      "type": "insert",
+      "location": "cafe",
+      "action": "Register distinguishes cash, deferred revenue and revenue"
+    },
+    {
+      "start": 41,
+      "end": 45.5,
+      "type": "medium",
+      "location": "exterior",
+      "action": "Buyer gives the card to his friend"
+    },
+    {
+      "start": 45.5,
+      "end": 49,
+      "type": "close-up",
+      "location": "exterior",
+      "action": "Recipient holds the outstanding promise"
+    },
+    {
+      "start": 49,
+      "end": 50.7,
+      "type": "medium",
+      "location": "cafe",
+      "action": "Recipient taps card on terminal"
+    },
+    {
+      "start": 50.7,
+      "end": 53.4,
+      "type": "insert",
+      "location": "cafe",
+      "action": "Balance falls from $20 to $6; $14 redeemed"
+    },
+    {
+      "start": 53.4,
+      "end": 56,
+      "type": "tracking",
+      "location": "cafe",
+      "action": "Cashier sets down cup; recipient picks it up and leaves"
+    },
+    {
+      "start": 56,
+      "end": 58.8,
+      "type": "wide",
+      "location": "home",
+      "action": "Recipient returns; calendar pages turn; drawer opens"
+    },
+    {
+      "start": 58.8,
+      "end": 61.4,
+      "type": "close-up",
+      "location": "home",
+      "action": "Card is lowered into drawer; drawer closes"
+    },
+    {
+      "start": 61.4,
+      "end": 63,
+      "type": "pull-out",
+      "location": "home",
+      "action": "Recipient leaves; $6 remains an obligation"
+    },
+    {
+      "start": 63,
+      "end": 71,
+      "type": "wide",
+      "location": "neighborhood",
+      "action": "Different households retain different small balances"
+    },
+    {
+      "start": 71,
+      "end": 73.5,
+      "type": "wide",
+      "location": "office",
+      "action": "Analyst examines historical customer cohorts"
+    },
+    {
+      "start": 73.5,
+      "end": 78,
+      "type": "over-shoulder",
+      "location": "office",
+      "action": "Redemption patterns inform estimated unused balances"
+    },
+    {
+      "start": 78,
+      "end": 81.3,
+      "type": "medium",
+      "location": "office",
+      "action": "Explainer introduces recognition as analyst operates mouse"
+    },
+    {
+      "start": 81.3,
+      "end": 94,
+      "type": "over-shoulder push-in",
+      "location": "office",
+      "action": "Matched proportional counters update; breakage label appears"
+    },
+    {
+      "start": 94,
+      "end": 105,
+      "type": "push-in",
+      "location": "cafe",
+      "action": "FY2025 $222.4M reveal, cast reactions, empty serving tray"
+    },
+    {
+      "start": 105,
+      "end": 112,
+      "type": "pull-out",
+      "location": "home",
+      "action": "Card remains in closed drawer; customer absent"
+    },
+    {
+      "start": 112,
+      "end": 119,
+      "type": "over-shoulder",
+      "location": "office",
+      "action": "Ledger distinguishes earlier cash from later recognition"
+    },
+    {
+      "start": 119,
+      "end": 126,
+      "type": "push-in",
+      "location": "exterior",
+      "action": "Explainer offers a card and asks the closing question"
+    },
+    {
+      "start": 126,
+      "end": 132.4,
+      "type": "tracking",
+      "location": "exterior",
+      "action": "Gift recipient, then company storefront"
+    },
+    {
+      "start": 132.4,
+      "end": 138,
+      "type": "pull-out",
+      "location": "exterior",
+      "action": "Explainer waves under the Oddly Logical shop sign"
+    }
+  ]
+}

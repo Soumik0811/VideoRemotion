@@ -1,11 +1,15 @@
-# Oddly Logical — Gift-card breakage
+# Oddly Logical — Cinematic V4
 
-The `GiftCardBreakage02` composition turns the supplied Starbucks gift-card script into a 138-second vertical animation with recurring characters, large number boards, cash/liability/revenue comparisons, and proportional breakage counters.
+The `GiftCardBreakage02` composition follows a Starbucks gift card through a purchase, gift, redemption, forgotten drawer and accounting office. The 138-second vertical animation uses 27 camera shots, articulated SVG characters, physical handoffs and financial values on register, terminal and computer screens.
 
 ```bash
 npm install
 npm run check:giftcard
-npm run render:giftcard -- --browser-executable=/usr/bin/chromium
+npm run check:giftcard:v4
+npm run studio
+npm run render:giftcard
 ```
 
-See [EPISODE-02.md](EPISODE-02.md) for editing and voiceover instructions, and the pending source verification. The preview includes music and effects, with estimated captions and no spoken narration.
+In the cloud environment, render with `npm run render:giftcard -- --browser-executable=/usr/bin/chromium`.
+
+See [EPISODE-02.md](EPISODE-02.md) for the reusable components, editing guide and source status. The finalized narration text is preserved. The preview includes original music and effects, with estimated captions and no recorded voiceover. Earlier bakery and T-shirt compositions remain functional.

@@ -3,25 +3,35 @@
   "stream_groups": [],
   "streams": [
     {
+      "index": 0,
       "codec_name": "h264",
+      "codec_type": "video",
       "width": 1080,
       "height": 1920,
       "r_frame_rate": "30/1",
+      "duration": "138.000000",
       "nb_frames": "4140",
       "side_data_list": [
         {}
       ]
     },
     {
+      "index": 1,
       "codec_name": "aac",
+      "codec_type": "audio",
       "sample_rate": "48000",
       "channels": 2,
       "r_frame_rate": "0/0",
+      "duration": "138.005000",
       "nb_frames": "6471"
     }
   ],
   "format": {
     "duration": "138.005000",
-    "size": "24460855"
-  }
+    "size": "48471992"
+  },
+  "version": "Cinematic V4",
+  "sha256": "430f3544f7c788e068d68695a2fed9d328b964ff61759697a99b7349ce55f5e5",
+  "fullDecode": "passed",
+  "narration": "none supplied; original music and Foley only"
 }

@@ -47,7 +47,7 @@ for i in range(math.ceil(duration/(beat*8))):
     envelope=np.minimum(1,t/.6)*np.minimum(1,(len(t)/RATE-t)/.9)
     for freq in chords[i%4]:
         music[start:start+len(t)] += .007*np.sin(2*np.pi*freq*t)*envelope
-# Pull the score down during the sixty-day reveal for a deliberate breath.
+# Pull the score down during the breakage reveal for a deliberate breath.
 timeline=np.arange(len(music))/RATE
 duck=1-.65*np.clip((timeline-91.0)/.45,0,1)*np.clip((94.1-timeline)/.4,0,1)
 music*=duck
