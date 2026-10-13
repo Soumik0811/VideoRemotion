@@ -1,8 +1,16 @@
 export type CharacterId = 'beebop';
-/** Simple, reliable poses only — no finger or hand-to-hand object work (V5.1). */
-export type BeebopPose =
-  | 'idle' | 'shocked' | 'explaining' | 'point' | 'thinking'
-  | 'happy' | 'laughing' | 'present' | 'walk';
+/** Two-axis rig: arms/legs pose + facial expression. No finger or object work (V5.1). */
+export type BeebopPose = 'idle' | 'wave' | 'point' | 'explain' | 'think' | 'fly';
+export type BeebopExpression = 'happy' | 'neutral' | 'surprised' | 'worried' | 'angry';
+export type BeebopLook = 'left' | 'center' | 'right';
+/** A time cue switching the character's state; latest active cue (at <= t) wins. */
+export type BeebopCue = {
+  at: number;
+  pose?: BeebopPose;
+  expression?: BeebopExpression;
+  talking?: boolean;
+  look?: BeebopLook;
+};
 export type BeeBopEpisode = {
   id: string; title: string; fps: number; width: number; height: number; durationSeconds: number;
   narration: {src: string | null; timing: string; text: string; sentences: {start:number;end:number;text:string}[]};

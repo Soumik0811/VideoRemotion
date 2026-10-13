@@ -1,106 +1,188 @@
 import React, {useId} from 'react';
-import {B, ease, mix} from '../engine/motion';
-import {BeebopPose, CharacterId, BeeBopEpisode} from '../types';
+import {BeebopCue, BeebopExpression, BeebopLook, BeebopPose} from '../types';
 
-type Pose = {ls:number;le:number;rs:number;re:number;tilt:number;smile:number;brow:number;mouth:number;eye:number};
-// Simple, reliable poses only. Arms are thin strokes ending in a round hand — no finger or object work.
-const poses: Record<BeebopPose, Pose> = {
-  idle:       {ls:10, le:-6, rs:-10, re:6,  tilt:0,  smile:5,  brow:0, mouth:0,  eye:1},
-  shocked:    {ls:130,le:-25,rs:-130,re:25, tilt:-4, smile:0,  brow:6, mouth:11, eye:1},
-  explaining: {ls:12, le:-6, rs:-70, re:-18,tilt:2,  smile:6,  brow:0, mouth:5,  eye:1},
-  point:      {ls:12, le:-6, rs:-118,re:-4, tilt:5,  smile:6,  brow:0, mouth:3,  eye:1},
-  thinking:   {ls:10, le:-6, rs:-34, re:-72,tilt:-6, smile:2,  brow:3, mouth:0,  eye:1},
-  happy:      {ls:44, le:-10,rs:-44, re:10, tilt:2,  smile:12, brow:0, mouth:2,  eye:1},
-  laughing:   {ls:96, le:-20,rs:-96, re:20, tilt:0,  smile:12, brow:0, mouth:10, eye:0},
-  present:    {ls:120,le:-14,rs:-120,re:14, tilt:0,  smile:11, brow:0, mouth:4,  eye:1},
-  walk:       {ls:26, le:-6, rs:-26, re:6,  tilt:0,  smile:6,  brow:0, mouth:0,  eye:1},
+/**
+ * BeeBop — all-vector, shape-only bee mascot ported from the approved character sheet.
+ * Rendered as a positioned <g> so it composes inside the single StoryWorld SVG + CameraRig.
+ * The provided standalone design drew into a 440x550 box (head center 220,216; feet baseline 518);
+ * here (x, y) is the FEET CENTER and `scale` sizes the whole box. All motion is frame-driven.
+ */
+const C = {
+  ink: '#30201D',
+  gold: '#FFD04A',
+  goldLight: '#FFE077',
+  brown: '#513024',
+  wing: '#D6F2FF',
+  wingVein: '#8BC0D7',
+  scarf: '#B88954',
+  scarfLight: '#E1B677',
+  blush: '#FFA875',
 };
 
-const blinks = [1.6, 4.4, 7.1, 10.3, 13.2, 16.8, 20.1, 23.6, 27.4, 31.2, 34.9, 38.6, 42.1, 45.7, 48.3];
+const BODY_PATH =
+  'M175 313 C155 322 147 352 152 389 C156 422 181 449 220 457 C259 449 284 422 289 389 C295 352 285 322 265 313 Z';
 
-/** One deterministic bee rig. Poses blend over 0.7 s; wings buzz, antennae sway, body breathes. */
+const ARMS: Record<BeebopPose, {left: string; right: string; lHand: [number, number]; rHand: [number, number]}> = {
+  idle:    {left: 'M166 347 Q129 360 118 405', right: 'M274 347 Q311 361 323 405', lHand: [118, 408], rHand: [323, 408]},
+  wave:    {left: 'M166 347 Q130 359 118 405', right: 'M275 345 Q337 325 360 244 Q370 198 374 163', lHand: [118, 408], rHand: [374, 163]},
+  point:   {left: 'M166 347 Q130 359 118 405', right: 'M276 345 Q329 337 387 334', lHand: [118, 408], rHand: [387, 334]},
+  explain: {left: 'M166 347 Q119 362 87 342',  right: 'M274 347 Q318 362 356 339', lHand: [87, 342], rHand: [356, 339]},
+  think:   {left: 'M166 347 Q131 360 117 408', right: 'M276 347 Q311 329 306 284', lHand: [117, 408], rHand: [306, 284]},
+  fly:     {left: 'M166 347 Q118 359 91 374',  right: 'M274 347 Q324 354 352 374', lHand: [91, 374], rHand: [352, 374]},
+};
+
 export const BeeBopCharacter: React.FC<{
-  id?: CharacterId; characters: BeeBopEpisode['character']; t: number;
-  x?: number; y?: number; scale?: number; actions?: {at:number; pose:BeebopPose}[]; look?: number;
-}> = ({id='beebop', characters, t, x=0, y=0, scale=1, actions=[], look=0}) => {
-  const c = characters[id];
-  const uid = useId().replace(/[:]/g,'');
-  let p: Pose = {...poses.idle};
-  let action: BeebopPose = 'idle', strength = 0;
+  t: number;
+  x?: number;
+  y?: number;
+  scale?: number;
+  pose?: BeebopPose;
+  expression?: BeebopExpression;
+  look?: BeebopLook;
+  talking?: boolean;
+  actions?: BeebopCue[];
+}> = ({t, x = 0, y = 0, scale = 1, pose = 'idle', expression = 'happy', look = 'center', talking = false, actions = []}) => {
+  const uid = useId().replace(/:/g, '');
+
+  // Resolve the current state from the latest active cue (at <= t). Poses are discrete SVG paths,
+  // so we step between them rather than morph geometry.
+  let curPose: BeebopPose = pose;
+  let curExpr: BeebopExpression = expression;
+  let curLook: BeebopLook = look;
+  let curTalking = talking;
   for (const cue of actions) {
-    const a = ease(t, cue.at, .7);
-    if (a > 0) { for (const key of Object.keys(p) as (keyof Pose)[]) p[key] = mix(p[key], poses[cue.pose][key], a); action = cue.pose; strength = a; }
+    if (t >= cue.at) {
+      if (cue.pose) curPose = cue.pose;
+      if (cue.expression) curExpr = cue.expression;
+      if (cue.look) curLook = cue.look;
+      if (cue.talking !== undefined) curTalking = cue.talking;
+    }
   }
-  const bob = Math.sin(t*2.1)*2 + (action==='laughing' ? Math.abs(Math.sin(t*8))*5*strength : 0);
-  const flut = Math.sin(t*20)*7;
-  const antSway = Math.sin(t*1.6)*3;
-  const walking = action==='walk' ? strength : 0;
-  let blink = 1;
-  for (const at of blinks) { const d = Math.abs(t-at); if (d<.12) blink = Math.min(blink, .1+.9*(d/.12)**2); }
-  const arm = (side:'left'|'right', sh:number, el:number) => {
-    const sx = side==='left'?74:166;
-    return <g transform={`translate(${sx} 178) rotate(${sh})`}>
-      <line x1="0" y1="0" x2="0" y2="42" stroke={B.ink} strokeWidth="7" strokeLinecap="round"/>
-      <g transform={`translate(0 42) rotate(${el})`}>
-        <line x1="0" y1="0" x2="0" y2="30" stroke={B.ink} strokeWidth="6" strokeLinecap="round"/>
-        <circle cx="0" cy="34" r="7.5" fill={c.body} stroke={B.ink} strokeWidth="3"/>
-      </g>
-    </g>;
-  };
-  const wing = (dir:number) => <g transform={`translate(${dir<0?92:148} 168) rotate(${dir*(28+flut)}) scale(${1} ${1-Math.abs(flut)*.006})`}>
-    <path d={`M0 0 Q${dir*58} -34 ${dir*70} 22 Q${dir*40} 44 0 16Z`} fill={c.wing} opacity=".72" stroke="#9CC6CE" strokeWidth="2.5"/>
-  </g>;
-  const antenna = (dir:number, tip:'leaf'|'bone') => <g transform={`translate(${120+dir*20} 34) rotate(${dir*(6+antSway)})`}>
-    <path d={`M0 0 Q${dir*6} -26 ${dir*16} -40`} fill="none" stroke={B.ink} strokeWidth="4.5" strokeLinecap="round"/>
-    {tip==='leaf'
-      ? <path d={`M${dir*16} -40 q${dir*16} -6 ${dir*20} 10 q-${dir*16} 6 -${dir*20} -10Z`} fill={B.sage} stroke={B.ink} strokeWidth="2.5"/>
-      : <g transform={`translate(${dir*18} -44)`} fill={B.paper} stroke={B.ink} strokeWidth="2.5"><circle cx="-5" cy="0" r="5"/><circle cx="5" cy="0" r="5"/><rect x="-6" y="-2" width="12" height="4" rx="2"/></g>}
-  </g>;
-  return <g transform={`translate(${x} ${y}) scale(${scale})`}>
-    <ellipse cx="120" cy="322" rx="78" ry="12" fill="#826D5122"/>
-    <g transform={`translate(0 ${bob})`}>
-      {wing(-1)}{wing(1)}
-      {[0,1].map(i=><g key={i} transform={`rotate(${walking*Math.sin(t*7+i*Math.PI)*14} ${i?138:102} 288)`}>
-        <line x1={i?138:102} y1="286" x2={i?146:94} y2="322" stroke={B.ink} strokeWidth="7" strokeLinecap="round"/>
-        <path d={`M${i?146:94} 322 h${i?16:-16}`} stroke={B.ink} strokeWidth="7" strokeLinecap="round"/>
-      </g>)}
-      {/* abdomen */}
-      <clipPath id={`bee-body-${uid}`}><ellipse cx="120" cy="228" rx="48" ry="64"/></clipPath>
-      <ellipse cx="120" cy="228" rx="48" ry="64" fill={c.body}/>
-      <g clipPath={`url(#bee-body-${uid})`}>
-        <rect x="70" y="196" width="100" height="20" fill={c.stripe}/>
-        <rect x="70" y="234" width="100" height="20" fill={c.stripe}/>
-        <rect x="70" y="266" width="100" height="22" fill={c.stripe}/>
-      </g>
-      <ellipse cx="120" cy="228" rx="48" ry="64" fill="none" stroke={B.ink} strokeWidth="4"/>
-      <path d="M120 292 l-9 16 h18Z" fill={c.stripe} stroke={B.ink} strokeWidth="2.5" strokeLinejoin="round"/>
-      {arm('left', p.ls + walking*Math.sin(t*7)*14, p.le)}
-      {arm('right', p.rs - walking*Math.sin(t*7)*14, p.re)}
-      {/* scarf */}
-      <path d="M80 150 Q120 168 160 150 L166 176 Q120 196 74 176Z" fill={c.scarf} stroke={B.ink} strokeWidth="3.5" strokeLinejoin="round"/>
-      <path d="M150 176 l16 26 -22 -6Z" fill={c.scarf} stroke={B.ink} strokeWidth="3" strokeLinejoin="round"/>
-      {/* head */}
-      <g transform={`rotate(${p.tilt + Math.sin(t*1.3)*.8} 120 150)`}>
-        {antenna(-1,'leaf')}{antenna(1,'bone')}
-        <circle cx="120" cy="92" r="66" fill={c.body} stroke={B.ink} strokeWidth="5"/>
-        <ellipse cx="80" cy="118" rx="11" ry="6" fill={c.cheek} opacity=".55"/>
-        <ellipse cx="160" cy="118" rx="11" ry="6" fill={c.cheek} opacity=".55"/>
-        <g transform={`translate(0 92) scale(1 ${blink})`}>
-          {p.eye > .5
-            ? <g><ellipse cx="98" cy="0" rx="19" ry="23" fill={B.paper} stroke={B.ink} strokeWidth="3.5"/>
-                 <ellipse cx="142" cy="0" rx="19" ry="23" fill={B.paper} stroke={B.ink} strokeWidth="3.5"/>
-                 <circle cx={98+look*4} cy="2" r="9" fill={B.ink}/><circle cx={142+look*4} cy="2" r="9" fill={B.ink}/>
-                 <circle cx={95+look*4} cy="-2" r="3" fill={B.paper}/><circle cx={139+look*4} cy="-2" r="3" fill={B.paper}/></g>
-            : <g stroke={B.ink} strokeWidth="5" strokeLinecap="round" fill="none">
-                 <path d="M80 -2 Q98 16 116 -2"/><path d="M124 -2 Q142 16 160 -2"/></g>}
+
+  const frame = t * 30;
+  const bob = Math.sin(frame * 0.11) * (curPose === 'fly' ? 9 : 3);
+  const wingAngle = Math.sin(frame * 0.72) * 13;
+  const blink = Math.floor(frame) % 113 >= 109 && Math.floor(frame) % 113 <= 111;
+  const mouthPulse = curTalking && Math.floor(frame / 5) % 2 === 0;
+  const pupilShift = curLook === 'left' ? -8 : curLook === 'right' ? 8 : 0;
+  const hoverTilt = curPose === 'fly' ? Math.sin(frame * 0.06) * 5 : 0;
+  const waveTilt = curPose === 'wave' ? Math.sin(frame * 0.32) * 11 : 0;
+  const stroke = {stroke: C.ink, strokeWidth: 5, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const};
+  const arms = ARMS[curPose];
+
+  return (
+    <g transform={`translate(${x} ${y}) scale(${scale}) translate(-220 -518)`}>
+      <defs>
+        <clipPath id={`${uid}-body`}>
+          <path d={BODY_PATH} />
+        </clipPath>
+      </defs>
+      <g transform={`translate(0 ${bob.toFixed(2)}) rotate(${hoverTilt.toFixed(2)} 220 310)`}>
+        {/* Four pale-blue wings behind the mascot, two animated pairs. */}
+        <g transform={`rotate(${-wingAngle} 157 326)`}>
+          <path d="M156 333 C115 276 58 275 56 315 C54 348 108 367 157 345 Z" fill={C.wing} stroke={C.ink} strokeWidth="4" />
+          <path d="M146 334 Q106 316 80 314" fill="none" stroke={C.wingVein} strokeWidth="3" strokeLinecap="round" />
         </g>
-        <g stroke={B.ink} strokeWidth="4.5" strokeLinecap="round" fill="none">
-          <path d={`M82 ${66-p.brow} Q98 ${60-p.brow*1.4} 114 ${64+p.brow*0.4}`}/>
-          <path d={`M126 ${64+p.brow*0.4} Q142 ${60-p.brow*1.4} 158 ${66-p.brow}`}/>
+        <g transform={`rotate(${wingAngle} 283 326)`}>
+          <path d="M284 333 C325 276 382 275 384 315 C386 348 332 367 283 345 Z" fill={C.wing} stroke={C.ink} strokeWidth="4" />
+          <path d="M294 334 Q334 316 359 314" fill="none" stroke={C.wingVein} strokeWidth="3" strokeLinecap="round" />
         </g>
-        <path d={`M100 120 Q120 ${120+p.smile*1.7} 140 120`} fill={p.smile>7?B.paper:'none'} stroke={B.ink} strokeWidth="4" strokeLinecap="round"/>
-        {p.mouth > .5 && <ellipse cx="120" cy={126+p.mouth*.3} rx={3+p.mouth*.7} ry={p.mouth*(action==='laughing'?.9:.7)} fill={B.ink}/>}
+        <g transform={`rotate(${(wingAngle * 0.6).toFixed(2)} 153 352)`}>
+          <path d="M152 347 C107 327 77 348 91 378 C105 400 132 380 162 365 Z" fill={C.wing} stroke={C.ink} strokeWidth="4" />
+          <path d="M149 356 Q123 356 105 374" fill="none" stroke={C.wingVein} strokeWidth="3" />
+        </g>
+        <g transform={`rotate(${(-wingAngle * 0.6).toFixed(2)} 287 352)`}>
+          <path d="M288 347 C333 327 363 348 349 378 C335 400 308 380 278 365 Z" fill={C.wing} stroke={C.ink} strokeWidth="4" />
+          <path d="M291 356 Q317 356 335 374" fill="none" stroke={C.wingVein} strokeWidth="3" />
+        </g>
+
+        {/* Legs and oval feet. */}
+        <path d="M188 432 Q184 466 184 506 M251 432 Q255 466 257 506" stroke={C.ink} strokeWidth="9" strokeLinecap="round" fill="none" />
+        <ellipse cx="167" cy="509" rx="29" ry="9" fill={C.ink} />
+        <ellipse cx="276" cy="509" rx="29" ry="9" fill={C.ink} />
+
+        {/* Small striped abdomen. */}
+        <path d={BODY_PATH} fill={C.gold} {...stroke} />
+        <g clipPath={`url(#${uid}-body)`}>
+          <path d="M145 361 Q220 381 295 361 L295 385 Q220 405 145 385 Z" fill={C.brown} />
+          <path d="M145 412 Q220 435 295 412 L295 441 Q220 461 145 441 Z" fill={C.brown} />
+        </g>
+
+        {/* Arms as rounded pen strokes; simple poses avoid hand-artifact issues. */}
+        <path d={arms.left} fill="none" stroke={C.ink} strokeWidth="10" strokeLinecap="round" />
+        <g transform={curPose === 'wave' ? `rotate(${waveTilt.toFixed(2)} 275 345)` : undefined}>
+          <path d={arms.right} fill="none" stroke={C.ink} strokeWidth="10" strokeLinecap="round" />
+          <ellipse cx={arms.rHand[0]} cy={arms.rHand[1]} rx={curPose === 'point' ? 9 : 12} ry={curPose === 'point' ? 7 : 13} fill={C.ink} />
+          {curPose === 'point' && <path d="M387 332 L415 321" stroke={C.ink} strokeWidth="8" strokeLinecap="round" />}
+          {curPose === 'wave' && <path d="M370 149 L360 132 M384 153 L395 133 M389 169 L408 165" stroke={C.ink} strokeWidth="5" strokeLinecap="round" />}
+        </g>
+        <ellipse cx={arms.lHand[0]} cy={arms.lHand[1]} rx="11" ry="13" fill={C.ink} />
+
+        {/* Antennae behind the face. */}
+        <path d="M181 119 Q168 66 139 62 M258 119 Q276 64 310 61" fill="none" stroke={C.ink} strokeWidth="8" strokeLinecap="round" />
+        <ellipse cx="135" cy="60" rx="13" ry="9" transform="rotate(24 135 60)" fill={C.brown} stroke={C.ink} strokeWidth="3" />
+        <ellipse cx="314" cy="60" rx="13" ry="9" transform="rotate(-24 314 60)" fill={C.brown} stroke={C.ink} strokeWidth="3" />
+
+        {/* Giant round golden head. */}
+        <circle cx="220" cy="216" r="126" fill={C.gold} {...stroke} />
+        <path d="M151 134 Q177 113 198 116" fill="none" stroke={C.goldLight} strokeWidth="13" strokeLinecap="round" opacity="0.65" />
+
+        {/* Brows carry the emotion even when the mouth is closed. */}
+        {curExpr === 'angry' ? (
+          <g stroke={C.ink} strokeWidth="6" strokeLinecap="round"><path d="M142 164 L192 186" /><path d="M298 164 L248 186" /></g>
+        ) : curExpr === 'worried' ? (
+          <g stroke={C.ink} strokeWidth="5" fill="none" strokeLinecap="round"><path d="M143 174 Q165 153 188 164" /><path d="M250 164 Q273 152 297 174" /></g>
+        ) : (
+          <g stroke={C.ink} strokeWidth="5" fill="none" strokeLinecap="round"><path d="M145 167 Q163 151 184 160" /><path d="M257 160 Q278 151 295 167" /></g>
+        )}
+
+        {/* Eyes with controlled gaze / blink. */}
+        {blink ? (
+          <g fill="none" stroke={C.ink} strokeWidth="6" strokeLinecap="round">
+            <path d="M132 223 Q170 248 207 223" />
+            <path d="M233 223 Q270 248 307 223" />
+          </g>
+        ) : (
+          <>
+            <ellipse cx="170" cy="224" rx="43" ry="54" fill="#fffdf8" stroke={C.ink} strokeWidth="4" />
+            <ellipse cx="270" cy="224" rx="43" ry="54" fill="#fffdf8" stroke={C.ink} strokeWidth="4" />
+            <ellipse cx={179 + pupilShift} cy="230" rx="21" ry="29" fill={C.ink} />
+            <ellipse cx={261 + pupilShift} cy="230" rx="21" ry="29" fill={C.ink} />
+            <circle cx={170 + pupilShift} cy="216" r="9" fill="white" />
+            <circle cx={252 + pupilShift} cy="216" r="9" fill="white" />
+          </>
+        )}
+        <ellipse cx="128" cy="278" rx="17" ry="9" fill={C.blush} opacity="0.48" />
+        <ellipse cx="313" cy="278" rx="17" ry="9" fill={C.blush} opacity="0.48" />
+
+        {/* Emotion-specific mouth; talking animates an open/closed mouth. */}
+        {curExpr === 'surprised' || mouthPulse ? (
+          <ellipse cx="221" cy="290" rx="17" ry="24" fill={C.brown} stroke={C.ink} strokeWidth="3" />
+        ) : curExpr === 'worried' || curExpr === 'angry' ? (
+          <path d="M197 301 Q220 277 244 301" fill="none" stroke={C.ink} strokeWidth="6" strokeLinecap="round" />
+        ) : curExpr === 'neutral' || (curTalking && !mouthPulse) ? (
+          <path d="M209 288 Q220 296 232 288" fill="none" stroke={C.ink} strokeWidth="5" strokeLinecap="round" />
+        ) : (
+          <>
+            <path d="M190 282 Q218 294 250 282 Q250 315 221 318 Q195 318 190 282 Z" fill={C.brown} stroke={C.ink} strokeWidth="4" strokeLinejoin="round" />
+            <path d="M202 305 Q221 292 240 305 Q228 319 217 318 Q209 318 202 305" fill="#F57B81" />
+          </>
+        )}
+
+        {/* Scarf in front of lower head/body. */}
+        <path d="M160 326 Q222 352 283 327 L251 375 Q221 384 188 369 Z" fill={C.scarf} {...stroke} />
+        <path d="M177 335 Q220 359 266 338 L245 358 Q218 366 194 355 Z" fill={C.scarfLight} opacity="0.58" />
+        <path d="M274 334 Q308 315 319 340 Q303 343 292 352 L311 369 Q285 368 273 347 Z" fill={C.scarf} {...stroke} />
+        <path d="M213 356 L221 374 L230 355" fill="none" stroke={C.ink} strokeWidth="3" opacity="0.7" />
+        {curPose === 'think' && (
+          <>
+            <path d="M316 373 Q345 330 303 304" fill="none" stroke={C.ink} strokeWidth="9" strokeLinecap="round" />
+            <ellipse cx="301" cy="304" rx="12" ry="12" fill={C.ink} />
+          </>
+        )}
       </g>
     </g>
-  </g>;
+  );
 };
+
+export default BeeBopCharacter;

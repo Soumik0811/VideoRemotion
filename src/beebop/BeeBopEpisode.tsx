@@ -1,6 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import {BeeBopEpisode as EpisodeType, BeebopPose} from './types';
+import {BeeBopEpisode as EpisodeType} from './types';
 import {B, SANS, SERIF, appear, ease, mix, windowAt} from './engine/motion';
 import {ObjectMotion} from '../engine/ObjectMotion';
 import {BeeBopCharacter} from './components/BeeBopCharacter';
@@ -24,7 +24,6 @@ const FactTag: React.FC<{x:number; y:number; text:string; color?:string}> = ({x,
 
 const StoryWorld: React.FC<{t:number; episode:EpisodeType}> = ({t, episode}) => {
   const f = episode.facts;
-  const chars = episode.character;
   const dive = ease(t, 4.8, 2) * (1 - ease(t, 11.2, 2));
   const alarmPush = ease(t, 19, .8) * (1 - ease(t, 26.5, 1));
   const zoom = mix(1, 2.25, dive) * mix(1, 1.06, alarmPush) * (1 + .01 * Math.sin(t/9));
@@ -41,7 +40,7 @@ const StoryWorld: React.FC<{t:number; episode:EpisodeType}> = ({t, episode}) => 
       {/* 01 · HOOK */}
       <g opacity={sHook}>
         <Kitchen t={t}/>
-        <BeeBopCharacter characters={chars} t={t} x={280} y={300} scale={1.05} look={1} actions={[{at:0,pose:'idle'},{at:2.4,pose:'shocked'}]}/>
+        <BeeBopCharacter t={t} x={300} y={660} scale={0.7} actions={[{at:0,pose:'idle',expression:'happy',look:'right'},{at:2.4,pose:'idle',expression:'surprised',look:'right'}]}/>
         <ObjectMotion t={t} at={[600,540]} kind="pop" start={1.2}><Banana scale={1.25}/></ObjectMotion>
         {[0,1,2,3].map(i=><Particle key={i} x={600+(i-1.5)*16} y={505} seed={i*.31} t={t}/>)}
         <g transform="translate(858 556)">
@@ -68,7 +67,7 @@ const StoryWorld: React.FC<{t:number; episode:EpisodeType}> = ({t, episode}) => 
         <Truck x={truckX} y={600} scale={.95} t={t} load={1}/>
         {[0,1,2].map(i=><ObjectMotion key={i} t={t} at={[560+i*40, 470-(i%2)*36]} kind="pop" start={25+i*.3}><BananaBunch scale={.55} count={3}/></ObjectMotion>)}
         <g opacity={appear(t,23.5,.5)}><Guard x={812} y={505} scale={.9} t={t} arms={ease(t,24.5,.6)}/></g>
-        <BeeBopCharacter characters={chars} t={t} x={880} y={376} scale={.82} actions={[{at:12,pose:'present'},{at:19,pose:'shocked'},{at:24.5,pose:'laughing'}]}/>
+        <BeeBopCharacter t={t} x={950} y={655} scale={0.62} actions={[{at:12,pose:'wave',expression:'happy',look:'left'},{at:19,pose:'idle',expression:'surprised',look:'left'},{at:24.5,pose:'fly',expression:'happy'}]}/>
         <g opacity={alarm}>
           <rect x={-200} y={-200} width={1480} height={1400} fill={B.red} opacity={.09*(.5+.5*Math.sin(t*8))}/>
           <FactTag x={540} y={210} text="ALARM! THOUSANDS OF BANANAS" color={B.red}/>
@@ -78,7 +77,7 @@ const StoryWorld: React.FC<{t:number; episode:EpisodeType}> = ({t, episode}) => 
       {/* 05 · IS IT DANGEROUS? */}
       <g opacity={sSafe}>
         <Studio t={t}/>
-        <BeeBopCharacter characters={chars} t={t} x={210} y={320} scale={1.0} actions={[{at:27,pose:'happy'},{at:30,pose:'explaining'}]}/>
+        <BeeBopCharacter t={t} x={270} y={650} scale={0.7} actions={[{at:27,pose:'idle',expression:'happy',look:'center'},{at:30,pose:'explain',expression:'happy',talking:true}]}/>
         <ObjectMotion t={t} at={[470,560]} kind="pop" start={27.4}><Banana scale={1.35} bitten/></ObjectMotion>
         <Gauge x={740} y={560} scale={.72} value={.06} label="ONE BANANA" valueText="~15 Bq" tone={B.green}/>
         <Gauge x={985} y={560} scale={.98} value={1} label="TRUCKLOAD" valueText="MAX" tone={B.red}/>
@@ -88,13 +87,13 @@ const StoryWorld: React.FC<{t:number; episode:EpisodeType}> = ({t, episode}) => 
       {/* 06 · YOU'RE A WALKING BANANA */}
       <g opacity={sYou}>
         <Studio t={t}/>
-        <BeeBopCharacter characters={chars} t={t} x={250} y={300} scale={1.05} actions={[{at:35,pose:'point'},{at:38.4,pose:'shocked'},{at:43.5,pose:'happy'},{at:46,pose:'laughing'}]}/>
+        <BeeBopCharacter t={t} x={300} y={760} scale={0.78} actions={[{at:35,pose:'point',expression:'neutral',look:'right'},{at:38.4,pose:'idle',expression:'surprised',look:'center'},{at:43.5,pose:'idle',expression:'happy'},{at:46,pose:'wave',expression:'happy',talking:true}]}/>
         <g opacity={appear(t,38.4,.6)}>
-          {[[330,360],[300,430],[360,470]].map((p,i)=><Atom key={i} x={p[0]} y={p[1]} scale={.34} t={t} label="" decay={0}/>)}
-          <RadiationSymbol x={330} y={300} scale={.5} color={B.glow}/>
+          {[[300,600],[268,655],[332,652]].map((p,i)=><Atom key={i} x={p[0]} y={p[1]} scale={.3} t={t} label="" decay={0}/>)}
+          <RadiationSymbol x={300} y={636} scale={.4} color={B.glow}/>
         </g>
         <g opacity={appear(t,38.4,.5)}><FactTag x={540} y={210} text="YOU'RE RADIOACTIVE TOO!" color={B.terra}/></g>
-        <g opacity={appear(t,40.9,.5)}><Badge x={330} y={640} label="YOUR BODY HOLDS" value={f.bodyPotassiumLabel} color={B.green} width={330}/></g>
+        <g opacity={appear(t,40.9,.5)}><Badge x={300} y={860} label="YOUR BODY HOLDS" value={f.bodyPotassiumLabel} color={B.green} width={330}/></g>
         <ObjectMotion t={t} at={[800,560]} kind="pop" start={43.6} dur={.9}><Banana scale={3.1} rotate={-12}/></ObjectMotion>
         <g opacity={appear(t,44.6,.6)}><Sparkle x={700} y={380} t={t} seed={1} size={1.4}/><Sparkle x={900} y={420} t={t} seed={3} size={1.1} color={B.glow}/></g>
         <g opacity={appear(t,45.8,.6)}><FactTag x={540} y={820} text="A WALKING BANANA!" color={B.amber}/></g>
