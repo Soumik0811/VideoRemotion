@@ -1,4 +1,8 @@
-# Oddly Logical — Cinematic V4
+# Oddly Logical Animation Studio
+
+Say **“initiate the master prompt”** or **“INITIATE ODDLY LOGICAL”** to start a new episode. I’ll ask for the final narration script and optional audio, then follow the saved [V5 master prompt](ODDLY_LOGICAL_MASTER.md). See [studio setup and reusable assets](studio/README.md).
+
+## Latest episode: Cinematic V4
 
 The `GiftCardBreakage02` composition follows a Starbucks gift card through a purchase, gift, redemption, forgotten drawer and accounting office. The 138-second vertical animation uses 27 camera shots, articulated SVG characters, physical handoffs and financial values on register, terminal and computer screens.
 
