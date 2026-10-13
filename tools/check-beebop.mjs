@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const e=JSON.parse(fs.readFileSync(new URL('../src/data/beebop-episode.json',import.meta.url),'utf8'));
+assert.equal(e.width,1080);assert.equal(e.height,1920);assert.equal(e.fps,30);
+assert.ok(e.durationSeconds>=40&&e.durationSeconds<=60,'BeeBop short should be 40-60s');
+assert.equal(e.scenes.length,6);
+assert.equal(e.scenes[0].start,0);
+e.scenes.forEach((s,i)=>{assert.ok(s.end>s.start,'scene must have positive length');assert.equal(s.end,e.scenes[i+1]?.start??e.durationSeconds,'scenes must be contiguous');});
+const flatten=s=>s.replace(/\s+/g,' ').trim();
+assert.equal(flatten(e.captions.map(c=>c.text).join(' ')),flatten(e.narration.text),'Captions must reconstruct the exact narration');
+assert.equal(flatten(e.narration.sentences.map(c=>c.text).join(' ')),flatten(e.narration.text),'Sentences must reconstruct the narration');
+e.captions.forEach((c,i)=>{assert.ok(c.start>=0&&c.end>c.start&&c.end<=e.durationSeconds,'caption bounds');assert.ok(c.start>=(e.captions[i-1]?.end??0),'captions must not overlap');});
+e.narration.sentences.forEach((s,i)=>{assert.ok(s.end>s.start);assert.ok(s.start>=(e.narration.sentences[i-1]?.end??0));});
+if(e.narration.src!==null)assert.ok(fs.existsSync(new URL(`../public/${e.narration.src}`,import.meta.url)),'narration audio must exist when src is set');
+e.soundEvents.forEach(a=>{assert.ok(a.at>=0&&a.at<e.durationSeconds);assert.ok(fs.existsSync(new URL(`../public/audio/bakery/${a.sound}.wav`,import.meta.url)),`missing sfx: ${a.sound}`);});
+assert.ok(fs.existsSync(new URL(`../public/${e.assets.music}`,import.meta.url)),'music asset must exist');
+console.log(`BeeBop verified: 6 scenes, ${e.captions.length} exact-script subtitle groups, ${e.durationSeconds}s. Facts: ${e.facts.potassiumIsotope}, single banana ~${e.facts.singleBananaBecquerel} Bq, truckload ${e.facts.truckBananas} bananas. Narration: ${e.narration.timing}${e.narration.src?' (audio linked)':' (audio pending)'}.`);

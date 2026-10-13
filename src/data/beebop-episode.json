@@ -1,0 +1,87 @@
+{
+  "id": "beebop-radioactive-banana",
+  "title": "Bananas Are Radioactive. So Are You.",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationSeconds": 50,
+  "narration": {
+    "src": null,
+    "timing": "editorial-estimate",
+    "text": "Did you know bananas are actually RADIOACTIVE?! Yep! That innocent yellow snack is secretly releasing radiation right now! Bananas contain potassium-40, a naturally radioactive form of potassium. As its atoms decay, they release tiny amounts of radiation. But here's the crazy part... A whole truck full of bananas can actually trigger radiation detectors at security checkpoints! Imagine expecting dangerous radioactive material... and discovering thousands of bananas! But don't panic! The radiation from a single banana is incredibly tiny, and completely harmless at normal eating levels. And here's the biggest twist... YOU'RE RADIOACTIVE TOO! Your own body contains potassium-40! So congratulations! You're basically a walking banana!",
+    "sentences": [
+      {"start": 0.4, "end": 3.8, "text": "Did you know bananas are actually RADIOACTIVE?!"},
+      {"start": 4.2, "end": 8.4, "text": "Yep! That innocent yellow snack is secretly releasing radiation right now!"},
+      {"start": 8.8, "end": 13.4, "text": "Bananas contain potassium-40, a naturally radioactive form of potassium."},
+      {"start": 13.6, "end": 17.0, "text": "As its atoms decay, they release tiny amounts of radiation."},
+      {"start": 17.2, "end": 18.8, "text": "But here's the crazy part..."},
+      {"start": 19.0, "end": 24.4, "text": "A whole truck full of bananas can actually trigger radiation detectors at security checkpoints!"},
+      {"start": 24.8, "end": 29.4, "text": "Imagine expecting dangerous radioactive material... and discovering thousands of bananas!"},
+      {"start": 29.8, "end": 36.0, "text": "But don't panic! The radiation from a single banana is incredibly tiny, and completely harmless at normal eating levels."},
+      {"start": 36.4, "end": 38.2, "text": "And here's the biggest twist..."},
+      {"start": 38.4, "end": 40.6, "text": "YOU'RE RADIOACTIVE TOO!"},
+      {"start": 40.9, "end": 43.2, "text": "Your own body contains potassium-40!"},
+      {"start": 43.5, "end": 48.0, "text": "So congratulations! You're basically a walking banana!"}
+    ]
+  },
+  "facts": {
+    "potassiumIsotope": "K-40",
+    "singleBananaBecquerel": 15,
+    "truckBananas": 40000,
+    "bodyPotassiumLabel": "POTASSIUM-40"
+  },
+  "character": {
+    "beebop": {
+      "name": "BeeBop",
+      "body": "#F4C64C",
+      "stripe": "#4A3A2A",
+      "wing": "#CFE7EC",
+      "scarf": "#D9B98C",
+      "cheek": "#E8896E"
+    }
+  },
+  "scenes": [
+    {"id": "hook", "start": 0, "end": 5, "label": "01 / THE HOOK", "heading": "Bananas are\nRADIOACTIVE?!"},
+    {"id": "atom", "start": 5, "end": 12, "label": "02 / POTASSIUM-40", "heading": "Inside every\nbanana"},
+    {"id": "truck", "start": 12, "end": 19, "label": "03 / THE TWIST", "heading": "A whole\ntruckload"},
+    {"id": "alarm", "start": 19, "end": 27, "label": "04 / THE ALARM", "heading": "The detector\nfires"},
+    {"id": "safe", "start": 27, "end": 35, "label": "05 / IS IT DANGEROUS?", "heading": "Tiny.\nHarmless."},
+    {"id": "you", "start": 35, "end": 50, "label": "06 / THE PUNCHLINE", "heading": "You're a\nwalking banana"}
+  ],
+  "captions": [
+    {"start": 0.4, "end": 2.2, "text": "Did you know bananas"},
+    {"start": 2.2, "end": 3.8, "text": "are actually RADIOACTIVE?!"},
+    {"start": 4.2, "end": 6.2, "text": "Yep! That innocent yellow snack"},
+    {"start": 6.2, "end": 8.4, "text": "is secretly releasing radiation right now!"},
+    {"start": 8.8, "end": 11.0, "text": "Bananas contain potassium-40,"},
+    {"start": 11.0, "end": 13.4, "text": "a naturally radioactive form of potassium."},
+    {"start": 13.6, "end": 15.3, "text": "As its atoms decay,"},
+    {"start": 15.3, "end": 17.0, "text": "they release tiny amounts of radiation."},
+    {"start": 17.2, "end": 18.8, "text": "But here's the crazy part..."},
+    {"start": 19.0, "end": 21.0, "text": "A whole truck full of bananas"},
+    {"start": 21.0, "end": 22.9, "text": "can actually trigger radiation detectors"},
+    {"start": 22.9, "end": 24.4, "text": "at security checkpoints!"},
+    {"start": 24.8, "end": 26.8, "text": "Imagine expecting dangerous radioactive material..."},
+    {"start": 26.8, "end": 29.4, "text": "and discovering thousands of bananas!"},
+    {"start": 29.8, "end": 31.6, "text": "But don't panic!"},
+    {"start": 31.6, "end": 33.4, "text": "The radiation from a single banana is incredibly tiny,"},
+    {"start": 33.4, "end": 36.0, "text": "and completely harmless at normal eating levels."},
+    {"start": 36.4, "end": 38.2, "text": "And here's the biggest twist..."},
+    {"start": 38.4, "end": 40.6, "text": "YOU'RE RADIOACTIVE TOO!"},
+    {"start": 40.9, "end": 43.2, "text": "Your own body contains potassium-40!"},
+    {"start": 43.5, "end": 45.8, "text": "So congratulations!"},
+    {"start": 45.8, "end": 48.0, "text": "You're basically a walking banana!"}
+  ],
+  "assets": {
+    "music": "audio/bakery/music.wav"
+  },
+  "soundEvents": [
+    {"at": 0.4, "sound": "pop"},
+    {"at": 3.9, "sound": "reveal"},
+    {"at": 8.8, "sound": "reveal"},
+    {"at": 19.0, "sound": "flip"},
+    {"at": 24.9, "sound": "reveal"},
+    {"at": 38.4, "sound": "reveal"},
+    {"at": 43.6, "sound": "pop"}
+  ]
+}

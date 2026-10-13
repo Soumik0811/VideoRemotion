@@ -12,7 +12,10 @@
     "render:legacy": "remotion render src/index.tsx FinanceExplainer out/tshirt-explainer.mp4 --codec h264 --crf 18",
     "still:legacy": "remotion still src/index.tsx FinanceExplainer out/thumbnail.png --frame 1500",
     "check:bakery": "node tools/check-bakery.mjs",
-    "export:bakery": "node tools/export-bakery.mjs"
+    "export:bakery": "node tools/export-bakery.mjs",
+    "check:beebop": "node tools/check-beebop.mjs",
+    "render:beebop": "remotion render src/index.tsx BeeBopRadioactiveBanana out/beebop/radioactive-banana.mp4 --codec h264 --crf 18 --concurrency 2",
+    "still:beebop": "remotion still src/index.tsx BeeBopRadioactiveBanana out/beebop/thumbnail.png --frame 60"
   },
   "dependencies": {
     "remotion": "^4.0.534",
