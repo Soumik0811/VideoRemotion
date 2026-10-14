@@ -1,57 +1,35 @@
-# Oddly Logical studio setup
+# Oddly Logical studio context
 
-The supplied V5 instructions are preserved in [ODDLY_LOGICAL_MASTER.md](../ODDLY_LOGICAL_MASTER.md). Say **initiate the master prompt** or **INITIATE ODDLY LOGICAL** to begin a new episode. If its script is missing, the assistant asks for the final narration and optional audio using the master's initiation message. Supplying both the command and narration skips that question.
+The active new-episode direction is **Animation Engine V6**, documented in [ANIMATION ENGINE.txt](../ANIMATION%20ENGINE.txt) and summarized in [ODDLY_LOGICAL_MASTER.md](../ODDLY_LOGICAL_MASTER.md). V6 uses simple recurring characters, persistent story worlds, object-led explanations, six selectable scene templates, selective radial bursts, bold stepwise number reveals, and frequent motivated visual events.
 
-Only the script is needed to plan and build an estimated preview. Audio allows final timing and synchronization. Routine choices about the title, cast, scenery, poses, props and camera are handled during production. A prior episode's narration is never silently reused for a fresh initiation.
+Say **initiate the master prompt** or **INITIATE ODDLY LOGICAL** to begin a fresh episode. If narration is missing, request the final script and optional narration audio. A supplied current script skips that request. Updating the production context alone does not launch an episode.
 
-This setup saves the assistant's production workflow and an asset catalog. It is not a standalone script that automatically converts arbitrary prose into a finished film without further implementation by the assistant.
-
-## Inspected foundation
+## Existing implementation snapshot
 
 | System | Existing implementation | Status |
 | --- | --- | --- |
-| Timeline and rendering | React, TypeScript, Remotion; `src/Root.tsx` | Working compositions: `GiftCardBreakage02`, `BakeryEpisode01`, `FinanceExplainer` |
-| Character animation | `src/giftcard/cinematic/CharacterAction.tsx`, `src/bakery/components/BakerCharacter.tsx` | Articulated SVG limbs, idle/blink/breathe, walk, expressions, head movement, gaze, costume variants; several actions are currently composed from pose data |
-| Physical interactions | `Interactions.tsx`, `choreography.ts` under `src/giftcard/cinematic/` | Shared hand coordinates, cash/card transfers, cup pickup, drawer grips and card insertion |
-| Environments | `src/giftcard/cinematic/Environments.tsx`, `src/bakery/components/Environment.tsx` | Café, storefront, home, office, bakery neighborhood, supermarket façade, supplier counter |
-| Cameras | `EnvironmentCamera.tsx`, `motion.ts` under `src/giftcard/cinematic/` | Shared world coordinates, pan, push-in, pull-out, tracking and parallax |
-| Numbers and props | `src/giftcard/components/Boards.tsx`, cinematic displays and ledger | Counters, labels, arrows, register, terminal, computer, cards, cash, wallet, cup, drawer, calendar |
-| Narration and captions | Episode JSON, phrase captions, cinematic `timing.ts` | Estimated timings and optional recording paths; sentence-based retiming demonstrated for the 35-sentence gift-card script |
-| Sound | `public/audio/`, `tools/make_giftcard_audio.py`, `tools/make-giftcard-foley.py` | Original synthesized music and effects; legacy T-shirt draft speech belongs only to that episode |
-| Quality review | TypeScript and story checks, `check:giftcard:v4`, `review:giftcard`, FFmpeg/ffprobe | Arithmetic, caption reconstruction, hand contacts, frame inspection and full-export checks |
-| Optional libraries | GSAP, Lottie, Rive, PixiJS | Not installed or integrated; no existing assets found. Ordinary production uses SVG and Remotion |
+| Timeline/rendering | React, TypeScript, Remotion; src/Root.tsx | Existing compositions: GiftCardBreakage02, BakeryEpisode01, FinanceExplainer |
+| Characters | Gift-card cinematic character rig and bakery character components | Existing designs/motion are reusable; use simple V6 character movement for new episodes. Preserve older episode identities. |
+| Story worlds | Gift-card cinematic environments and bakery environments | Existing café, home, office, bakery, neighborhood, supermarket and supplier settings. Reuse layouts when relevant. |
+| Object interactions | Gift-card Interactions.tsx, choreography and props | Existing hand-contact choreography belongs to the earlier episode. For new V6 work, prefer floating/sliding object motion and avoid realistic handoffs. |
+| Camera/motion | EnvironmentCamera.tsx, motion.ts, engine motion helpers | Frame-driven camera and coordinate helpers exist. Reuse selectively. |
+| Boards/captions | Financial boards, Caption.tsx, bakery subtitle overlay | Existing components; adapt for concise V6 headings, sequential math and safe caption placement. |
+| Episode data/timing | Episode JSON, cinematic storyboard/timing | Existing formats are episode-specific. Create a fresh storyboard and timing anchors for each script. |
+| Quality review | Story/check scripts and gift-card frame review tooling | Existing checks are tied to specific episodes; use relevant checks and inspect several frames through motion. |
+| V6 template components | Story World, Concept Reveal, Object Mechanism, Math Reveal, Comparison Screen, Final Payoff | Selection is a production rule. Catalog/inspect before treating any as implemented reusable components. |
+| Radial burst / ambient engine / object library | No confirmed dedicated general-purpose implementation in the inspected inventory | Build only as needed; update catalog to reflect actual status. |
+| Optional libraries | GSAP, Lottie, Rive, PixiJS | Not installed or integrated in the inspected setup. Remotion/SVG is the default. |
 
-The machine-readable [library.json](library.json) points to real assets and records reuse constraints. The [storyboard template](storyboard.template.json) contains the V5 planning fields without introducing a new story or invented figures.
+The machine-readable studio/library.json records known reusable files and constraints. Consult it before creating assets; update it when reusable systems actually change.
 
-## Permanent cast and migration
+## Episode safeguards
 
-The V5 canon is **Oliver, Leo, Maya and Mr. Brooks**, as defined in the master. Register stable identity IDs independently from the roles/costumes assigned in a story. Reuse existing body geometry, motion helpers and hand-coordinate math.
+Use a new episode ID/directory and preserve earlier scripts, assets, and exports. Keep 1080×1920, 30 FPS, H.264 by default. Never reuse episode-specific narration audio or sentence anchors for another story. Use narration audio for final timing when supplied; otherwise use editable estimates and describe synchronization as pending.
 
-Historical episodes keep their recorded identities: bakery Oliver/Noah, the original T-shirt cast, and gift-card Miles/Ben/Alex/Riley/Sam. Do not rename those characters or revise their exported episodes as part of initialization.
+Preserve the user's script and figures. Verify arithmetic and distinguish sourced claims from supplied or hypothetical claims. Use only licensed/original audio. External paid media generation requires explicit authorization.
 
-The current role-keyed rig is a reusable foundation, not yet the full V5 cast library. The following extensions should be built once and retained when first needed:
+## Existing commands
 
-- Separate character identity from story role and costume, with backward-compatible defaults for old episodes.
-- Establish the V5 character variants, including Maya's shoulder-length hair and Mr. Brooks' middle-aged face, mustache and navy blazer. A terracotta shirt alone does not make the old recipient rig Maya.
-- Add missing common actions such as sit/stand, turn, shrug, nod/shakeHead and richer expressions; do not claim every V5 action already has a reusable preset.
-- Replace named main-cast clones used as ambient extras with a small generic crowd collection in new scenes.
-- Extend prop rendering for contracts, receipts, parcels and other objects without rebuilding the shared transfer motion.
-- Add bank, factory, airport, historical or other locations only when the narration needs them.
-
-## Episode production layout
-
-Use a new episode ID and directory rather than editing the previous episode's narration. Save the script, financial/source notes, selected asset IDs and time-coded storyboard with the episode. The template's `null` timestamps are placeholders: replace them with measured or clearly estimated values before rendering.
-
-Retain 1080 × 1920, 30 FPS, H.264 unless the user requests otherwise. Register each new composition in `src/Root.tsx` and add a named render script rather than changing an earlier episode's command.
-
-For a different script, create its own sentence reference anchors. The gift-card `storyTime`/`audioTime` wrappers are tied to its 35 sentences and must not be reused unchanged for unrelated narration. Its `mapTime` algorithm and timing approach can be generalized. Never attach `public/audio/narration.wav` to a new story simply because it already exists.
-
-Preserve the user's script. Check claims against available sources, distinguish supplied claims from verified ones, and label hypothetical calculations. Use licensed/original sound only; paid generation stays off unless explicitly authorized.
-
-## Established commands
-
-```bash
-npm install
 npm run studio
 npm run typecheck
 npm run check:story
@@ -60,6 +38,5 @@ npm run check:giftcard
 npm run check:giftcard:v4
 npm run review:giftcard
 npm run render:giftcard -- --browser-executable=/usr/bin/chromium
-```
 
-The final command is the cloud browser example for the existing episode. Locally, omit that browser flag or use the local Chrome path. New episodes receive their own render/review commands. The first V5 setup changes instructions, catalog and planning scaffolding; it does not create or rerender an episode.
+The gift-card checks and render target that episode only. Give every new episode its own composition and commands as appropriate.

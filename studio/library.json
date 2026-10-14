@@ -205,6 +205,34 @@
       "exports": [],
       "status": "existing",
       "reuseNotes": "Existing composition frame review, including --no-captions; adapt composition/output path per episode."
+    },
+    {
+      "id": "unit-economics-episode-03",
+      "path": "src/episodes/unitEconomics/UnitEconomicsEpisode.tsx",
+      "exports": ["UnitEconomicsEpisode"],
+      "status": "episode-specific, implemented; restyled 2026-10-14 in The Curious Plot flat-vector style",
+      "reuseNotes": "V6 object-led 13-beat composition rebuilt on the curious design system (cutout characters, sunburst scenes, display type). No CharacterAction rig or old office/box assets; original V1 preserved at UnitEconomicsEpisodeV1.tsx. Captions phrase-timed and proportionally mapped to the supplied 51.644-second narration."
+    },
+    {
+      "id": "curious-theme",
+      "path": "src/curious/theme.ts",
+      "exports": ["PALETTE", "OUTLINE", "FONT_HEAD", "FONT_BODY"],
+      "status": "existing",
+      "reuseNotes": "Flat-vector palette (ink/paper/gold/red/green scene colors), 7px outline convention, display and body font stacks for The Curious Plot style."
+    },
+    {
+      "id": "curious-primitives",
+      "path": "src/curious/primitives.tsx",
+      "exports": ["Display", "Sunburst", "Coin", "ProductBox", "StatChip", "Pill", "TermCard", "AdBill", "SkyScene", "Storefront", "pop", "fade"],
+      "status": "existing",
+      "reuseNotes": "Outlined display text, radial sunburst backgrounds, coins, boxes, chips, pills, MONEY TERM card, ad-bill prop, sky/ground scene, storefront, and pop/fade easing helpers."
+    },
+    {
+      "id": "curious-cutout-character",
+      "path": "src/curious/Character.tsx",
+      "exports": ["CutoutCharacter", "SELLER_A", "SELLER_B"],
+      "status": "existing",
+      "reuseNotes": "Primitive cutout character with swap-state moods (happy/calm/sad/shocked/thinking/smug) and arm poses; SELLER_A (orange) and SELLER_B (green) presets. Style is nameless by design; map named cast identities via shirt/pants props when a script requires Leo/Oliver."
     }
   ],
   "optionalLibraries": {

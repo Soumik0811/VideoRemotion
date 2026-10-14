@@ -1,0 +1,61 @@
+{
+  "id": "episode-03-unit-economics",
+  "title": "He Sold 500 Products and LOST Money!",
+  "brand": "ODDLY LOGICAL",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationSeconds": 51.64408163265306,
+  "narration": {
+    "src": "audio/episode-03/narration.mp3",
+    "timing": "storyboard phrase timing proportionally mapped to measured supplied-audio duration",
+    "text": "This man sold FIVE HUNDRED products... and LOST money on every single sale! Meanwhile, his friend sold just ONE HUNDRED... and came out seven hundred dollars ahead! Same product. Same price. So what went wrong? Both sold a twenty-dollar product that cost eight dollars to make and ship. But the first man spent FIFTEEN dollars on ads... just to get ONE customer! Twenty dollars in. Eight dollars out. Fifteen for ads. That's THREE DOLLARS LOST on every sale! Five hundred orders? MINUS FIFTEEN HUNDRED DOLLARS! His friend spent just five dollars attracting each customer. Seven dollars left per order. One hundred sales? PLUS SEVEN HUNDRED! That's called unit economics. And repeat customers? Their lifetime value can change everything. The first man bought customers he couldn't afford. The second built a business that could afford to keep them.",
+    "sentences": []
+  },
+  "financials": {
+    "purchase": 20,
+    "redeemed": 8,
+    "balance": 12,
+    "reportedBreakageFloorMillions": 0,
+    "reportedBreakageMillions": 0,
+    "fiscalYear": 2026,
+    "illustrativeRedemptionFraction": 0
+  },
+  "source": {
+    "status": "hypothetical example supplied by user",
+    "reportedAmountLabel": "not applicable",
+    "reference": "User-provided episode storyboard",
+    "requestedUrls": [],
+    "accountingNotes": [
+      "Store A contribution per order is $20 - $8 - $15 = -$3; across 500 orders this is -$1,500.",
+      "Store B contribution per order is $20 - $8 - $5 = +$7; across 100 orders this is +$700.",
+      "These totals are contribution after product, fulfillment and acquisition advertising costs, before fixed costs; they are not final net profit.",
+      "Repeat purchases may increase customer lifetime value but can incur further costs and do not guarantee profitability."
+    ]
+  },
+  "characters": {
+    "explainer": {"name":"Oliver","color":"#285343","skin":"#E6B48D","hair":"#332C29","shape":"oliver","costume":"casual"},
+    "customer": {"name":"Leo","color":"#398CAA","skin":"#D69D74","hair":"#44372F","shape":"noah","costume":"casual"},
+    "barista": {"name":"Store associate","color":"#297357","skin":"#D8AA83","hair":"#3F342B","shape":"oliver","costume":"casual"},
+    "friend": {"name":"Oliver","color":"#285343","skin":"#ECC39E","hair":"#79563B","shape":"noah","costume":"casual"},
+    "analyst": {"name":"Background worker","color":"#C5A259","skin":"#BE855F","hair":"#382F2A","shape":"noah","costume":"analyst"}
+  },
+  "scenes": [
+    {"id":"hook","start":0,"end":3.5,"label":"STORE A HOOK","heading":"500 SALES. −$3 EACH."},
+    {"id":"compare-open","start":3.5,"end":7,"label":"TWO STORES","heading":"−$1,500 vs +$700"},
+    {"id":"same-product","start":7,"end":9.5,"label":"SAME PRODUCT","heading":"Same product. Same price."},
+    {"id":"product-cost","start":9.5,"end":13,"label":"PRODUCT COST","heading":"$20 − $8 = $12 before ads"},
+    {"id":"ad-cost-a","start":13,"end":17,"label":"STORE A ADS","heading":"$15 to acquire one customer"},
+    {"id":"math-a","start":17,"end":20,"label":"MATH REVEAL","heading":"$20 − $8 − $15"},
+    {"id":"loss-per-order","start":20,"end":23,"label":"LOSS PER ORDER","heading":"−$3 per order"},
+    {"id":"total-loss","start":23,"end":26,"label":"TOTAL LOSS","heading":"500 × −$3 = −$1,500"},
+    {"id":"ad-cost-b","start":26,"end":30,"label":"STORE B ADS","heading":"$5 per order"},
+    {"id":"math-b","start":30,"end":34.5,"label":"POSITIVE UNIT ECONOMICS","heading":"100 × +$7 = +$700"},
+    {"id":"lifetime-value","start":34.5,"end":39,"label":"CONCEPT REVEAL","heading":"Unit economics"},
+    {"id":"unaffordable-growth","start":39,"end":43,"label":"STORE A CONSEQUENCE","heading":"More sales ≠ more profit"},
+    {"id":"payoff","start":43,"end":48.5,"label":"FINAL COMPARISON","heading":"Profit per order matters"}
+  ],
+  "captions": [],
+  "assets": {"music": ""},
+  "soundEvents": []
+}

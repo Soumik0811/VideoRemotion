@@ -1,0 +1,611 @@
+# ODDLY LOGICAL — ANIMATION ENGINE V6
+## Reference-Inspired Cartoon Storytelling Upgrade
+
+You are the animation director and senior Remotion engineer for Oddly Logical.
+
+Your task is to upgrade the existing animation engine to produce short educational cartoons with the storytelling rhythm and visual mechanisms observed in the reference video:
+
+**"Are You Carrying Buckets or Building a Pipeline?" — The Curious Plot**
+
+Do not recreate the reference's characters, exact artwork, branding or complete scene compositions. Extract its animation principles and implement them using Oddly Logical's established visual identity.
+
+The uploaded reference is approximately 76 seconds long, vertical 1080 × 1920 at 30 FPS.
+
+The reference uses:
+- Simple recurring cartoon characters
+- Bold colored radial-burst backgrounds
+- A reusable physical story environment
+- Animated objects and numerical counters
+- Short explanatory concept cards
+- Multiplication of objects
+- Day/night changes
+- Gradually assembled visual mechanisms
+- Financial calculations revealed step by step
+- Split-screen comparisons
+- High-contrast captions
+- Quick visual transitions
+- Minimal complex body animation
+
+Our goal is to reproduce the **quality of visual storytelling and animation pacing**, not copy its specific artwork.
+
+---
+
+## PHASE 1 — INSPECT AND PRESERVE
+
+First inspect the existing repository.
+
+Read:
+- AGENTS.md if present
+- ODDLY_LOGICAL_MASTER.md
+- Existing episode compositions
+- Character components
+- Environment components
+- Animation libraries
+- Audio and caption systems
+- Existing GSAP, Lottie, and Remotion integrations
+
+Preserve all existing working episodes.
+
+Preserve the current scenery, which already looks good.
+
+Preserve the existing four recurring characters:
+- Oliver — explainer
+- Leo — everyday protagonist
+- Maya — supporting protagonist
+- Mr. Brooks — business professional
+
+Do not redesign the characters.
+
+Preserve their identities, clothing, proportions and facial features.
+
+If character rigs are complicated or unstable, simplify their animation while preserving the visible design.
+
+Update the permanent master instructions to incorporate this new animation direction.
+
+---
+
+## PHASE 2 — THE NEW ANIMATION PHILOSOPHY
+
+The reference succeeds because the environment and objects tell the story.
+
+Do not attempt realistic human animation.
+
+Characters should primarily:
+- Stand
+- Walk short distances
+- Blink
+- Nod
+- Look toward objects
+- Change expressions
+- Point using simple arm rotation
+- Celebrate
+- React to surprising outcomes
+
+Avoid:
+- Detailed hand articulation
+- Realistic grabbing
+- Multi-joint inverse kinematics
+- Hand-to-hand transactions
+- Complex limb choreography
+- Unnatural arm stretching
+
+When a character buys or sells something, use a floating object animation rather than a physical handoff.
+
+Example:
+
+Two characters face one another.
+
+A money bill appears above the counter.
+
+The bill moves toward the seller.
+
+A product appears and slides toward the buyer.
+
+The two characters react.
+
+The audience understands the transaction without needing realistic hand movement.
+
+This is our permanent character-animation rule.
+
+---
+
+## PHASE 3 — SIX REUSABLE SCENE TEMPLATES
+
+Implement six compositional templates that can be automatically selected based on the narration.
+
+### TEMPLATE A — STORY WORLD
+
+Shows a physical environment with relevant characters and objects.
+
+Examples:
+- Coffee shop
+- Bank
+- Factory
+- Village
+- Airport
+- Supermarket
+- Office
+
+Requirements:
+- Reuse the established scenery
+- Add relevant animated foreground and background elements
+- Place characters naturally in the location
+- Allow camera pans and object-focused zooms
+- Use small pop-up labels when needed
+
+The environment should be recognizable.
+
+Do not use an empty generic background for physical story scenes.
+
+### TEMPLATE B — CONCEPT REVEAL
+
+A short, bold explanation screen using a radial-burst background.
+
+Example:
+
+Blue radial background.
+
+An illustrated character appears.
+
+A jar of coins materializes.
+
+Coins fall into the jar.
+
+Large heading:
+
+ACTIVE INCOME
+
+Short explanation:
+
+"Money earned while you work."
+
+Keep this template short and animated.
+
+Use it when introducing an important concept, not for every narration sentence.
+
+### TEMPLATE C — OBJECT MECHANISM
+
+Used to demonstrate how a process works.
+
+Examples:
+- A pipeline assembles segment by segment
+- Gift-card value decreases after purchases
+- Products travel from factory to retailer
+- Cash moves between businesses
+- A loan balance decreases with payments
+- Inventory grows in a warehouse
+
+Objects must physically move, appear, multiply, disappear or transform.
+
+Prefer process animation over text-based explanations.
+
+### TEMPLATE D — MATH REVEAL
+
+Displays important calculations.
+
+Reveal the formula progressively.
+
+For example:
+
+$20 GIFT CARD
+
+Then:
+
+$14 REDEEMED
+
+Then:
+
+$20 − $14 = $6 LEFT
+
+The final number should receive a satisfying pop, scale or highlight animation.
+
+Never display a complicated equation all at once.
+
+Use animated numerical counting only when it clarifies the change.
+
+### TEMPLATE E — COMPARISON SCREEN
+
+Shows two situations side by side.
+
+Examples:
+- Active income versus passive income
+- Revenue versus profit
+- Two business strategies
+- Before versus after
+- Debt versus equity
+
+Use clear color coding.
+
+Keep both sides visually balanced.
+
+Allow comparison bars, objects and character expressions to change independently.
+
+### TEMPLATE F — FINAL PAYOFF
+
+Reserve the most visually impactful animation for the main conclusion.
+
+Use:
+- A large final number
+- Animated highlights
+- Relevant character reactions
+- A short conceptual label
+- A brief camera push-in
+- Minimal competing text
+
+After the payoff, return to the story environment or a branded ending when appropriate.
+
+---
+
+## PHASE 4 — RADIAL BACKGROUND SYSTEM
+
+Implement a reusable RadialBurstBackground component.
+
+Support:
+- Teal/blue for hooks and explanations
+- Gold/green for success and positive outcomes
+- Red for losses and negative consequences
+- Purple for psychology or behavioral concepts
+- Brown/amber for trade-offs and costs
+
+Use Oddly Logical's own brand colors and styling.
+
+Animate the burst very subtly through a slow scale, rotation or lightness variation.
+
+The effect should feel energetic without distracting from the content.
+
+Support optional decorative particles, but keep them minimal.
+
+Do not use the radial background for every shot.
+
+Story-world scenes should retain their actual topic-specific scenery.
+
+---
+
+## PHASE 5 — BACKGROUND ACTIVITY ENGINE
+
+Create a reusable AmbientActivitySystem.
+
+Every story environment can define appropriate background animation tracks.
+
+Coffee shop:
+- Steam rises
+- Coffee machine operates
+- Door opens
+- Cups appear
+- Background customer passes
+
+Factory:
+- Conveyor belt moves
+- Products emerge
+- Gears rotate
+- Boxes stack
+- Worker walks in background
+
+Bank:
+- Clock moves
+- Queue changes
+- Monitor updates
+- Papers slide across a desk
+
+Village:
+- Sun moves
+- Water flows
+- Characters pass
+- Clouds drift
+- Water containers fill
+
+Ambient activity should operate independently of the main action.
+
+However, activity must match the setting.
+
+Aim for two or three subtle background animations during a typical story-world shot.
+
+Do not make every background object move at once.
+
+Use deterministic frame-driven motion.
+
+Avoid loops that visibly restart at scene boundaries.
+
+---
+
+## PHASE 6 — OBJECT ANIMATION LIBRARY
+
+Prioritize object animation over character animation.
+
+Build or improve these reusable components:
+
+- PopIn
+- SlideIn
+- SlideOut
+- Float
+- Drop
+- Bounce
+- ScaleReveal
+- ObjectDuplicate
+- ObjectStack
+- ObjectMoveAlongPath
+- ObjectMorphOrReplace
+- CounterIncrease
+- CounterDecrease
+- CoinRain
+- ProductFlow
+- PipelineAssembly
+- CalendarFlip
+- ProgressFill
+- BarGrow
+- SplitScreenReveal
+- NumberImpact
+
+Use Remotion's frame-based APIs.
+
+GSAP may be used where its timeline abstractions improve complex choreography, provided rendering remains synchronized with Remotion frames.
+
+Reuse local Lottie animations for appropriate ambient motion.
+
+Do not introduce unnecessary rendering complexity.
+
+---
+
+## PHASE 7 — NUMBER AND CONCEPT BOARDS
+
+The reference uses large, bold, readable text.
+
+Create a consistent Oddly Logical typography system.
+
+Major headings:
+- Heavy rounded sans-serif
+- White or gold
+- Dark outline or shadow
+- High contrast
+- Short phrases
+
+Examples:
+- SAME START
+- DIFFERENT RESULTS
+- $222.4 MILLION
+- WHAT CHANGED?
+- THE HIDDEN COST
+- GIFT-CARD BREAKAGE
+
+Use only one major heading at a time.
+
+Concept cards should contain:
+- Small category label
+- Main concept name
+- One short explanation if needed
+
+Avoid paragraph-heavy boards.
+
+Numbers must be visually larger than supporting text.
+
+For calculations:
+- Introduce values sequentially
+- Use coherent color meaning
+- Emphasize the final result
+- Allow sufficient reading time
+
+Do not use complicated dashboard UI when a simple number, equation, or physical object can explain the concept.
+
+---
+
+## PHASE 8 — STORY PACING
+
+The reference has frequent visual changes without constantly changing physical locations.
+
+Apply the following targets:
+
+- Initial hook within 0–3 seconds
+- New meaningful visual event roughly every 1.5–3 seconds
+- A larger change of composition approximately every 4–7 seconds when appropriate
+- Concept screens typically 2–5 seconds
+- Important numerical reveals should be held long enough to read
+- Return to the main story environment after abstract explanations
+
+These are editorial guidelines, not mandatory fixed intervals.
+
+Do not add unnecessary transitions just to meet a timing target.
+
+Each visual change should correspond to an action, a number, a consequence, or a new idea from the narration.
+
+---
+
+## PHASE 9 — CONTINUOUS STORY WORLDS
+
+One of the reference video's strongest features is its persistent village and river setting.
+
+Apply this principle to all future videos.
+
+For example, a Starbucks gift-card story should reuse:
+
+- One coffee-shop exterior
+- One coffee-shop interior
+- One checkout counter
+- One customer-home environment
+- One simple accounting-office environment
+
+Do not regenerate locations when returning to them.
+
+Use the same spatial layout and object designs.
+
+Allow relevant props and environmental states to change while the location remains recognizable.
+
+Keep day/night, time passage, and camera movement available as transitions.
+
+---
+
+## PHASE 10 — TOP PROGRESS BAR AND CAPTIONS
+
+Add an optional thin gold progress bar along the top of the video.
+
+It must correspond to the actual episode duration.
+
+Captions should have:
+- Black or very dark translucent rounded background
+- White bold text
+- Yellow or gold emphasis for key words
+- Short phrase groups
+- Accurate timing
+- Consistent placement
+
+Avoid excessive bouncing text.
+
+Do not place captions over important numerical graphics.
+
+Ensure all important visuals and captions respect YouTube Shorts interface-safe regions.
+
+---
+
+## PHASE 11 — AUTOMATIC STORYBOARD SELECTION
+
+For each new narration, analyze the story and decide which scene template fits each visual beat.
+
+Example mapping:
+
+Physical character action:
+STORY WORLD
+
+New financial theory introduced:
+CONCEPT REVEAL
+
+Object or money moving through a process:
+OBJECT MECHANISM
+
+Arithmetic calculation:
+MATH REVEAL
+
+Two outcomes:
+COMPARISON SCREEN
+
+Final twist:
+FINAL PAYOFF
+
+Do not always follow the same scene-template order.
+
+A video may return to STORY WORLD multiple times.
+
+Use a combination that fits the narration naturally.
+
+The user should not need to select templates manually.
+
+---
+
+## PHASE 12 — EPISODE CONFIGURATION
+
+Keep each episode data-driven.
+
+Each visual beat should specify:
+
+- narration segment or cue
+- scene template
+- environment ID
+- character IDs
+- character expressions
+- object IDs
+- object animations
+- ambient actions
+- numerical values
+- heading or label
+- camera action
+- start and end timing
+- transition
+
+Timing should be derived from narration audio or reliable alignment when available.
+
+Support estimated timing for silent previews.
+
+Store reusable characters, objects, backgrounds, motion components and scene templates independently of episode data.
+
+---
+
+## PHASE 13 — PROOF OF CONCEPT
+
+Before refactoring the whole episode, build a short demonstration using the existing Starbucks story.
+
+Demonstrate these beats:
+
+1. Blue radial-burst hook with gift cards and the $222.4M figure.
+2. Transition into the existing coffee-shop environment.
+3. Leo and cashier standing with minimal movement.
+4. A $20 gift card pops into view.
+5. The card moves toward Leo without a physical handoff.
+6. Coffee and food appear on the counter.
+7. The gift-card balance changes to $6.
+8. A short concept board explains the remaining obligation.
+
+Use at least two relevant ambient background actions.
+
+Do not introduce hand-movement artifacts.
+
+Render a 15–20-second demonstration and inspect it before upgrading the entire video.
+
+---
+
+## PHASE 14 — QUALITY CONTROL
+
+For the demonstration and completed episode:
+
+- Run the repository's available type checks.
+- Verify financial values.
+- Verify character identity consistency.
+- Check background continuity.
+- Check object placement.
+- Inspect caption overlap.
+- Inspect scene transitions.
+- Check for distorted arms or hands.
+- Verify loops and number animations.
+- Inspect multiple frames within action sequences, not just one screenshot per scene.
+
+Create a storyboard contact sheet or representative-frame montage to help review the result.
+
+If rendering is supported, export the demonstration and final episode as MP4 files.
+
+Report actual output paths.
+
+Do not claim rendering success without verifying the files.
+
+---
+
+## PHASE 15 — PERMANENT ENGINE UPDATE
+
+After the demonstration is validated:
+
+1. Update the reusable master instruction file.
+2. Save the six scene templates.
+3. Save the radial background and caption systems.
+4. Save the object animation components.
+5. Preserve existing characters and environment assets.
+6. Extend the episode generation workflow to automatically use the new templates.
+7. Keep earlier episodes functional.
+8. Do not require new paid AI assets for ordinary episodes.
+
+For future episodes, the user should only need to supply:
+- Final narration text
+- Narration audio, if available
+- Optional special creative requirements
+
+The engine should automatically select the appropriate characters, scenery, objects, numerical effects and visual templates.
+
+---
+
+## FINAL DIRECTIVE
+
+Prioritize:
+
+1. Clear visual storytelling
+2. Reusable characters
+3. Topic-matching scenery
+4. Frequent meaningful object animation
+5. Bold numerical reveals
+6. Simple reliable character movement
+7. Fast, readable editing
+8. Consistent branding
+9. Reusable assets
+10. Low production cost
+
+**The target is a polished, energetic 2D educational cartoon—not a slideshow, not a complex character-animation film, and not a collection of disconnected motion-graphics screens.**
+
+Implement the actual repository changes. Do not stop at proposing an architecture.
+
+Start by inspecting the project, then build and render the Starbucks demonstration.
+
+END OF ODDLY LOGICAL ANIMATION ENGINE V6.

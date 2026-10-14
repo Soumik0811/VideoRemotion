@@ -1,0 +1,42 @@
+export const PALETTE = {
+  ink: '#1E2430',
+  paper: '#FFFDF6',
+  cream: '#F7F1E4',
+  skyTop: '#7FC4E8',
+  skyBottom: '#D8EEF8',
+  sun: '#FFE28A',
+  ground: '#EADBBB',
+  groundLine: '#C6AE83',
+  gold: '#F6C65A',
+  goldDeep: '#D9A23B',
+  highlight: '#FFD23F',
+  red: '#D64545',
+  redDark: '#A9343E',
+  redBg: '#8E2F39',
+  redRay: '#A63B45',
+  green: '#2E9E63',
+  greenDark: '#1F7A4A',
+  greenBg: '#2C6E49',
+  greenRay: '#3B8A57',
+  teal: '#2E7F86',
+  tealBg: '#215E66',
+  tealRay: '#3A8E94',
+  navy: '#22355C',
+  navyBg: '#1B2A49',
+  navyRay: '#2C4470',
+  purple: '#7A48B0',
+  purpleBg: '#5A3585',
+  purpleRay: '#8A5BC0',
+  brown: '#8A5A33',
+  wood: '#C99B62',
+  woodDark: '#8F6A3E',
+  blue: '#3E8FB0',
+  slate: '#46536B',
+  chipBg: '#1B2433',
+  chipLabel: '#AEBFD0',
+  water: '#5FB6DE'
+};
+
+export const OUTLINE = 7;
+export const FONT_HEAD = "'Arial Black','Arial',sans-serif";
+export const FONT_BODY = 'Arial, sans-serif';
