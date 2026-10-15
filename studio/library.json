@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "masterInstructions": "ODDLY_LOGICAL_MASTER.md",
+  "launchCommands": [
+    "initiate the master prompt",
+    "INITIATE ODDLY LOGICAL"
+  ],
+  "launchMatching": "case-insensitive",
+  "productionMode": "assistant-directed Remotion workflow",
+  "brand": {
+    "name": "Oddly Logical",
+    "tagline": "Strange Stories. Smart Explanations.",
+    "palette": {
+      "forestGreen": "#193D35",
+      "cream": "#F7F1E4",
+      "gold": "#F6C65A",
+      "sage": "#92AE85",
+      "terracotta": "#D68C73",
+      "outline": "#382F2A"
+    }
+  },
+  "castCanon": [
+    {
+      "id": "oliver",
+      "name": "Oliver",
+      "role": "recurring explainer",
+      "status": "V5 identity/role adapter needed; existing reusable geometry available"
+    },
+    {
+      "id": "leo",
+      "name": "Leo",
+      "role": "everyday protagonist",
+      "status": "V5 identity/role adapter needed; existing reusable geometry available"
+    },
+    {
+      "id": "maya",
+      "name": "Maya",
+      "role": "supporting protagonist",
+      "status": "V5 shoulder-length-haired character variant required"
+    },
+    {
+      "id": "mr-brooks",
+      "name": "Mr. Brooks",
+      "role": "business and financial professional",
+      "status": "V5 middle-aged mustached character variant required"
+    }
+  ],
+  "preserveHistoricalEpisodeCast": true,
+  "assets": [
+    {
+      "id": "articulated-character",
+      "path": "src/giftcard/cinematic/CharacterAction.tsx",
+      "exports": [
+        "CharacterAction",
+        "handPosition"
+      ],
+      "status": "existing",
+      "reuseNotes": "Role-keyed V4 rig; separate identity/costume when adapting for V5; preserve old defaults."
+    },
+    {
+      "id": "baker-character",
+      "path": "src/bakery/components/BakerCharacter.tsx",
+      "exports": [
+        "BakerCharacter",
+        "CustomerCharacter"
+      ],
+      "status": "existing",
+      "reuseNotes": "Existing Oliver/Noah identities, pose blending and costume variants."
+    },
+    {
+      "id": "interaction-primitives",
+      "path": "src/giftcard/cinematic/Interactions.tsx",
+      "exports": [
+        "HandObjectInteraction",
+        "ObjectTransfer",
+        "RegisterDisplay",
+        "PaymentTerminal",
+        "DrawerInteraction",
+        "CalendarProgression",
+        "FinancialReveal"
+      ],
+      "status": "existing",
+      "reuseNotes": "Current prop kinds: card, cash, cup, wallet. Generalize prop selection when new objects are needed."
+    },
+    {
+      "id": "character-action-examples",
+      "path": "src/giftcard/cinematic/choreography.ts",
+      "exports": [
+        "purchaseAction",
+        "giftAction",
+        "redemptionAction",
+        "homeAction"
+      ],
+      "status": "existing",
+      "reuseNotes": "Gift-card blocking is episode-specific; reuse motion/hand helpers, not its financial story."
+    },
+    {
+      "id": "cinematic-environments",
+      "path": "src/giftcard/cinematic/Environments.tsx",
+      "exports": [
+        "CafeEnvironment",
+        "HomeEnvironment",
+        "OfficeEnvironment",
+        "OfficeDesk",
+        "ExteriorEnvironment"
+      ],
+      "status": "existing",
+      "reuseNotes": "Preserve layouts between shots. Remove or parameterize topic-specific Starbucks signage for unrelated stories."
+    },
+    {
+      "id": "bakery-environments",
+      "path": "src/bakery/components/Environment.tsx",
+      "exports": [
+        "BakeryExterior",
+        "Neighborhood",
+        "BakeryInterior",
+        "Supermarket",
+        "IngredientCounter"
+      ],
+      "status": "existing",
+      "reuseNotes": "Use when relevant; supplier/supermarket are smaller environment components, not full new locations."
+    },
+    {
+      "id": "camera",
+      "path": "src/giftcard/cinematic/EnvironmentCamera.tsx",
+      "exports": [
+        "EnvironmentCamera",
+        "Parallax"
+      ],
+      "status": "existing",
+      "reuseNotes": "Uses cinematic-stage SVG clip and portrait framing; define the matching clip in the composition."
+    },
+    {
+      "id": "motion",
+      "path": "src/giftcard/cinematic/motion.ts",
+      "exports": [
+        "point",
+        "lerpPoint",
+        "travel",
+        "blendCamera",
+        "elbowFor"
+      ],
+      "status": "existing",
+      "reuseNotes": "Deterministic scene coordinates and two-bone IK."
+    },
+    {
+      "id": "financial-graphics",
+      "path": "src/giftcard/components/Boards.tsx",
+      "exports": [
+        "Panel",
+        "Label",
+        "Counter",
+        "NumberBoard",
+        "Arrow",
+        "ChalkTag",
+        "Note"
+      ],
+      "status": "existing",
+      "reuseNotes": "Integrate into environmental displays; avoid repeated slide layouts."
+    },
+    {
+      "id": "ledger",
+      "path": "src/giftcard/cinematic/LedgerMonitor.tsx",
+      "exports": [
+        "LedgerMonitor"
+      ],
+      "status": "existing",
+      "reuseNotes": "Accounting interfaces currently encode the gift-card example; adapt data explicitly."
+    },
+    {
+      "id": "timing",
+      "path": "src/giftcard/cinematic/timing.ts",
+      "exports": [
+        "mapTime",
+        "storyTime",
+        "audioTime"
+      ],
+      "status": "existing",
+      "reuseNotes": "Only mapTime is script-independent; wrappers use the gift-card sentence reference anchors."
+    },
+    {
+      "id": "original-music",
+      "path": "tools/make_giftcard_audio.py",
+      "exports": [],
+      "status": "existing",
+      "reuseNotes": "Original synthesized instrumental and six effects; duration comes from gift-card JSON. Parameterize for another episode."
+    },
+    {
+      "id": "original-foley",
+      "path": "tools/make-giftcard-foley.py",
+      "exports": [],
+      "status": "existing",
+      "reuseNotes": "Original synthesized door, terminal, cup, drawer and keyboard effects."
+    },
+    {
+      "id": "choreography-checks",
+      "path": "tools/check-giftcard-v4.mjs",
+      "exports": [],
+      "status": "existing",
+      "reuseNotes": "Validates the gift-card choreography and timing; add meaningful checks for new interactions."
+    },
+    {
+      "id": "frame-review",
+      "path": "tools/review-giftcard.mjs",
+      "exports": [],
+      "status": "existing",
+      "reuseNotes": "Existing composition frame review, including --no-captions; adapt composition/output path per episode."
+    },
+    {
+      "id": "unit-economics-episode-03",
+      "path": "src/episodes/unitEconomics/UnitEconomicsEpisode.tsx",
+      "exports": ["UnitEconomicsEpisode"],
+      "status": "episode-specific, implemented; restyled 2026-10-14 in The Curious Plot flat-vector style",
+      "reuseNotes": "V6 object-led 13-beat composition rebuilt on the curious design system (cutout characters, sunburst scenes, display type). No CharacterAction rig or old office/box assets; original V1 preserved at UnitEconomicsEpisodeV1.tsx. Captions phrase-timed and proportionally mapped to the supplied 51.644-second narration."
+    },
+    {
+      "id": "curious-theme",
+      "path": "src/curious/theme.ts",
+      "exports": ["PALETTE", "OUTLINE", "FONT_HEAD", "FONT_BODY"],
+      "status": "existing",
+      "reuseNotes": "Flat-vector palette (ink/paper/gold/red/green scene colors), 7px outline convention, display and body font stacks for The Curious Plot style."
+    },
+    {
+      "id": "curious-primitives",
+      "path": "src/curious/primitives.tsx",
+      "exports": ["Display", "Sunburst", "Coin", "ProductBox", "StatChip", "Pill", "TermCard", "AdBill", "SkyScene", "Storefront", "pop", "fade"],
+      "status": "existing",
+      "reuseNotes": "Outlined display text, radial sunburst backgrounds, coins, boxes, chips, pills, MONEY TERM card, ad-bill prop, sky/ground scene, storefront, and pop/fade easing helpers."
+    },
+    {
+      "id": "curious-cutout-character",
+      "path": "src/curious/Character.tsx",
+      "exports": ["CutoutCharacter", "SELLER_A", "SELLER_B"],
+      "status": "existing",
+      "reuseNotes": "Primitive cutout character with swap-state moods (happy/calm/sad/shocked/thinking/smug) and arm poses; SELLER_A (orange) and SELLER_B (green) presets. Style is nameless by design; map named cast identities via shirt/pants props when a script requires Leo/Oliver."
+    }
+  ],
+  "optionalLibraries": {
+    "gsap": "not installed",
+    "lottie": "not installed; no local assets found",
+    "rive": "not installed; no rigs found",
+    "pixijs": "not installed"
+  },
+  "paidGenerationDefault": "disabled; explicit user authorization required"
+}

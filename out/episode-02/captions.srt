@@ -1,0 +1,307 @@
+1
+00:00:00,450 --> 00:00:02,235
+In 2025, Starbucks reported over
+
+2
+00:00:02,235 --> 00:00:04,020
+two hundred and twenty-two million
+
+3
+00:00:04,020 --> 00:00:05,091
+dollars in revenue.
+
+4
+00:00:05,321 --> 00:00:07,107
+From gift-card money customers were
+
+5
+00:00:07,107 --> 00:00:08,535
+never expected to spend.
+
+6
+00:00:08,765 --> 00:00:10,550
+And here's the surprising part.
+
+7
+00:00:11,450 --> 00:00:13,376
+This isn't some illegal trick.
+
+8
+00:00:13,376 --> 00:00:15,303
+It's a recognized accounting practice
+
+9
+00:00:15,303 --> 00:00:17,229
+used by businesses that sell
+
+10
+00:00:17,229 --> 00:00:17,999
+gift cards.
+
+11
+00:00:18,229 --> 00:00:20,156
+Once you see how it
+
+12
+00:00:20,156 --> 00:00:22,082
+works, you'll never look at
+
+13
+00:00:22,082 --> 00:00:24,008
+a gift card the same
+
+14
+00:00:24,008 --> 00:00:24,779
+way again.
+
+15
+00:00:25,009 --> 00:00:26,550
+So here's the setup.
+
+16
+00:00:27,450 --> 00:00:29,418
+A man walks into Starbucks
+
+17
+00:00:29,418 --> 00:00:31,385
+and buys a twenty-dollar gift
+
+18
+00:00:31,385 --> 00:00:32,959
+card for his friend.
+
+19
+00:00:33,189 --> 00:00:34,369
+Starbucks takes his
+
+20
+00:00:34,369 --> 00:00:35,550
+twenty dollars immediately.
+
+21
+00:00:36,450 --> 00:00:38,352
+But in accounting terms, that
+
+22
+00:00:38,352 --> 00:00:39,873
+money isn't revenue yet.
+
+23
+00:00:40,103 --> 00:00:41,244
+It's a promise.
+
+24
+00:00:41,474 --> 00:00:43,376
+Because Starbucks still owes someone
+
+25
+00:00:43,376 --> 00:00:45,277
+twenty dollars' worth of coffee.
+
+26
+00:00:45,507 --> 00:00:47,029
+It's a debt wearing
+
+27
+00:00:47,029 --> 00:00:48,550
+a gift card's clothing.
+
+28
+00:00:49,450 --> 00:00:51,407
+Now, the friend visits Starbucks
+
+29
+00:00:51,407 --> 00:00:52,972
+and spends fourteen dollars.
+
+30
+00:00:53,202 --> 00:00:54,376
+Six dollars remain
+
+31
+00:00:54,376 --> 00:00:55,550
+on the card.
+
+32
+00:00:56,450 --> 00:00:57,318
+Weeks pass.
+
+33
+00:00:57,548 --> 00:00:58,415
+Then months.
+
+34
+00:00:58,645 --> 00:01:00,815
+And the card ends up
+
+35
+00:01:00,815 --> 00:01:02,550
+forgotten in a drawer.
+
+36
+00:01:03,450 --> 00:01:04,940
+Now multiply that by
+
+37
+00:01:04,940 --> 00:01:06,058
+millions of customers.
+
+38
+00:01:06,288 --> 00:01:07,778
+Some spend every cent.
+
+39
+00:01:08,008 --> 00:01:09,498
+Others leave a dollar
+
+40
+00:01:09,498 --> 00:01:10,615
+or two behind.
+
+41
+00:01:10,845 --> 00:01:12,708
+Starbucks studies historical redemption patterns
+
+42
+00:01:12,708 --> 00:01:14,570
+to estimate how much of
+
+43
+00:01:14,570 --> 00:01:16,433
+that money customers are unlikely
+
+44
+00:01:16,433 --> 00:01:17,550
+to ever use.
+
+45
+00:01:18,450 --> 00:01:19,760
+And here's where
+
+46
+00:01:19,760 --> 00:01:21,070
+things get interesting.
+
+47
+00:01:21,300 --> 00:01:23,483
+Under accounting rules, Starbucks can
+
+48
+00:01:23,483 --> 00:01:25,667
+gradually recognize a portion of
+
+49
+00:01:25,667 --> 00:01:27,850
+those expected unused balances as
+
+50
+00:01:27,850 --> 00:01:30,033
+revenue, in proportion to gift-card
+
+51
+00:01:30,033 --> 00:01:30,470
+redemptions.
+
+52
+00:01:30,700 --> 00:01:32,447
+This has a name.
+
+53
+00:01:32,677 --> 00:01:33,550
+Gift-card breakage.
+
+54
+00:01:34,450 --> 00:01:36,029
+And in fiscal 2025,
+
+55
+00:01:36,029 --> 00:01:37,608
+Starbucks recognized over two
+
+56
+00:01:37,608 --> 00:01:39,188
+hundred and twenty-two million
+
+57
+00:01:39,188 --> 00:01:40,767
+dollars in breakage revenue.
+
+58
+00:01:40,997 --> 00:01:42,971
+Not one extra latte required
+
+59
+00:01:42,971 --> 00:01:44,550
+for those unused balances.
+
+60
+00:01:45,450 --> 00:01:47,309
+So here's the strange truth.
+
+61
+00:01:47,539 --> 00:01:49,398
+A company can recognize revenue
+
+62
+00:01:49,398 --> 00:01:51,256
+even when the customer never
+
+63
+00:01:51,256 --> 00:01:53,115
+comes back to use the
+
+64
+00:01:53,115 --> 00:01:54,231
+remaining gift-card balance.
+
+65
+00:01:54,461 --> 00:01:55,948
+The cash was collected
+
+66
+00:01:55,948 --> 00:01:57,435
+earlier. The product may
+
+67
+00:01:57,435 --> 00:01:58,550
+never be redeemed.
+
+68
+00:01:59,450 --> 00:02:01,597
+So next time you buy
+
+69
+00:02:01,597 --> 00:02:03,745
+a gift card, ask yourself...
+
+70
+00:02:03,975 --> 00:02:06,123
+Who's really receiving the gift?
+
+71
+00:02:06,353 --> 00:02:07,641
+The person you're
+
+72
+00:02:07,641 --> 00:02:08,930
+giving it to?
+
+73
+00:02:09,160 --> 00:02:10,877
+Or the company you
+
+74
+00:02:10,877 --> 00:02:12,166
+bought it from?
+
+75
+00:02:12,396 --> 00:02:14,114
+Follow Oddly Logical for
+
+76
+00:02:14,114 --> 00:02:15,832
+more strange business secrets
+
+77
+00:02:15,832 --> 00:02:17,550
+hiding in plain sight.

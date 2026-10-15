@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+const e=JSON.parse(fs.readFileSync(new URL('../src/data/giftcard-episode.json',import.meta.url),'utf8'));
+const storyboard=JSON.parse(fs.readFileSync(new URL('../src/giftcard/cinematic/storyboard.json',import.meta.url),'utf8'));
+const out=new URL('../out/episode-02/',import.meta.url);fs.mkdirSync(out,{recursive:true});
+const stamp=t=>{const ms=Math.round(t*1000);return `${String(Math.floor(ms/3600000)).padStart(2,'0')}:${String(Math.floor(ms/60000)%60).padStart(2,'0')}:${String(Math.floor(ms/1000)%60).padStart(2,'0')},${String(ms%1000).padStart(3,'0')}`;};
+fs.writeFileSync(new URL('narration.txt',out),e.narration.text+'\n');
+fs.writeFileSync(new URL('captions.srt',out),e.captions.map((c,i)=>`${i+1}\n${stamp(c.start)} --> ${stamp(c.end)}\n${c.text}\n`).join('\n'));
+fs.writeFileSync(new URL('timing.json',out),JSON.stringify({notice:e.narration.timing==='audio-verified'?'Sentence timestamps verified against supplied narration.':'Editorial estimates; not verified against a voice recording.',version:4,storyboard,duration:e.durationSeconds,scenes:e.scenes,sentences:e.narration.sentences,captions:e.captions},null,2)+'\n');
+fs.writeFileSync(new URL('source-notes.json',out),JSON.stringify(e.source,null,2)+'\n');
+console.log(`Exported exact narration, ${e.captions.length} subtitle groups, timing and source notes.`);

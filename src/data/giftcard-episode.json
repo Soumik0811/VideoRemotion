@@ -1,0 +1,840 @@
+{
+  "id": "episode-02-gift-card-breakage",
+  "title": "The $222 Million Gift-Card Secret",
+  "brand": "ODDLY LOGICAL",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationSeconds": 138,
+  "narration": {
+    "src": null,
+    "timing": "editorial-estimate",
+    "text": "In 2025, Starbucks reported over two hundred and twenty-two million dollars in revenue.\n\nFrom gift-card money customers were never expected to spend.\n\nAnd here's the surprising part.\n\nThis isn't some illegal trick. It's a recognized accounting practice used by businesses that sell gift cards.\n\nOnce you see how it works, you'll never look at a gift card the same way again.\n\nSo here's the setup.\n\nA man walks into Starbucks and buys a twenty-dollar gift card for his friend.\n\nStarbucks takes his twenty dollars immediately.\n\nBut in accounting terms, that money isn't revenue yet.\n\nIt's a promise.\n\nBecause Starbucks still owes someone twenty dollars' worth of coffee.\n\nIt's a debt wearing a gift card's clothing.\n\nNow, the friend visits Starbucks and spends fourteen dollars.\n\nSix dollars remain on the card.\n\nWeeks pass.\n\nThen months.\n\nAnd the card ends up forgotten in a drawer.\n\nNow multiply that by millions of customers.\n\nSome spend every cent.\n\nOthers leave a dollar or two behind.\n\nStarbucks studies historical redemption patterns to estimate how much of that money customers are unlikely to ever use.\n\nAnd here's where things get interesting.\n\nUnder accounting rules, Starbucks can gradually recognize a portion of those expected unused balances as revenue, in proportion to gift-card redemptions.\n\nThis has a name.\n\nGift-card breakage.\n\nAnd in fiscal 2025, Starbucks recognized over two hundred and twenty-two million dollars in breakage revenue.\n\nNot one extra latte required for those unused balances.\n\nSo here's the strange truth.\n\nA company can recognize revenue even when the customer never comes back to use the remaining gift-card balance.\n\nThe cash was collected earlier. The product may never be redeemed.\n\nSo next time you buy a gift card, ask yourself...\n\nWho's really receiving the gift?\n\nThe person you're giving it to?\n\nOr the company you bought it from?\n\nFollow Oddly Logical for more strange business secrets hiding in plain sight.",
+    "sentences": [
+      {
+        "start": 0.45,
+        "end": 5.091,
+        "text": "In 2025, Starbucks reported over two hundred and twenty-two million dollars in revenue."
+      },
+      {
+        "start": 5.321,
+        "end": 8.535,
+        "text": "From gift-card money customers were never expected to spend."
+      },
+      {
+        "start": 8.765,
+        "end": 10.55,
+        "text": "And here's the surprising part."
+      },
+      {
+        "start": 11.45,
+        "end": 17.999,
+        "text": "This isn't some illegal trick. It's a recognized accounting practice used by businesses that sell gift cards."
+      },
+      {
+        "start": 18.229,
+        "end": 24.779,
+        "text": "Once you see how it works, you'll never look at a gift card the same way again."
+      },
+      {
+        "start": 25.009,
+        "end": 26.55,
+        "text": "So here's the setup."
+      },
+      {
+        "start": 27.45,
+        "end": 32.959,
+        "text": "A man walks into Starbucks and buys a twenty-dollar gift card for his friend."
+      },
+      {
+        "start": 33.189,
+        "end": 35.55,
+        "text": "Starbucks takes his twenty dollars immediately."
+      },
+      {
+        "start": 36.45,
+        "end": 39.873,
+        "text": "But in accounting terms, that money isn't revenue yet."
+      },
+      {
+        "start": 40.103,
+        "end": 41.244,
+        "text": "It's a promise."
+      },
+      {
+        "start": 41.474,
+        "end": 45.277,
+        "text": "Because Starbucks still owes someone twenty dollars' worth of coffee."
+      },
+      {
+        "start": 45.507,
+        "end": 48.55,
+        "text": "It's a debt wearing a gift card's clothing."
+      },
+      {
+        "start": 49.45,
+        "end": 52.972,
+        "text": "Now, the friend visits Starbucks and spends fourteen dollars."
+      },
+      {
+        "start": 53.202,
+        "end": 55.55,
+        "text": "Six dollars remain on the card."
+      },
+      {
+        "start": 56.45,
+        "end": 57.318,
+        "text": "Weeks pass."
+      },
+      {
+        "start": 57.548,
+        "end": 58.415,
+        "text": "Then months."
+      },
+      {
+        "start": 58.645,
+        "end": 62.55,
+        "text": "And the card ends up forgotten in a drawer."
+      },
+      {
+        "start": 63.45,
+        "end": 66.058,
+        "text": "Now multiply that by millions of customers."
+      },
+      {
+        "start": 66.288,
+        "end": 67.778,
+        "text": "Some spend every cent."
+      },
+      {
+        "start": 68.008,
+        "end": 70.615,
+        "text": "Others leave a dollar or two behind."
+      },
+      {
+        "start": 70.845,
+        "end": 77.55,
+        "text": "Starbucks studies historical redemption patterns to estimate how much of that money customers are unlikely to ever use."
+      },
+      {
+        "start": 78.45,
+        "end": 81.07,
+        "text": "And here's where things get interesting."
+      },
+      {
+        "start": 81.3,
+        "end": 90.47,
+        "text": "Under accounting rules, Starbucks can gradually recognize a portion of those expected unused balances as revenue, in proportion to gift-card redemptions."
+      },
+      {
+        "start": 90.7,
+        "end": 92.447,
+        "text": "This has a name."
+      },
+      {
+        "start": 92.677,
+        "end": 93.55,
+        "text": "Gift-card breakage."
+      },
+      {
+        "start": 94.45,
+        "end": 100.767,
+        "text": "And in fiscal 2025, Starbucks recognized over two hundred and twenty-two million dollars in breakage revenue."
+      },
+      {
+        "start": 100.997,
+        "end": 104.55,
+        "text": "Not one extra latte required for those unused balances."
+      },
+      {
+        "start": 105.45,
+        "end": 107.309,
+        "text": "So here's the strange truth."
+      },
+      {
+        "start": 107.539,
+        "end": 114.231,
+        "text": "A company can recognize revenue even when the customer never comes back to use the remaining gift-card balance."
+      },
+      {
+        "start": 114.461,
+        "end": 118.55,
+        "text": "The cash was collected earlier. The product may never be redeemed."
+      },
+      {
+        "start": 119.45,
+        "end": 123.745,
+        "text": "So next time you buy a gift card, ask yourself..."
+      },
+      {
+        "start": 123.975,
+        "end": 126.123,
+        "text": "Who's really receiving the gift?"
+      },
+      {
+        "start": 126.353,
+        "end": 128.93,
+        "text": "The person you're giving it to?"
+      },
+      {
+        "start": 129.16,
+        "end": 132.166,
+        "text": "Or the company you bought it from?"
+      },
+      {
+        "start": 132.396,
+        "end": 137.55,
+        "text": "Follow Oddly Logical for more strange business secrets hiding in plain sight."
+      }
+    ]
+  },
+  "financials": {
+    "purchase": 20,
+    "redeemed": 14,
+    "balance": 6,
+    "reportedBreakageFloorMillions": 222,
+    "fiscalYear": 2025,
+    "illustrativeRedemptionFraction": 0.5,
+    "reportedBreakageMillions": 222.4
+  },
+  "source": {
+    "status": "User-supplied figure; independent filing verification pending network access",
+    "reportedAmountLabel": "$222.4 MILLION (user-supplied V4 brief)",
+    "reference": "Starbucks fiscal 2025 annual report / 10-K, stored-value cards and breakage",
+    "requestedUrls": [
+      "https://investor.starbucks.com/financial-data/annual-reports/default.aspx",
+      "https://s203.q4cdn.com/326826266/files/doc_financials/2025/ar/SBUX-2025-10K.pdf"
+    ],
+    "accountingNotes": [
+      "Cash received on issue is deferred revenue until performance or qualifying breakage recognition.",
+      "Illustrative single-card ledger omits aggregate breakage.",
+      "Breakage recognition follows redemptions where permitted; it is not automatic forfeiture of a forgotten balance.",
+      "Percentages shown during the recognition example are illustrative proportions, not a claimed Starbucks breakage rate."
+    ]
+  },
+  "characters": {
+    "explainer": {
+      "name": "Miles",
+      "color": "#285343",
+      "skin": "#E6B48D",
+      "hair": "#332C29",
+      "shape": "oliver",
+      "costume": "casual"
+    },
+    "customer": {
+      "name": "Ben",
+      "color": "#658CA2",
+      "skin": "#D69D74",
+      "hair": "#44372F",
+      "shape": "noah",
+      "costume": "casual"
+    },
+    "barista": {
+      "name": "Alex",
+      "color": "#297357",
+      "skin": "#D8AA83",
+      "hair": "#3F342B",
+      "shape": "oliver",
+      "costume": "barista"
+    },
+    "friend": {
+      "name": "Riley",
+      "color": "#C97B65",
+      "skin": "#ECC39E",
+      "hair": "#79563B",
+      "shape": "noah",
+      "costume": "casual"
+    },
+    "analyst": {
+      "name": "Sam",
+      "color": "#C5A259",
+      "skin": "#BE855F",
+      "hair": "#382F2A",
+      "shape": "noah",
+      "costume": "analyst"
+    }
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0,
+      "end": 11,
+      "label": "THE HIDDEN REVENUE",
+      "heading": "A $222 million gift."
+    },
+    {
+      "id": "practice",
+      "start": 11,
+      "end": 27,
+      "label": "THE ACCOUNTING TWIST",
+      "heading": "Legal. Recognized.\nSurprisingly ordinary."
+    },
+    {
+      "id": "purchase",
+      "start": 27,
+      "end": 36,
+      "label": "01 / CASH ARRIVES",
+      "heading": "One card.\nTwenty dollars."
+    },
+    {
+      "id": "liability",
+      "start": 36,
+      "end": 49,
+      "label": "02 / A PROMISE TO DELIVER",
+      "heading": "Cash received.\nRevenue? Not yet."
+    },
+    {
+      "id": "redeem",
+      "start": 49,
+      "end": 56,
+      "label": "03 / THE FIRST VISIT",
+      "heading": "$14 spent.\n$6 still waiting."
+    },
+    {
+      "id": "forgotten",
+      "start": 56,
+      "end": 63,
+      "label": "04 / TIME GOES BY",
+      "heading": "The balance\nthat gets forgotten."
+    },
+    {
+      "id": "scale",
+      "start": 63,
+      "end": 78,
+      "label": "05 / THINK IN MILLIONS",
+      "heading": "Tiny balances.\nA very large pattern."
+    },
+    {
+      "id": "rules",
+      "start": 78,
+      "end": 94,
+      "label": "06 / THE RECOGNITION RULE",
+      "heading": "Recognition follows\nredemption."
+    },
+    {
+      "id": "reveal",
+      "start": 94,
+      "end": 105,
+      "label": "THE FY2025 REVEAL",
+      "heading": "Revenue.\nNo extra latte."
+    },
+    {
+      "id": "truth",
+      "start": 105,
+      "end": 119,
+      "label": "FOLLOW THE TIMING",
+      "heading": "Cash came earlier.\nRevenue comes later."
+    },
+    {
+      "id": "question",
+      "start": 119,
+      "end": 138,
+      "label": "ODDLY LOGICAL",
+      "heading": "Who\u2019s really\nreceiving the gift?"
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.45,
+      "end": 2.235,
+      "text": "In 2025, Starbucks reported over"
+    },
+    {
+      "start": 2.235,
+      "end": 4.02,
+      "text": "two hundred and twenty-two million"
+    },
+    {
+      "start": 4.02,
+      "end": 5.091,
+      "text": "dollars in revenue."
+    },
+    {
+      "start": 5.321,
+      "end": 7.107,
+      "text": "From gift-card money customers were"
+    },
+    {
+      "start": 7.107,
+      "end": 8.535,
+      "text": "never expected to spend."
+    },
+    {
+      "start": 8.765,
+      "end": 10.55,
+      "text": "And here's the surprising part."
+    },
+    {
+      "start": 11.45,
+      "end": 13.376,
+      "text": "This isn't some illegal trick."
+    },
+    {
+      "start": 13.376,
+      "end": 15.303,
+      "text": "It's a recognized accounting practice"
+    },
+    {
+      "start": 15.303,
+      "end": 17.229,
+      "text": "used by businesses that sell"
+    },
+    {
+      "start": 17.229,
+      "end": 17.999,
+      "text": "gift cards."
+    },
+    {
+      "start": 18.229,
+      "end": 20.156,
+      "text": "Once you see how it"
+    },
+    {
+      "start": 20.156,
+      "end": 22.082,
+      "text": "works, you'll never look at"
+    },
+    {
+      "start": 22.082,
+      "end": 24.008,
+      "text": "a gift card the same"
+    },
+    {
+      "start": 24.008,
+      "end": 24.779,
+      "text": "way again."
+    },
+    {
+      "start": 25.009,
+      "end": 26.55,
+      "text": "So here's the setup."
+    },
+    {
+      "start": 27.45,
+      "end": 29.418,
+      "text": "A man walks into Starbucks"
+    },
+    {
+      "start": 29.418,
+      "end": 31.385,
+      "text": "and buys a twenty-dollar gift"
+    },
+    {
+      "start": 31.385,
+      "end": 32.959,
+      "text": "card for his friend."
+    },
+    {
+      "start": 33.189,
+      "end": 34.369,
+      "text": "Starbucks takes his"
+    },
+    {
+      "start": 34.369,
+      "end": 35.55,
+      "text": "twenty dollars immediately."
+    },
+    {
+      "start": 36.45,
+      "end": 38.352,
+      "text": "But in accounting terms, that"
+    },
+    {
+      "start": 38.352,
+      "end": 39.873,
+      "text": "money isn't revenue yet."
+    },
+    {
+      "start": 40.103,
+      "end": 41.244,
+      "text": "It's a promise."
+    },
+    {
+      "start": 41.474,
+      "end": 43.376,
+      "text": "Because Starbucks still owes someone"
+    },
+    {
+      "start": 43.376,
+      "end": 45.277,
+      "text": "twenty dollars' worth of coffee."
+    },
+    {
+      "start": 45.507,
+      "end": 47.029,
+      "text": "It's a debt wearing"
+    },
+    {
+      "start": 47.029,
+      "end": 48.55,
+      "text": "a gift card's clothing."
+    },
+    {
+      "start": 49.45,
+      "end": 51.407,
+      "text": "Now, the friend visits Starbucks"
+    },
+    {
+      "start": 51.407,
+      "end": 52.972,
+      "text": "and spends fourteen dollars."
+    },
+    {
+      "start": 53.202,
+      "end": 54.376,
+      "text": "Six dollars remain"
+    },
+    {
+      "start": 54.376,
+      "end": 55.55,
+      "text": "on the card."
+    },
+    {
+      "start": 56.45,
+      "end": 57.318,
+      "text": "Weeks pass."
+    },
+    {
+      "start": 57.548,
+      "end": 58.415,
+      "text": "Then months."
+    },
+    {
+      "start": 58.645,
+      "end": 60.815,
+      "text": "And the card ends up"
+    },
+    {
+      "start": 60.815,
+      "end": 62.55,
+      "text": "forgotten in a drawer."
+    },
+    {
+      "start": 63.45,
+      "end": 64.94,
+      "text": "Now multiply that by"
+    },
+    {
+      "start": 64.94,
+      "end": 66.058,
+      "text": "millions of customers."
+    },
+    {
+      "start": 66.288,
+      "end": 67.778,
+      "text": "Some spend every cent."
+    },
+    {
+      "start": 68.008,
+      "end": 69.498,
+      "text": "Others leave a dollar"
+    },
+    {
+      "start": 69.498,
+      "end": 70.615,
+      "text": "or two behind."
+    },
+    {
+      "start": 70.845,
+      "end": 72.708,
+      "text": "Starbucks studies historical redemption patterns"
+    },
+    {
+      "start": 72.708,
+      "end": 74.57,
+      "text": "to estimate how much of"
+    },
+    {
+      "start": 74.57,
+      "end": 76.433,
+      "text": "that money customers are unlikely"
+    },
+    {
+      "start": 76.433,
+      "end": 77.55,
+      "text": "to ever use."
+    },
+    {
+      "start": 78.45,
+      "end": 79.76,
+      "text": "And here's where"
+    },
+    {
+      "start": 79.76,
+      "end": 81.07,
+      "text": "things get interesting."
+    },
+    {
+      "start": 81.3,
+      "end": 83.483,
+      "text": "Under accounting rules, Starbucks can"
+    },
+    {
+      "start": 83.483,
+      "end": 85.667,
+      "text": "gradually recognize a portion of"
+    },
+    {
+      "start": 85.667,
+      "end": 87.85,
+      "text": "those expected unused balances as"
+    },
+    {
+      "start": 87.85,
+      "end": 90.033,
+      "text": "revenue, in proportion to gift-card"
+    },
+    {
+      "start": 90.033,
+      "end": 90.47,
+      "text": "redemptions."
+    },
+    {
+      "start": 90.7,
+      "end": 92.447,
+      "text": "This has a name."
+    },
+    {
+      "start": 92.677,
+      "end": 93.55,
+      "text": "Gift-card breakage."
+    },
+    {
+      "start": 94.45,
+      "end": 96.029,
+      "text": "And in fiscal 2025,"
+    },
+    {
+      "start": 96.029,
+      "end": 97.608,
+      "text": "Starbucks recognized over two"
+    },
+    {
+      "start": 97.608,
+      "end": 99.188,
+      "text": "hundred and twenty-two million"
+    },
+    {
+      "start": 99.188,
+      "end": 100.767,
+      "text": "dollars in breakage revenue."
+    },
+    {
+      "start": 100.997,
+      "end": 102.971,
+      "text": "Not one extra latte required"
+    },
+    {
+      "start": 102.971,
+      "end": 104.55,
+      "text": "for those unused balances."
+    },
+    {
+      "start": 105.45,
+      "end": 107.309,
+      "text": "So here's the strange truth."
+    },
+    {
+      "start": 107.539,
+      "end": 109.398,
+      "text": "A company can recognize revenue"
+    },
+    {
+      "start": 109.398,
+      "end": 111.256,
+      "text": "even when the customer never"
+    },
+    {
+      "start": 111.256,
+      "end": 113.115,
+      "text": "comes back to use the"
+    },
+    {
+      "start": 113.115,
+      "end": 114.231,
+      "text": "remaining gift-card balance."
+    },
+    {
+      "start": 114.461,
+      "end": 115.948,
+      "text": "The cash was collected"
+    },
+    {
+      "start": 115.948,
+      "end": 117.435,
+      "text": "earlier. The product may"
+    },
+    {
+      "start": 117.435,
+      "end": 118.55,
+      "text": "never be redeemed."
+    },
+    {
+      "start": 119.45,
+      "end": 121.597,
+      "text": "So next time you buy"
+    },
+    {
+      "start": 121.597,
+      "end": 123.745,
+      "text": "a gift card, ask yourself..."
+    },
+    {
+      "start": 123.975,
+      "end": 126.123,
+      "text": "Who's really receiving the gift?"
+    },
+    {
+      "start": 126.353,
+      "end": 127.641,
+      "text": "The person you're"
+    },
+    {
+      "start": 127.641,
+      "end": 128.93,
+      "text": "giving it to?"
+    },
+    {
+      "start": 129.16,
+      "end": 130.877,
+      "text": "Or the company you"
+    },
+    {
+      "start": 130.877,
+      "end": 132.166,
+      "text": "bought it from?"
+    },
+    {
+      "start": 132.396,
+      "end": 134.114,
+      "text": "Follow Oddly Logical for"
+    },
+    {
+      "start": 134.114,
+      "end": 135.832,
+      "text": "more strange business secrets"
+    },
+    {
+      "start": 135.832,
+      "end": 137.55,
+      "text": "hiding in plain sight."
+    }
+  ],
+  "assets": {
+    "music": "audio/giftcard/music.wav"
+  },
+  "soundEvents": [
+    {
+      "at": 0.7,
+      "sound": "reveal"
+    },
+    {
+      "at": 21.1,
+      "sound": "door"
+    },
+    {
+      "at": 29.65,
+      "sound": "paper"
+    },
+    {
+      "at": 30.2,
+      "sound": "money"
+    },
+    {
+      "at": 32.7,
+      "sound": "paper"
+    },
+    {
+      "at": 33.2,
+      "sound": "register"
+    },
+    {
+      "at": 35.8,
+      "sound": "paper"
+    },
+    {
+      "at": 43.15,
+      "sound": "paper"
+    },
+    {
+      "at": 50.45,
+      "sound": "terminal"
+    },
+    {
+      "at": 53,
+      "sound": "cup"
+    },
+    {
+      "at": 54.25,
+      "sound": "cup"
+    },
+    {
+      "at": 56.7,
+      "sound": "flip"
+    },
+    {
+      "at": 57.4,
+      "sound": "flip"
+    },
+    {
+      "at": 58.1,
+      "sound": "drawer"
+    },
+    {
+      "at": 58.5,
+      "sound": "flip"
+    },
+    {
+      "at": 59.85,
+      "sound": "paper"
+    },
+    {
+      "at": 60.8,
+      "sound": "drawer"
+    },
+    {
+      "at": 64.2,
+      "sound": "paper"
+    },
+    {
+      "at": 66.5,
+      "sound": "terminal"
+    },
+    {
+      "at": 71.7,
+      "sound": "keyboard"
+    },
+    {
+      "at": 74.6,
+      "sound": "keyboard"
+    },
+    {
+      "at": 81.3,
+      "sound": "keyboard"
+    },
+    {
+      "at": 86.5,
+      "sound": "keyboard"
+    },
+    {
+      "at": 92.3,
+      "sound": "register"
+    },
+    {
+      "at": 94.5,
+      "sound": "reveal"
+    },
+    {
+      "at": 113,
+      "sound": "keyboard"
+    },
+    {
+      "at": 127.4,
+      "sound": "paper"
+    },
+    {
+      "at": 132.8,
+      "sound": "reveal"
+    }
+  ]
+}

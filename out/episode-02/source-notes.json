@@ -1,0 +1,15 @@
+{
+  "status": "User-supplied figure; independent filing verification pending network access",
+  "reportedAmountLabel": "$222.4 MILLION (user-supplied V4 brief)",
+  "reference": "Starbucks fiscal 2025 annual report / 10-K, stored-value cards and breakage",
+  "requestedUrls": [
+    "https://investor.starbucks.com/financial-data/annual-reports/default.aspx",
+    "https://s203.q4cdn.com/326826266/files/doc_financials/2025/ar/SBUX-2025-10K.pdf"
+  ],
+  "accountingNotes": [
+    "Cash received on issue is deferred revenue until performance or qualifying breakage recognition.",
+    "Illustrative single-card ledger omits aggregate breakage.",
+    "Breakage recognition follows redemptions where permitted; it is not automatic forfeiture of a forgotten balance.",
+    "Percentages shown during the recognition example are illustrative proportions, not a claimed Starbucks breakage rate."
+  ]
+}

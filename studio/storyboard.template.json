@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "template": true,
+  "episodeId": "",
+  "title": "",
+  "compositionName": "",
+  "brand": {
+    "channel": "Oddly Logical",
+    "tagline": "Strange Stories. Smart Explanations."
+  },
+  "format": {"width": 1080, "height": 1920, "fps": 30, "codec": "h264"},
+  "narration": {
+    "scriptPath": "",
+    "audioPath": null,
+    "timingStatus": "editorial-estimate",
+    "durationSeconds": null,
+    "sentenceTimings": []
+  },
+  "castAssignments": [],
+  "financialFigures": [],
+  "sourceNotes": [],
+  "reusedAssets": [],
+  "newReusableAssets": [],
+  "beats": [
+    {
+      "id": "",
+      "start": null,
+      "end": null,
+      "narrationSegment": "",
+      "location": "",
+      "characters": [],
+      "characterActions": [],
+      "ambientActions": [],
+      "objects": [],
+      "camera": {"shotType": "", "movement": "", "focus": ""},
+      "numericalGraphics": [],
+      "soundCues": [],
+      "captionGroups": [],
+      "transition": ""
+    }
+  ],
+  "outputs": {"videoPath": null, "captionPath": null, "reviewFramesPath": null},
+  "limitations": []
+}
