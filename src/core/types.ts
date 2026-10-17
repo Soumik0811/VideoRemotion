@@ -1,0 +1,10 @@
+import type {ComponentType} from 'react';
+import type {BeebopScene} from './beebop.config';
+export type Position = 'left' | 'right' | 'center' | 'hidden';
+export type Word = {w: string; start: number; end?: number};
+export type Segment = {start: number; end: number; text: string; words?: Word[]; title?: Title};
+export type Title = {line1: string; line2: string};
+export type VideoInput = {slug: string; topic: string; audio: string; title?: Title; segments: Segment[]};
+export type SceneProp = {component: ComponentType<any>; at: number; duration?: number; props?: any};
+export type Scene = {start: number; end: number; background: ComponentType<any>; props?: SceneProp[]; beebop: BeebopScene; transition?: 'fade'|'slide'|'zoom'|'none'};
+export type VideoDefinition = {id: string; config: VideoInput; scenes: Scene[]};

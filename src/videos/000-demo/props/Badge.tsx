@@ -1,0 +1,1 @@
+import React from 'react'; export const Badge:React.FC=()=> <div style={{position:'absolute',left:'62%',top:'43%',padding:'16px 26px',borderRadius:14,background:'#E5392B',color:'#fff',font:'800 54px sans-serif',transform:'rotate(-8deg)'}}>FEE!</div>;

@@ -1,29 +1,28 @@
 {
-  "name": "finance-motion-engine",
+  "name": "beebop-studio",
   "version": "1.0.0",
   "private": true,
-  "description": "Reusable flat 2D finance explainer generator using Remotion",
+  "type": "module",
   "scripts": {
-    "studio": "remotion studio src/index.tsx",
-    "render": "remotion render src/index.tsx BakeryEpisode01 out/episode-01/bakery-episode-01.mp4 --codec h264 --crf 18 --concurrency 2",
-    "still": "remotion still src/index.tsx BakeryEpisode01 out/episode-01/thumbnail.png --frame 2190",
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts 000-demo out/demo.mp4",
     "typecheck": "tsc --noEmit",
-    "check:story": "node tools/check-story.mjs",
-    "render:legacy": "remotion render src/index.tsx FinanceExplainer out/tshirt-explainer.mp4 --codec h264 --crf 18",
-    "still:legacy": "remotion still src/index.tsx FinanceExplainer out/thumbnail.png --frame 1500",
-    "check:bakery": "node tools/check-bakery.mjs",
-    "export:bakery": "node tools/export-bakery.mjs"
+    "new": "tsx scripts/new-video.ts",
+    "validate": "tsx scripts/validate.ts"
   },
   "dependencies": {
-    "remotion": "^4.0.534",
     "@remotion/cli": "^4.0.534",
-    "@remotion/media": "^4.0.534",
+    "@remotion/google-fonts": "^4.0.534",
+    "@remotion/media-utils": "^4.0.534",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "remotion": "^4.0.534"
   },
   "devDependencies": {
-    "typescript": "^5.8.3",
+    "@types/node": "^22.0.0",
     "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.0"
+    "@types/react-dom": "^19.1.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.3"
   }
 }

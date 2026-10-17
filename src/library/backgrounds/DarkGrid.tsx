@@ -1,0 +1,1 @@
+import React from 'react'; export const DarkGrid:React.FC<{tone?:string}>=({tone='#171922'})=><div style={{width:'100%',height:'100%',backgroundColor:tone,backgroundImage:'linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px)',backgroundSize:'90px 90px'}}/>;

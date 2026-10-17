@@ -1,0 +1,1 @@
+import React from 'react'; export const Neon:React.FC<{tone?:string}>=({tone='#171922'})=><div style={{width:'100%',height:'100%',background:`radial-gradient(circle at 70% 35%, #3b1e35, transparent 35%), ${tone}`}}/>;

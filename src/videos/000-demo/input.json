@@ -1,0 +1,11 @@
+{
+  "slug": "000-demo",
+  "topic": "A quick Beebop explainer",
+  "audio": "videos/000-demo/narration.mp3",
+  "title": {"line1": "TOO GOOD.", "line2": "FINED."},
+  "segments": [
+    {"start":0,"end":4.5,"text":"For making bulbs that *lasted*","words":[{"w":"For","start":0},{"w":"making","start":0.55},{"w":"bulbs","start":1.2},{"w":"that","start":1.85},{"w":"lasted","start":2.35,"end":4.5}]},
+    {"start":4.5,"end":9,"text":"The longer they lasted, the bigger the *fine*"},
+    {"start":9,"end":15,"text":"Always read the *fine print*"}
+  ]
+}

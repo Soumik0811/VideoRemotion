@@ -1,16 +1,2 @@
-import React from 'react';
-import {Composition} from 'remotion';
-import episodeJSON from './data/episode.json';
-import {Episode} from './types';
-import {Explainer} from './Explainer';
-import bakeryJSON from './data/bakery-episode.json';
-import {BakeryEpisode} from './bakery/BakeryEpisode';
-import {BakeryEpisode as BakeryEpisodeType} from './bakery/types';
-
-const episode=episodeJSON as Episode;
-const durationInFrames=episode.scenes.reduce((n,s)=>n+Math.round(s.seconds*episode.fps),0);
-const bakery=bakeryJSON as BakeryEpisodeType;
-export const RemotionRoot:React.FC=()=> <>
-  <Composition id="BakeryEpisode01" component={BakeryEpisode} width={bakery.width} height={bakery.height} fps={bakery.fps} durationInFrames={Math.round(bakery.durationSeconds*bakery.fps)} defaultProps={{episode:bakery}} calculateMetadata={({props})=>({durationInFrames:Math.round(props.episode.durationSeconds*props.episode.fps),fps:props.episode.fps,width:props.episode.width,height:props.episode.height})}/>
-  <Composition id="FinanceExplainer" component={Explainer} width={episode.width} height={episode.height} fps={episode.fps} durationInFrames={durationInFrames} defaultProps={{episode}}/>
-</>;
+import React from 'react'; import {Composition, staticFile} from 'remotion'; import {getAudioDurationInSeconds} from '@remotion/media-utils'; import {registry} from './registry'; import {VideoTemplate} from './core/VideoTemplate'; import {BeebopGestures} from './core/BeebopGestures'; import {VIDEO_WIDTH,VIDEO_HEIGHT,FPS} from './core/theme';
+export const Root:React.FC=()=> <>{registry.map((v)=>{ const Video:React.FC<any>=()=> <VideoTemplate config={v.config} scenes={v.scenes}/>; return <Composition key={v.id} id={v.id} component={Video} width={VIDEO_WIDTH} height={VIDEO_HEIGHT} fps={FPS} durationInFrames={FPS*15} defaultProps={{}} calculateMetadata={async({props}:any)=>{try{return {durationInFrames:Math.ceil((await getAudioDurationInSeconds(staticFile(props.config?.audio??v.config.audio)))*FPS)}}catch{return {durationInFrames:Math.ceil((v.scenes.at(-1)?.end??15)*FPS)}}}} />; })}<Composition id="BeebopGestures" component={BeebopGestures} width={VIDEO_WIDTH} height={VIDEO_HEIGHT} fps={FPS} durationInFrames={FPS*4}/></>;

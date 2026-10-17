@@ -1,0 +1,1 @@
+import React from 'react'; export const PriceTag:React.FC<{price?:string}>=({price='$99'})=><div style={{position:'absolute',left:'65%',top:'42%',padding:'18px 30px',borderRadius:18,background:'#E5392B',color:'#fff',font:'800 58px sans-serif',transform:'rotate(8deg)'}}>{price}</div>;
