@@ -1,0 +1,788 @@
+{
+  "transcript": "A perfect slap isn't anger. It's applied physics with attitude. First, angular momentum. You don't just swing your arm, you wind up your entire torso like a human trebuchet. More rotation equals more rotational energy equals more facial regret. Next, force. Force equals mass times acceleration. So the faster your hand is moving when it collides with that soft unsuspecting cheek, the louder the lesson. And if the hand is wet, surface tension turns water into a temporary glue. It increases contact area for a split second, then ruptures with a filthy satisfying crack. That's not a slap, that's Newtonian justice, delivered at 9.8 meters per second squared and pure spite.",
+  "duration": 0,
+  "words": [
+    {
+      "word": "a",
+      "start": 0.0,
+      "end": 0.32,
+      "confidence": 0.9951172,
+      "punctuated_word": "A"
+    },
+    {
+      "word": "perfect",
+      "start": 0.32,
+      "end": 0.71999997,
+      "confidence": 0.9921875,
+      "punctuated_word": "perfect"
+    },
+    {
+      "word": "slap",
+      "start": 0.71999997,
+      "end": 1.1999999,
+      "confidence": 0.9975586,
+      "punctuated_word": "slap"
+    },
+    {
+      "word": "isn't",
+      "start": 1.1999999,
+      "end": 1.68,
+      "confidence": 0.9980469,
+      "punctuated_word": "isn't"
+    },
+    {
+      "word": "anger",
+      "start": 1.68,
+      "end": 2.4799998,
+      "confidence": 0.8273926,
+      "punctuated_word": "anger."
+    },
+    {
+      "word": "it's",
+      "start": 2.8,
+      "end": 3.04,
+      "confidence": 0.9970703,
+      "punctuated_word": "It's"
+    },
+    {
+      "word": "applied",
+      "start": 3.04,
+      "end": 3.36,
+      "confidence": 0.99902344,
+      "punctuated_word": "applied"
+    },
+    {
+      "word": "physics",
+      "start": 3.36,
+      "end": 4.24,
+      "confidence": 0.99902344,
+      "punctuated_word": "physics"
+    },
+    {
+      "word": "with",
+      "start": 4.3199997,
+      "end": 4.64,
+      "confidence": 0.8569336,
+      "punctuated_word": "with"
+    },
+    {
+      "word": "attitude",
+      "start": 4.64,
+      "end": 5.52,
+      "confidence": 0.99902344,
+      "punctuated_word": "attitude."
+    },
+    {
+      "word": "first",
+      "start": 5.7599998,
+      "end": 6.3999996,
+      "confidence": 0.9494629,
+      "punctuated_word": "First,"
+    },
+    {
+      "word": "angular",
+      "start": 6.3999996,
+      "end": 6.8799996,
+      "confidence": 0.99902344,
+      "punctuated_word": "angular"
+    },
+    {
+      "word": "momentum",
+      "start": 6.8799996,
+      "end": 7.6,
+      "confidence": 0.99658203,
+      "punctuated_word": "momentum."
+    },
+    {
+      "word": "you",
+      "start": 7.6,
+      "end": 7.8399997,
+      "confidence": 1.0,
+      "punctuated_word": "You"
+    },
+    {
+      "word": "don't",
+      "start": 7.8399997,
+      "end": 8.0,
+      "confidence": 1.0,
+      "punctuated_word": "don't"
+    },
+    {
+      "word": "just",
+      "start": 8.0,
+      "end": 8.16,
+      "confidence": 0.99902344,
+      "punctuated_word": "just"
+    },
+    {
+      "word": "swing",
+      "start": 8.16,
+      "end": 8.559999,
+      "confidence": 1.0,
+      "punctuated_word": "swing"
+    },
+    {
+      "word": "your",
+      "start": 8.559999,
+      "end": 8.72,
+      "confidence": 0.99902344,
+      "punctuated_word": "your"
+    },
+    {
+      "word": "arm",
+      "start": 8.72,
+      "end": 9.36,
+      "confidence": 0.861084,
+      "punctuated_word": "arm,"
+    },
+    {
+      "word": "you",
+      "start": 9.36,
+      "end": 9.44,
+      "confidence": 0.99902344,
+      "punctuated_word": "you"
+    },
+    {
+      "word": "wind",
+      "start": 9.44,
+      "end": 9.76,
+      "confidence": 1.0,
+      "punctuated_word": "wind"
+    },
+    {
+      "word": "up",
+      "start": 9.76,
+      "end": 9.92,
+      "confidence": 0.98828125,
+      "punctuated_word": "up"
+    },
+    {
+      "word": "your",
+      "start": 9.92,
+      "end": 10.08,
+      "confidence": 0.99902344,
+      "punctuated_word": "your"
+    },
+    {
+      "word": "entire",
+      "start": 10.08,
+      "end": 10.48,
+      "confidence": 0.9980469,
+      "punctuated_word": "entire"
+    },
+    {
+      "word": "torso",
+      "start": 10.48,
+      "end": 11.04,
+      "confidence": 1.0,
+      "punctuated_word": "torso"
+    },
+    {
+      "word": "like",
+      "start": 11.04,
+      "end": 11.28,
+      "confidence": 0.99609375,
+      "punctuated_word": "like"
+    },
+    {
+      "word": "a",
+      "start": 11.28,
+      "end": 11.44,
+      "confidence": 0.99902344,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "human",
+      "start": 11.44,
+      "end": 11.679999,
+      "confidence": 1.0,
+      "punctuated_word": "human"
+    },
+    {
+      "word": "trebuchet",
+      "start": 11.679999,
+      "end": 12.32,
+      "confidence": 0.9951172,
+      "punctuated_word": "trebuchet."
+    },
+    {
+      "word": "more",
+      "start": 12.575,
+      "end": 12.974999,
+      "confidence": 0.99902344,
+      "punctuated_word": "More"
+    },
+    {
+      "word": "rotation",
+      "start": 12.974999,
+      "end": 13.455,
+      "confidence": 1.0,
+      "punctuated_word": "rotation"
+    },
+    {
+      "word": "equals",
+      "start": 13.455,
+      "end": 13.855,
+      "confidence": 0.9550781,
+      "punctuated_word": "equals"
+    },
+    {
+      "word": "more",
+      "start": 13.855,
+      "end": 14.175,
+      "confidence": 1.0,
+      "punctuated_word": "more"
+    },
+    {
+      "word": "rotational",
+      "start": 14.175,
+      "end": 14.735,
+      "confidence": 0.9995117,
+      "punctuated_word": "rotational"
+    },
+    {
+      "word": "energy",
+      "start": 14.735,
+      "end": 15.295,
+      "confidence": 1.0,
+      "punctuated_word": "energy"
+    },
+    {
+      "word": "equals",
+      "start": 15.295,
+      "end": 15.775,
+      "confidence": 0.89453125,
+      "punctuated_word": "equals"
+    },
+    {
+      "word": "more",
+      "start": 15.775,
+      "end": 16.095,
+      "confidence": 1.0,
+      "punctuated_word": "more"
+    },
+    {
+      "word": "facial",
+      "start": 16.095,
+      "end": 16.575,
+      "confidence": 1.0,
+      "punctuated_word": "facial"
+    },
+    {
+      "word": "regret",
+      "start": 16.575,
+      "end": 17.295,
+      "confidence": 0.9995117,
+      "punctuated_word": "regret."
+    },
+    {
+      "word": "next",
+      "start": 17.615,
+      "end": 18.255,
+      "confidence": 0.8444824,
+      "punctuated_word": "Next,"
+    },
+    {
+      "word": "force",
+      "start": 18.335,
+      "end": 18.974998,
+      "confidence": 0.97558594,
+      "punctuated_word": "force."
+    },
+    {
+      "word": "force",
+      "start": 19.215,
+      "end": 19.615,
+      "confidence": 1.0,
+      "punctuated_word": "Force"
+    },
+    {
+      "word": "equals",
+      "start": 19.615,
+      "end": 20.015,
+      "confidence": 0.99902344,
+      "punctuated_word": "equals"
+    },
+    {
+      "word": "mass",
+      "start": 20.015,
+      "end": 20.414999,
+      "confidence": 0.99902344,
+      "punctuated_word": "mass"
+    },
+    {
+      "word": "times",
+      "start": 20.414999,
+      "end": 20.735,
+      "confidence": 0.9921875,
+      "punctuated_word": "times"
+    },
+    {
+      "word": "acceleration",
+      "start": 20.735,
+      "end": 21.615,
+      "confidence": 0.94750977,
+      "punctuated_word": "acceleration."
+    },
+    {
+      "word": "so",
+      "start": 21.775,
+      "end": 21.935,
+      "confidence": 1.0,
+      "punctuated_word": "So"
+    },
+    {
+      "word": "the",
+      "start": 21.935,
+      "end": 22.095,
+      "confidence": 0.9892578,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "faster",
+      "start": 22.095,
+      "end": 22.494999,
+      "confidence": 1.0,
+      "punctuated_word": "faster"
+    },
+    {
+      "word": "your",
+      "start": 22.494999,
+      "end": 22.654999,
+      "confidence": 0.99902344,
+      "punctuated_word": "your"
+    },
+    {
+      "word": "hand",
+      "start": 22.654999,
+      "end": 22.895,
+      "confidence": 1.0,
+      "punctuated_word": "hand"
+    },
+    {
+      "word": "is",
+      "start": 22.895,
+      "end": 23.055,
+      "confidence": 1.0,
+      "punctuated_word": "is"
+    },
+    {
+      "word": "moving",
+      "start": 23.055,
+      "end": 23.375,
+      "confidence": 1.0,
+      "punctuated_word": "moving"
+    },
+    {
+      "word": "when",
+      "start": 23.375,
+      "end": 23.615,
+      "confidence": 0.99609375,
+      "punctuated_word": "when"
+    },
+    {
+      "word": "it",
+      "start": 23.615,
+      "end": 23.695,
+      "confidence": 0.99902344,
+      "punctuated_word": "it"
+    },
+    {
+      "word": "collides",
+      "start": 23.695,
+      "end": 24.095,
+      "confidence": 1.0,
+      "punctuated_word": "collides"
+    },
+    {
+      "word": "with",
+      "start": 24.095,
+      "end": 24.255,
+      "confidence": 1.0,
+      "punctuated_word": "with"
+    },
+    {
+      "word": "that",
+      "start": 24.255,
+      "end": 24.494999,
+      "confidence": 0.9980469,
+      "punctuated_word": "that"
+    },
+    {
+      "word": "soft",
+      "start": 24.494999,
+      "end": 25.055,
+      "confidence": 1.0,
+      "punctuated_word": "soft"
+    },
+    {
+      "word": "unsuspecting",
+      "start": 25.055,
+      "end": 25.855,
+      "confidence": 0.8989258,
+      "punctuated_word": "unsuspecting"
+    },
+    {
+      "word": "cheek",
+      "start": 25.855,
+      "end": 26.255,
+      "confidence": 0.9914551,
+      "punctuated_word": "cheek,"
+    },
+    {
+      "word": "the",
+      "start": 26.74,
+      "end": 26.98,
+      "confidence": 0.99902344,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "louder",
+      "start": 26.98,
+      "end": 27.3,
+      "confidence": 1.0,
+      "punctuated_word": "louder"
+    },
+    {
+      "word": "the",
+      "start": 27.3,
+      "end": 27.539999,
+      "confidence": 0.99902344,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "lesson",
+      "start": 27.539999,
+      "end": 28.1,
+      "confidence": 0.9790039,
+      "punctuated_word": "lesson."
+    },
+    {
+      "word": "and",
+      "start": 28.34,
+      "end": 28.5,
+      "confidence": 0.9790039,
+      "punctuated_word": "And"
+    },
+    {
+      "word": "if",
+      "start": 28.5,
+      "end": 28.74,
+      "confidence": 0.9951172,
+      "punctuated_word": "if"
+    },
+    {
+      "word": "the",
+      "start": 28.74,
+      "end": 28.9,
+      "confidence": 0.9970703,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "hand",
+      "start": 28.9,
+      "end": 29.06,
+      "confidence": 1.0,
+      "punctuated_word": "hand"
+    },
+    {
+      "word": "is",
+      "start": 29.06,
+      "end": 29.3,
+      "confidence": 1.0,
+      "punctuated_word": "is"
+    },
+    {
+      "word": "wet",
+      "start": 29.3,
+      "end": 29.86,
+      "confidence": 0.95825195,
+      "punctuated_word": "wet,"
+    },
+    {
+      "word": "surface",
+      "start": 30.1,
+      "end": 30.5,
+      "confidence": 0.99316406,
+      "punctuated_word": "surface"
+    },
+    {
+      "word": "tension",
+      "start": 30.5,
+      "end": 30.9,
+      "confidence": 1.0,
+      "punctuated_word": "tension"
+    },
+    {
+      "word": "turns",
+      "start": 30.9,
+      "end": 31.22,
+      "confidence": 1.0,
+      "punctuated_word": "turns"
+    },
+    {
+      "word": "water",
+      "start": 31.22,
+      "end": 31.54,
+      "confidence": 1.0,
+      "punctuated_word": "water"
+    },
+    {
+      "word": "into",
+      "start": 31.54,
+      "end": 31.86,
+      "confidence": 0.99902344,
+      "punctuated_word": "into"
+    },
+    {
+      "word": "a",
+      "start": 31.86,
+      "end": 32.02,
+      "confidence": 0.9980469,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "temporary",
+      "start": 32.02,
+      "end": 32.5,
+      "confidence": 1.0,
+      "punctuated_word": "temporary"
+    },
+    {
+      "word": "glue",
+      "start": 32.5,
+      "end": 33.14,
+      "confidence": 0.97314453,
+      "punctuated_word": "glue."
+    },
+    {
+      "word": "it",
+      "start": 33.3,
+      "end": 33.46,
+      "confidence": 0.99902344,
+      "punctuated_word": "It"
+    },
+    {
+      "word": "increases",
+      "start": 33.46,
+      "end": 33.94,
+      "confidence": 1.0,
+      "punctuated_word": "increases"
+    },
+    {
+      "word": "contact",
+      "start": 33.94,
+      "end": 34.42,
+      "confidence": 1.0,
+      "punctuated_word": "contact"
+    },
+    {
+      "word": "area",
+      "start": 34.42,
+      "end": 34.739998,
+      "confidence": 1.0,
+      "punctuated_word": "area"
+    },
+    {
+      "word": "for",
+      "start": 34.739998,
+      "end": 34.9,
+      "confidence": 1.0,
+      "punctuated_word": "for"
+    },
+    {
+      "word": "a",
+      "start": 34.9,
+      "end": 35.059998,
+      "confidence": 0.99902344,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "split",
+      "start": 35.059998,
+      "end": 35.38,
+      "confidence": 1.0,
+      "punctuated_word": "split"
+    },
+    {
+      "word": "second",
+      "start": 35.38,
+      "end": 36.02,
+      "confidence": 0.8286133,
+      "punctuated_word": "second,"
+    },
+    {
+      "word": "then",
+      "start": 36.1,
+      "end": 36.42,
+      "confidence": 0.99316406,
+      "punctuated_word": "then"
+    },
+    {
+      "word": "ruptures",
+      "start": 36.42,
+      "end": 36.9,
+      "confidence": 0.9975586,
+      "punctuated_word": "ruptures"
+    },
+    {
+      "word": "with",
+      "start": 36.9,
+      "end": 37.059998,
+      "confidence": 1.0,
+      "punctuated_word": "with"
+    },
+    {
+      "word": "a",
+      "start": 37.059998,
+      "end": 37.22,
+      "confidence": 0.9970703,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "filthy",
+      "start": 37.22,
+      "end": 37.78,
+      "confidence": 1.0,
+      "punctuated_word": "filthy"
+    },
+    {
+      "word": "satisfying",
+      "start": 37.78,
+      "end": 38.66,
+      "confidence": 0.77734375,
+      "punctuated_word": "satisfying"
+    },
+    {
+      "word": "crack",
+      "start": 38.66,
+      "end": 38.9,
+      "confidence": 0.9885254,
+      "punctuated_word": "crack."
+    },
+    {
+      "word": "that's",
+      "start": 39.331123,
+      "end": 39.891125,
+      "confidence": 0.99609375,
+      "punctuated_word": "That's"
+    },
+    {
+      "word": "not",
+      "start": 39.891125,
+      "end": 40.051125,
+      "confidence": 0.99902344,
+      "punctuated_word": "not"
+    },
+    {
+      "word": "a",
+      "start": 40.051125,
+      "end": 40.211124,
+      "confidence": 0.9980469,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "slap",
+      "start": 40.211124,
+      "end": 40.93112,
+      "confidence": 0.8574219,
+      "punctuated_word": "slap,"
+    },
+    {
+      "word": "that's",
+      "start": 40.93112,
+      "end": 41.171124,
+      "confidence": 0.9975586,
+      "punctuated_word": "that's"
+    },
+    {
+      "word": "newtonian",
+      "start": 41.171124,
+      "end": 41.811123,
+      "confidence": 0.9460449,
+      "punctuated_word": "Newtonian"
+    },
+    {
+      "word": "justice",
+      "start": 41.811123,
+      "end": 42.691124,
+      "confidence": 0.6002197,
+      "punctuated_word": "justice,"
+    },
+    {
+      "word": "delivered",
+      "start": 42.771122,
+      "end": 43.171124,
+      "confidence": 0.99902344,
+      "punctuated_word": "delivered"
+    },
+    {
+      "word": "at",
+      "start": 43.171124,
+      "end": 43.411125,
+      "confidence": 0.99609375,
+      "punctuated_word": "at"
+    },
+    {
+      "word": "9.8",
+      "start": 43.411125,
+      "end": 44.051125,
+      "confidence": 0.9977214,
+      "punctuated_word": "9.8"
+    },
+    {
+      "word": "meters",
+      "start": 44.051125,
+      "end": 44.371124,
+      "confidence": 0.88183594,
+      "punctuated_word": "meters"
+    },
+    {
+      "word": "per",
+      "start": 44.371124,
+      "end": 44.611122,
+      "confidence": 0.99609375,
+      "punctuated_word": "per"
+    },
+    {
+      "word": "second",
+      "start": 44.611122,
+      "end": 44.851124,
+      "confidence": 0.98535156,
+      "punctuated_word": "second"
+    },
+    {
+      "word": "squared",
+      "start": 44.851124,
+      "end": 45.651123,
+      "confidence": 0.9941406,
+      "punctuated_word": "squared"
+    },
+    {
+      "word": "and",
+      "start": 45.731125,
+      "end": 45.971123,
+      "confidence": 0.6191406,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "pure",
+      "start": 45.971123,
+      "end": 46.691124,
+      "confidence": 0.99609375,
+      "punctuated_word": "pure"
+    },
+    {
+      "word": "spite",
+      "start": 46.691124,
+      "end": 47.09112,
+      "confidence": 0.99072266,
+      "punctuated_word": "spite."
+    }
+  ],
+  "metadata": {
+    "model": "deepgram-nova-3",
+    "language": "en",
+    "confidence": 0
+  }
+}

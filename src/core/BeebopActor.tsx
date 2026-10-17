@@ -140,7 +140,12 @@ export const BeebopActor: React.FC<{ timeline: TimelineScene[]; segments?: LipSe
   const ls = visemeAt(words, time);
 
   return (
-    <AbsoluteFill style={{ pointerEvents: "none" }}>
+    <AbsoluteFill
+      style={{
+        pointerEvents: "none",
+        translate: "-633px 584.5px"
+      }}
+    >
       <div
         style={{
           position: "absolute",

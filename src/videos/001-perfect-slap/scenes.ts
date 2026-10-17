@@ -1,0 +1,1 @@
+export {scenes} from './props/scenes';

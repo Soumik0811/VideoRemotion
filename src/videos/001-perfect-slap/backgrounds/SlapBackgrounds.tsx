@@ -1,0 +1,10 @@
+import React from 'react';
+
+const full: React.CSSProperties = {position:'absolute',inset:0,overflow:'hidden'};
+const vignette = 'radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,.62) 100%)';
+
+export const SpotlightBg: React.FC = () => <div style={{...full,background:`${vignette}, radial-gradient(ellipse at 50% 42%, rgba(255,231,162,.18), transparent 48%), #15151b`}}><div style={{position:'absolute',left:'32%',top:'-35%',width:'36%',height:'100%',background:'linear-gradient(180deg,rgba(255,240,197,.13),transparent)',clipPath:'polygon(38% 0,62% 0,100% 100%,0 100%)'}}/></div>;
+export const BlueprintGridBg: React.FC = () => <div style={{...full,backgroundColor:'#101a29',backgroundImage:'linear-gradient(rgba(88,174,219,.075) 1px,transparent 1px),linear-gradient(90deg,rgba(88,174,219,.075) 1px,transparent 1px),radial-gradient(ellipse at 50% 50%,rgba(36,103,143,.18),transparent 70%)',backgroundSize:'64px 64px,64px 64px,100% 100%'}}/>;
+export const SpeedLinesBg: React.FC = () => <div style={{...full,background:'#17141b',backgroundImage:'repeating-linear-gradient(168deg,transparent 0 58px,rgba(238,68,56,.08) 59px 61px,transparent 62px 106px),radial-gradient(ellipse at 50% 53%,rgba(169,37,44,.2),transparent 66%)'}}/>;
+export const WaterBg: React.FC = () => <div style={{...full,background:'radial-gradient(ellipse at 50% 55%,rgba(30,143,163,.26),transparent 65%),linear-gradient(180deg,#0b2029,#101b26 72%,#111821)'}}><div style={{position:'absolute',left:0,right:0,bottom:'28%',height:2,background:'rgba(75,206,217,.16)',boxShadow:'0 -18px 50px rgba(50,204,220,.12)'}}/></div>;
+export const CourtroomBg: React.FC = () => <div style={{...full,background:'radial-gradient(ellipse at 52% 48%,rgba(105,61,132,.32),transparent 65%),#17121f'}}><div style={{position:'absolute',left:'10%',right:'10%',top:'26%',height:'46%',border:'2px solid rgba(218,190,236,.08)',borderBottom:0}}/><div style={{position:'absolute',left:'15%',right:'15%',top:'32%',height:2,background:'rgba(218,190,236,.08)'}}/></div>;
