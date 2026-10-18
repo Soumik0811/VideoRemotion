@@ -1,0 +1,79 @@
+﻿{
+    "id":  "episode-04-left-digit-effect",
+    "title":  "The Left-Digit Effect: Why $9.99 Feels Cheaper",
+    "compositionName":  "LeftDigitEffect04",
+    "format":  {
+                   "width":  1080,
+                   "height":  1920,
+                   "fps":  30,
+                   "codec":  "h264"
+               },
+    "narration":  {
+                      "scriptPath":  "src/episodes/leftDigitEffect/narration.txt",
+                      "audioPath":  "public/videos/left-digit-effect/narration.mp3",
+                      "timestampPath":  "src/episodes/leftDigitEffect/word-timestamps.json",
+                      "timingStatus":  "word timestamps supplied with ElevenLabs narration; final word ends at 61.25275 seconds",
+                      "durationSeconds":  61.25275,
+                      "transcript":  "One store sold more sweaters at $39 than at 34. $5 more expensive and more people bought it. And no, those customers weren\u0027t confused. Their brains were doing exactly what brains do. Researchers put the same clothing on sale at three prices, 34, 39, 44. The $39 version beat them both. Here\u0027s why. You don\u0027t read $9.99 as $10. Your eyes hit the 9 first and stop. The 9 is the price. The 99 is decoration. That\u0027s the left digit effect. One digit does all the work and the other one just stands there making the first one look smaller. Now multiply that by every price in every store you walked into this week. The tag isn\u0027t telling you what it costs, it\u0027s telling you which number to look at. So is $9.99 a discount or a disguise? Tell me in the comments. And follow Oddly Logical for more strange things hiding in plain sight."
+                  },
+    "titleOverrides":  [
+                           {
+                               "end":  9.04,
+                               "line2":  "MORE SALES.",
+                               "line1":  "MORE MONEY.",
+                               "start":  0
+                           },
+                           {
+                               "end":  14.525,
+                               "line2":  "CONFUSED.",
+                               "line1":  "NOT",
+                               "start":  9.04
+                           },
+                           {
+                               "end":  24.125,
+                               "line2":  "PRICES.",
+                               "line1":  "THREE",
+                               "start":  14.525
+                           },
+                           {
+                               "end":  42.775,
+                               "line2":  "IS THE PRICE.",
+                               "fallback":  "WINS.",
+                               "line1":  "THE NINE.",
+                               "start":  24.125
+                           },
+                           {
+                               "end":  52.695,
+                               "line2":  "LIES.",
+                               "line1":  "THE TAG.",
+                               "start":  42.775
+                           },
+                           {
+                               "end":  61.25275,
+                               "line2":  "DISGUISE?",
+                               "line1":  "DISCOUNT?",
+                               "start":  52.695
+                           }
+                       ],
+    "highlightWords":  [
+                           "thirty-nine",
+                           "more",
+                           "confused",
+                           "brains",
+                           "three prices",
+                           "beat",
+                           "nine",
+                           "decoration",
+                           "left-digit effect",
+                           "which number",
+                           "disguise"
+                       ],
+    "financialFigures":  [
+
+                         ],
+    "sourceNotes":  [
+                        "Narration and word timestamps supplied by user. Timestamp JSON reports duration=0, but its final word ends at 61.25275 seconds; the episode uses that final word timestamp.",
+                        "The supplied editorial beat plan ends at 50 seconds. Beat boundaries were adjusted to the supplied spoken word timing, and the audio is 61.25 seconds.",
+                        "The claim about relative sweater sales is presented as narration supplied by the user; no independent study source was attached."
+                    ]
+}

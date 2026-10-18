@@ -1,0 +1,610 @@
+﻿{
+    "schemaVersion":  1,
+    "template":  false,
+    "episodeId":  "episode-04-left-digit-effect",
+    "title":  "The Left-Digit Effect: Why $9.99 Feels Cheaper",
+    "compositionName":  "LeftDigitEffect04",
+    "brand":  {
+                  "channel":  "Oddly Logical",
+                  "tagline":  "Strange Stories. Smart Explanations."
+              },
+    "format":  {
+                   "width":  1080,
+                   "height":  1920,
+                   "fps":  30,
+                   "codec":  "h264"
+               },
+    "narration":  {
+                      "scriptPath":  "src/episodes/leftDigitEffect/narration.txt",
+                      "audioPath":  "public/videos/left-digit-effect/narration.mp3",
+                      "timingStatus":  "word timestamps supplied; episode duration follows last word end",
+                      "durationSeconds":  61.25275,
+                      "timestampPath":  "src/episodes/leftDigitEffect/word-timestamps.json"
+                  },
+    "castAssignments":  [
+                            {
+                                "id":  "host",
+                                "name":  "CutoutCharacter",
+                                "status":  "existing curious cutout character, reused as provided",
+                                "role":  "small edge host and reaction guide",
+                                "poseLimit":  "right-arm down/up/point; moods happy/calm/sad/shocked/thinking/smug",
+                                "preset":  "SELLER_A orange, with SELLER_B green as a per-scene prop change"
+                            }
+                        ],
+    "financialFigures":  [
+
+                         ],
+    "sourceNotes":  [
+                        "Transcript and timestamp file supplied by user. The timestamp file\u0027s duration field is zero; final word end is 61.25275 seconds.",
+                        "The user\u0027s editorial plan is 50 seconds; scenes follow spoken timing and end at 61.25275 seconds.",
+                        "No source citation for the sweater sales study was attached; claim retained as supplied narration."
+                    ],
+    "reusedAssets":  [
+                         "src/curious/Character.tsx: CutoutCharacter, SELLER_A, SELLER_B",
+                         "src/curious/primitives.tsx: SkyScene, Sunburst, Storefront, ProductBox, Pill, Display, TermCard, Coin, pop, fade",
+                         "src/curious/theme.ts: PALETTE and fonts"
+                     ],
+    "newReusableAssets":  [
+                              {
+                                  "status":  "implemented episode prop; candidate for extraction after reuse is confirmed",
+                                  "path":  "src/episodes/leftDigitEffect/LeftDigitEffect.tsx",
+                                  "id":  "price-tag"
+                              },
+                              {
+                                  "status":  "implemented episode-local",
+                                  "path":  "src/episodes/leftDigitEffect/LeftDigitEffect.tsx",
+                                  "id":  "sales-bars-and-scene-props"
+                              }
+                          ],
+    "beats":  [
+                  {
+                      "id":  "hook-prices",
+                      "start":  0,
+                      "end":  4.4,
+                      "narrationSegment":  "One store sold more sweaters at $39 than at 34.",
+                      "location":  "SkyScene; sweater product box",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+                                               "small edge reaction"
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "hanger sweater",
+                                      "stacked $39 and $34 price tags"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "center stage",
+                                     "movement":  "tag drop and slight scale pop",
+                                     "focus":  "hero price tag"
+                                 },
+                      "numericalGraphics":  [
+                                                "$39",
+                                                "$34"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "hard visual change"
+                  },
+                  {
+                      "id":  "more-expensive-more-sales",
+                      "start":  4.4,
+                      "end":  9.04,
+                      "narrationSegment":  "$5 more expensive and more people bought it.",
+                      "location":  "SkyScene; same sweater and sales bars",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "red arrow",
+                                      "+$5 chip",
+                                      "two shopper bars"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "center stage",
+                                     "movement":  "bars grow",
+                                     "focus":  "taller $39 result"
+                                 },
+                      "numericalGraphics":  [
+                                                "+$5",
+                                                "$39 \u003e $34"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "cut"
+                  },
+                  {
+                      "id":  "not-confused",
+                      "start":  9.04,
+                      "end":  11.52,
+                      "narrationSegment":  "And no, those customers weren\u0027t confused.",
+                      "location":  "SkyScene; five mini CutoutCharacter shoppers",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+                                               "shrug"
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "shopper row",
+                                      "question marks",
+                                      "red X"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "wide",
+                                     "movement":  "X slam",
+                                     "focus":  "NOT CONFUSED"
+                                 },
+                      "numericalGraphics":  [
+
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "pop cut"
+                  },
+                  {
+                      "id":  "brains",
+                      "start":  11.52,
+                      "end":  14.525,
+                      "narrationSegment":  "Their brains were doing exactly what brains do.",
+                      "location":  "SkyScene; thought bubble and brain",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+                                               "nod",
+                                               "point"
+                                           ],
+                      "ambientActions":  [
+                                             "turning brain gears"
+                                         ],
+                      "objects":  [
+                                      "brain icon"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "medium",
+                                     "movement":  "scale reveal",
+                                     "focus":  "brain"
+                                 },
+                      "numericalGraphics":  [
+
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "slide"
+                  },
+                  {
+                      "id":  "same-clothing-three-prices",
+                      "start":  14.525,
+                      "end":  18.205,
+                      "narrationSegment":  "Researchers put the same clothing on sale at three prices.",
+                      "location":  "SkyScene; three sweater ProductBoxes",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "three identical sweaters",
+                                      "blank price tags"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "balanced triptych",
+                                     "movement":  "sweaters slide in",
+                                     "focus":  "identical clothing"
+                                 },
+                      "numericalGraphics":  [
+                                                "SAME CLOTHES"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "six-frame black cut begins at 20.7s"
+                  },
+                  {
+                      "id":  "price-flip-interrupt",
+                      "start":  18.205,
+                      "end":  21.325,
+                      "narrationSegment":  "34, 39, 44.",
+                      "location":  "SkyScene; black flash then sequential tag flips",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "three tags flip to $34, $39, $44"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "three-up",
+                                     "movement":  "six-frame black interrupt, sequential tag pop",
+                                     "focus":  "spoken price order"
+                                 },
+                      "numericalGraphics":  [
+                                                "$34 â†’ $39 â†’ $44"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "hard cut"
+                  },
+                  {
+                      "id":  "39-wins",
+                      "start":  21.325,
+                      "end":  24.125,
+                      "narrationSegment":  "The $39 version beat them both.",
+                      "location":  "Sunburst; sales-bar payoff",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "sales bars",
+                                      "gold highlight",
+                                      "dim side sweaters"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "three-up",
+                                     "movement":  "bars grow; center overshoots",
+                                     "focus":  "$39"
+                                 },
+                      "numericalGraphics":  [
+                                                "$39 WINS"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "cut"
+                  },
+                  {
+                      "id":  "nine-ninety-nine",
+                      "start":  24.125,
+                      "end":  28.75,
+                      "narrationSegment":  "Here\u0027s why. You don\u0027t read $9.99 as $10.",
+                      "location":  "SkyScene; $9.99 vs crossed $10.00",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "hero $9.99 tag",
+                                      "ghost $10.00 tag",
+                                      "red strike"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "close-up",
+                                     "movement":  "tag pop",
+                                     "focus":  "$9.99 versus $10.00"
+                                 },
+                      "numericalGraphics":  [
+                                                "$9.99",
+                                                "$10.00 crossed out"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "scan line"
+                  },
+                  {
+                      "id":  "eye-stops-on-nine",
+                      "start":  28.75,
+                      "end":  31.23,
+                      "narrationSegment":  "Your eyes hit the 9 first and stop.",
+                      "location":  "SkyScene; eye-scan close-up",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "dotted scan line",
+                                      "spotlight ring"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "close-up",
+                                     "movement":  "scan slides then halts",
+                                     "focus":  "first 9"
+                                 },
+                      "numericalGraphics":  [
+                                                "eye scan"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "hold"
+                  },
+                  {
+                      "id":  "price-decoration",
+                      "start":  31.23,
+                      "end":  35.15,
+                      "narrationSegment":  "The 9 is the price. The 99 is decoration.",
+                      "location":  "SkyScene; left digit emphasis",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "enlarged 9",
+                                      "faded .99",
+                                      "sparkles"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "close-up",
+                                     "movement":  "9 grows; decimals shrink",
+                                     "focus":  "left digit"
+                                 },
+                      "numericalGraphics":  [
+                                                "THE PRICE",
+                                                "DECORATION"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "stamp"
+                  },
+                  {
+                      "id":  "left-digit-effect",
+                      "start":  35.15,
+                      "end":  42.775,
+                      "narrationSegment":  "That\u0027s the left digit effect. One digit does all the work and the other one just stands there making the first one look smaller.",
+                      "location":  "Sunburst; TermCard",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+                                               "points to term stamp"
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "left digit flexing",
+                                      ".99 seated beside it"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "hero tag",
+                                     "movement":  "term stamps in; 9 flexes",
+                                     "focus":  "THE LEFT-DIGIT EFFECT"
+                                 },
+                      "numericalGraphics":  [
+                                                "THE LEFT-DIGIT EFFECT"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "clone"
+                  },
+                  {
+                      "id":  "tag-grid",
+                      "start":  42.775,
+                      "end":  47.495,
+                      "narrationSegment":  "Now multiply that by every price in every store you walked into this week.",
+                      "location":  "SkyScene; three Storefronts",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "grid of $4.99, $19.99, $2.98, $49.99 tags",
+                                      "sequential red left digits"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "grid",
+                                     "movement":  "clone and accelerate left-digit highlights",
+                                     "focus":  "first digit in each price"
+                                 },
+                      "numericalGraphics":  [
+                                                "tag price grid"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "grid collapse"
+                  },
+                  {
+                      "id":  "which-number",
+                      "start":  47.495,
+                      "end":  52.695,
+                      "narrationSegment":  "The tag isn\u0027t telling you what it costs, it\u0027s telling you which number to look at.",
+                      "location":  "SkyScene; single price tag",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "single tag",
+                                      "crossed WHAT IT COSTS",
+                                      "arrow to first digit"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "close-up",
+                                     "movement":  "grid collapses",
+                                     "focus":  "WHICH NUMBER TO LOOK AT"
+                                 },
+                      "numericalGraphics":  [
+                                                "WHAT IT COSTS",
+                                                "WHICH NUMBER TO LOOK AT"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "split"
+                  },
+                  {
+                      "id":  "discount-or-disguise",
+                      "start":  52.695,
+                      "end":  56.37275,
+                      "narrationSegment":  "So is $9.99 a discount or a disguise?",
+                      "location":  "SkyScene; split tag",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+                                               "tilts head"
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "split tag",
+                                      "discount badge",
+                                      "fake mustache and glasses"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "split close-up",
+                                     "movement":  "halves flip",
+                                     "focus":  "DISCOUNT or DISGUISE"
+                                 },
+                      "numericalGraphics":  [
+                                                "DISCOUNT?",
+                                                "DISGUISE?"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "cut to CTA"
+                  },
+                  {
+                      "id":  "cta-loop",
+                      "start":  56.37275,
+                      "end":  61.25275,
+                      "narrationSegment":  "Tell me in the comments. And follow Oddly Logical for more strange things hiding in plain sight.",
+                      "location":  "SkyScene; comment and follow",
+                      "characters":  [
+                                         "CutoutCharacter host; SELLER_A orange; SELLER_B green where specified"
+                                     ],
+                      "characterActions":  [
+                                               "small edge reaction"
+                                           ],
+                      "ambientActions":  [
+
+                                         ],
+                      "objects":  [
+                                      "comment bubble",
+                                      "FOLLOW button",
+                                      "opening sweater with $39 over $34 tags"
+                                  ],
+                      "camera":  {
+                                     "shotType":  "center stage",
+                                     "movement":  "comment cursor blink, follow tap, hard cut to opening hero",
+                                     "focus":  "comment and follow then $39/$34"
+                                 },
+                      "numericalGraphics":  [
+                                                "COMMENT",
+                                                "FOLLOW"
+                                            ],
+                      "soundCues":  [
+                                        "No separate SFX supplied; narration-only render"
+                                    ],
+                      "captionGroups":  [
+
+                                        ],
+                      "transition":  "last frame matches opening frame"
+                  }
+              ],
+    "outputs":  {
+                    "videoPath":  "out/episode-04/left-digit-effect.mp4",
+                    "captionPath":  null,
+                    "reviewFramesPath":  null
+                },
+    "limitations":  [
+                        "The supplied timing JSON has duration=0; duration was taken from the final word end time (61.25275s).",
+                        "The plan names sound effects, but only narration audio was supplied; no SFX were mixed.",
+                        "Study claim is kept as supplied; no study citation was attached."
+                    ]
+}

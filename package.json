@@ -10,6 +10,8 @@
     "typecheck": "tsc --noEmit",
     "check:story": "node tools/check-story.mjs",
     "render:unit-economics": "remotion render src/index.tsx UnitEconomics03 out/episode-03/he-sold-500-products.mp4 --codec h264 --crf 18 --concurrency 2",
+    "render:left-digit": "remotion render src/index.tsx LeftDigitEffect04 out/episode-04/left-digit-effect.mp4 --codec h264 --crf 18 --concurrency 2",
+    "still:left-digit": "remotion still src/index.tsx LeftDigitEffect04 out/episode-04/thumbnail.png --frame 60",
     "render:legacy": "remotion render src/index.tsx FinanceExplainer out/tshirt-explainer.mp4 --codec h264 --crf 18",
     "still:legacy": "remotion still src/index.tsx FinanceExplainer out/thumbnail.png --frame 1500",
     "check:bakery": "node tools/check-bakery.mjs",

@@ -1,5 +1,7 @@
 # Oddly Logical Animation Studio
 
+Reusable production rules are collected in [AGENT_PROMPT.md](AGENT_PROMPT.md). This repository contains completed episodes and their working Remotion compositions; see [src/videos/README.md](src/videos/README.md) for the episode layout and migration note. Shared-system and reusable-asset destinations are documented in [src/core/README.md](src/core/README.md) and [src/library/README.md](src/library/README.md).
+
 Say **“initiate the master prompt”** or **“INITIATE ODDLY LOGICAL”** to start a new episode. I’ll ask for the final narration script and optional audio, then follow the saved [V5 master prompt](ODDLY_LOGICAL_MASTER.md). See [studio setup and reusable assets](studio/README.md).
 
 ## Latest episode: Cinematic V4
