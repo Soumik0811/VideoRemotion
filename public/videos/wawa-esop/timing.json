@@ -1,0 +1,865 @@
+{
+  "transcript": "Some store cashiers retired millionaires. And no, they didn't win the lottery. They worked at Wawa, a convenience store chain with a surprising benefit. Eligible employees receive company funded stock in a retirement plan. No stock purchase required. For contributions, workers generally need to be 18 or older and work a thousand hours in a year. In 2003, a Wawa share was worth about $900. By 2020, it reportedly reached 14,000. And employees weren't just waiting for one share to grow. Annual company contributions helped build their accounts too. Over long careers, some built million dollar retirement balances. It's called an employee stock ownership plan, an ESOP. Wawa stayed private and shared part of the business with the people working in it.",
+  "duration": 0,
+  "words": [
+    {
+      "word": "some",
+      "start": 0.0,
+      "end": 0.48,
+      "confidence": 0.9980469,
+      "punctuated_word": "Some"
+    },
+    {
+      "word": "store",
+      "start": 0.48,
+      "end": 0.88,
+      "confidence": 1.0,
+      "punctuated_word": "store"
+    },
+    {
+      "word": "cashiers",
+      "start": 0.88,
+      "end": 1.4399999,
+      "confidence": 0.9921875,
+      "punctuated_word": "cashiers"
+    },
+    {
+      "word": "retired",
+      "start": 1.4399999,
+      "end": 1.92,
+      "confidence": 0.99902344,
+      "punctuated_word": "retired"
+    },
+    {
+      "word": "millionaires",
+      "start": 1.92,
+      "end": 3.12,
+      "confidence": 0.85858154,
+      "punctuated_word": "millionaires."
+    },
+    {
+      "word": "and",
+      "start": 3.28,
+      "end": 3.52,
+      "confidence": 0.99316406,
+      "punctuated_word": "And"
+    },
+    {
+      "word": "no",
+      "start": 3.52,
+      "end": 4.0,
+      "confidence": 0.8869629,
+      "punctuated_word": "no,"
+    },
+    {
+      "word": "they",
+      "start": 4.0,
+      "end": 4.16,
+      "confidence": 1.0,
+      "punctuated_word": "they"
+    },
+    {
+      "word": "didn't",
+      "start": 4.16,
+      "end": 4.48,
+      "confidence": 1.0,
+      "punctuated_word": "didn't"
+    },
+    {
+      "word": "win",
+      "start": 4.48,
+      "end": 4.72,
+      "confidence": 1.0,
+      "punctuated_word": "win"
+    },
+    {
+      "word": "the",
+      "start": 4.72,
+      "end": 4.7999997,
+      "confidence": 1.0,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "lottery",
+      "start": 4.7999997,
+      "end": 5.52,
+      "confidence": 0.9909668,
+      "punctuated_word": "lottery."
+    },
+    {
+      "word": "they",
+      "start": 5.52,
+      "end": 5.68,
+      "confidence": 0.99902344,
+      "punctuated_word": "They"
+    },
+    {
+      "word": "worked",
+      "start": 5.68,
+      "end": 5.92,
+      "confidence": 0.99902344,
+      "punctuated_word": "worked"
+    },
+    {
+      "word": "at",
+      "start": 5.92,
+      "end": 6.08,
+      "confidence": 0.99902344,
+      "punctuated_word": "at"
+    },
+    {
+      "word": "wawa",
+      "start": 6.08,
+      "end": 6.7999997,
+      "confidence": 0.91764325,
+      "punctuated_word": "Wawa,"
+    },
+    {
+      "word": "a",
+      "start": 6.7999997,
+      "end": 6.96,
+      "confidence": 1.0,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "convenience",
+      "start": 6.96,
+      "end": 7.3599997,
+      "confidence": 0.97802734,
+      "punctuated_word": "convenience"
+    },
+    {
+      "word": "store",
+      "start": 7.3599997,
+      "end": 7.68,
+      "confidence": 1.0,
+      "punctuated_word": "store"
+    },
+    {
+      "word": "chain",
+      "start": 7.68,
+      "end": 7.9199996,
+      "confidence": 1.0,
+      "punctuated_word": "chain"
+    },
+    {
+      "word": "with",
+      "start": 7.9199996,
+      "end": 8.16,
+      "confidence": 0.9951172,
+      "punctuated_word": "with"
+    },
+    {
+      "word": "a",
+      "start": 8.16,
+      "end": 8.4,
+      "confidence": 0.9980469,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "surprising",
+      "start": 8.4,
+      "end": 8.88,
+      "confidence": 0.99902344,
+      "punctuated_word": "surprising"
+    },
+    {
+      "word": "benefit",
+      "start": 8.88,
+      "end": 9.599999,
+      "confidence": 0.9975586,
+      "punctuated_word": "benefit."
+    },
+    {
+      "word": "eligible",
+      "start": 9.76,
+      "end": 10.24,
+      "confidence": 1.0,
+      "punctuated_word": "Eligible"
+    },
+    {
+      "word": "employees",
+      "start": 10.24,
+      "end": 10.8,
+      "confidence": 1.0,
+      "punctuated_word": "employees"
+    },
+    {
+      "word": "receive",
+      "start": 10.8,
+      "end": 11.2,
+      "confidence": 0.8120117,
+      "punctuated_word": "receive"
+    },
+    {
+      "word": "company",
+      "start": 11.2,
+      "end": 11.679999,
+      "confidence": 0.99902344,
+      "punctuated_word": "company"
+    },
+    {
+      "word": "funded",
+      "start": 11.679999,
+      "end": 12.0,
+      "confidence": 0.99902344,
+      "punctuated_word": "funded"
+    },
+    {
+      "word": "stock",
+      "start": 12.0,
+      "end": 12.4,
+      "confidence": 1.0,
+      "punctuated_word": "stock"
+    },
+    {
+      "word": "in",
+      "start": 12.4,
+      "end": 12.639999,
+      "confidence": 0.8051758,
+      "punctuated_word": "in"
+    },
+    {
+      "word": "a",
+      "start": 12.639999,
+      "end": 12.799999,
+      "confidence": 0.9980469,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "retirement",
+      "start": 12.799999,
+      "end": 13.2,
+      "confidence": 1.0,
+      "punctuated_word": "retirement"
+    },
+    {
+      "word": "plan",
+      "start": 13.2,
+      "end": 13.839999,
+      "confidence": 0.9675293,
+      "punctuated_word": "plan."
+    },
+    {
+      "word": "no",
+      "start": 13.84,
+      "end": 14.08,
+      "confidence": 1.0,
+      "punctuated_word": "No"
+    },
+    {
+      "word": "stock",
+      "start": 14.08,
+      "end": 14.4,
+      "confidence": 1.0,
+      "punctuated_word": "stock"
+    },
+    {
+      "word": "purchase",
+      "start": 14.4,
+      "end": 14.799999,
+      "confidence": 0.99902344,
+      "punctuated_word": "purchase"
+    },
+    {
+      "word": "required",
+      "start": 14.799999,
+      "end": 15.2,
+      "confidence": 0.9921875,
+      "punctuated_word": "required."
+    },
+    {
+      "word": "for",
+      "start": 15.665,
+      "end": 15.985,
+      "confidence": 1.0,
+      "punctuated_word": "For"
+    },
+    {
+      "word": "contributions",
+      "start": 15.985,
+      "end": 16.945,
+      "confidence": 0.984375,
+      "punctuated_word": "contributions,"
+    },
+    {
+      "word": "workers",
+      "start": 16.945,
+      "end": 17.345,
+      "confidence": 1.0,
+      "punctuated_word": "workers"
+    },
+    {
+      "word": "generally",
+      "start": 17.345,
+      "end": 17.905,
+      "confidence": 0.9980469,
+      "punctuated_word": "generally"
+    },
+    {
+      "word": "need",
+      "start": 17.905,
+      "end": 18.065,
+      "confidence": 1.0,
+      "punctuated_word": "need"
+    },
+    {
+      "word": "to",
+      "start": 18.065,
+      "end": 18.225,
+      "confidence": 1.0,
+      "punctuated_word": "to"
+    },
+    {
+      "word": "be",
+      "start": 18.225,
+      "end": 18.385,
+      "confidence": 1.0,
+      "punctuated_word": "be"
+    },
+    {
+      "word": "18",
+      "start": 18.385,
+      "end": 18.705,
+      "confidence": 1.0,
+      "punctuated_word": "18"
+    },
+    {
+      "word": "or",
+      "start": 18.705,
+      "end": 18.945,
+      "confidence": 0.99902344,
+      "punctuated_word": "or"
+    },
+    {
+      "word": "older",
+      "start": 18.945,
+      "end": 19.265,
+      "confidence": 1.0,
+      "punctuated_word": "older"
+    },
+    {
+      "word": "and",
+      "start": 19.265,
+      "end": 19.505,
+      "confidence": 0.9428711,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "work",
+      "start": 19.505,
+      "end": 19.744999,
+      "confidence": 1.0,
+      "punctuated_word": "work"
+    },
+    {
+      "word": "a",
+      "start": 19.744999,
+      "end": 19.985,
+      "confidence": 0.9550781,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "thousand",
+      "start": 19.985,
+      "end": 20.225,
+      "confidence": 0.9970703,
+      "punctuated_word": "thousand"
+    },
+    {
+      "word": "hours",
+      "start": 20.225,
+      "end": 20.545,
+      "confidence": 1.0,
+      "punctuated_word": "hours"
+    },
+    {
+      "word": "in",
+      "start": 20.545,
+      "end": 20.785,
+      "confidence": 0.9980469,
+      "punctuated_word": "in"
+    },
+    {
+      "word": "a",
+      "start": 20.785,
+      "end": 20.865,
+      "confidence": 1.0,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "year",
+      "start": 20.865,
+      "end": 21.345,
+      "confidence": 0.9995117,
+      "punctuated_word": "year."
+    },
+    {
+      "word": "in",
+      "start": 21.585,
+      "end": 21.825,
+      "confidence": 1.0,
+      "punctuated_word": "In"
+    },
+    {
+      "word": "2003",
+      "start": 21.825,
+      "end": 22.785,
+      "confidence": 0.98624676,
+      "punctuated_word": "2003,"
+    },
+    {
+      "word": "a",
+      "start": 22.785,
+      "end": 22.945,
+      "confidence": 0.984375,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "wawa",
+      "start": 22.945,
+      "end": 23.345,
+      "confidence": 0.9169922,
+      "punctuated_word": "Wawa"
+    },
+    {
+      "word": "share",
+      "start": 23.345,
+      "end": 23.585,
+      "confidence": 0.9770508,
+      "punctuated_word": "share"
+    },
+    {
+      "word": "was",
+      "start": 23.585,
+      "end": 23.825,
+      "confidence": 0.99902344,
+      "punctuated_word": "was"
+    },
+    {
+      "word": "worth",
+      "start": 23.825,
+      "end": 24.064999,
+      "confidence": 1.0,
+      "punctuated_word": "worth"
+    },
+    {
+      "word": "about",
+      "start": 24.064999,
+      "end": 24.305,
+      "confidence": 1.0,
+      "punctuated_word": "about"
+    },
+    {
+      "word": "$900",
+      "start": 24.305,
+      "end": 25.585,
+      "confidence": 0.98791504,
+      "punctuated_word": "$900."
+    },
+    {
+      "word": "by",
+      "start": 25.744999,
+      "end": 25.985,
+      "confidence": 1.0,
+      "punctuated_word": "By"
+    },
+    {
+      "word": "2020",
+      "start": 25.985,
+      "end": 26.865,
+      "confidence": 0.9926758,
+      "punctuated_word": "2020,"
+    },
+    {
+      "word": "it",
+      "start": 26.865,
+      "end": 27.025,
+      "confidence": 0.99902344,
+      "punctuated_word": "it"
+    },
+    {
+      "word": "reportedly",
+      "start": 27.025,
+      "end": 27.505001,
+      "confidence": 0.99902344,
+      "punctuated_word": "reportedly"
+    },
+    {
+      "word": "reached",
+      "start": 27.505001,
+      "end": 27.985,
+      "confidence": 1.0,
+      "punctuated_word": "reached"
+    },
+    {
+      "word": "14,000",
+      "start": 27.985,
+      "end": 29.025,
+      "confidence": 0.9453125,
+      "punctuated_word": "14,000."
+    },
+    {
+      "word": "and",
+      "start": 29.57,
+      "end": 29.81,
+      "confidence": 0.99121094,
+      "punctuated_word": "And"
+    },
+    {
+      "word": "employees",
+      "start": 29.81,
+      "end": 30.21,
+      "confidence": 0.99902344,
+      "punctuated_word": "employees"
+    },
+    {
+      "word": "weren't",
+      "start": 30.21,
+      "end": 30.61,
+      "confidence": 0.9995117,
+      "punctuated_word": "weren't"
+    },
+    {
+      "word": "just",
+      "start": 30.61,
+      "end": 30.77,
+      "confidence": 0.99902344,
+      "punctuated_word": "just"
+    },
+    {
+      "word": "waiting",
+      "start": 30.77,
+      "end": 31.09,
+      "confidence": 1.0,
+      "punctuated_word": "waiting"
+    },
+    {
+      "word": "for",
+      "start": 31.09,
+      "end": 31.33,
+      "confidence": 1.0,
+      "punctuated_word": "for"
+    },
+    {
+      "word": "one",
+      "start": 31.33,
+      "end": 31.57,
+      "confidence": 1.0,
+      "punctuated_word": "one"
+    },
+    {
+      "word": "share",
+      "start": 31.57,
+      "end": 31.89,
+      "confidence": 0.99902344,
+      "punctuated_word": "share"
+    },
+    {
+      "word": "to",
+      "start": 31.89,
+      "end": 32.05,
+      "confidence": 1.0,
+      "punctuated_word": "to"
+    },
+    {
+      "word": "grow",
+      "start": 32.05,
+      "end": 32.53,
+      "confidence": 0.89819336,
+      "punctuated_word": "grow."
+    },
+    {
+      "word": "annual",
+      "start": 32.69,
+      "end": 33.09,
+      "confidence": 0.9980469,
+      "punctuated_word": "Annual"
+    },
+    {
+      "word": "company",
+      "start": 33.09,
+      "end": 33.489998,
+      "confidence": 0.99902344,
+      "punctuated_word": "company"
+    },
+    {
+      "word": "contributions",
+      "start": 33.489998,
+      "end": 34.21,
+      "confidence": 1.0,
+      "punctuated_word": "contributions"
+    },
+    {
+      "word": "helped",
+      "start": 34.21,
+      "end": 34.53,
+      "confidence": 0.9892578,
+      "punctuated_word": "helped"
+    },
+    {
+      "word": "build",
+      "start": 34.53,
+      "end": 34.85,
+      "confidence": 0.98828125,
+      "punctuated_word": "build"
+    },
+    {
+      "word": "their",
+      "start": 34.85,
+      "end": 35.01,
+      "confidence": 1.0,
+      "punctuated_word": "their"
+    },
+    {
+      "word": "accounts",
+      "start": 35.01,
+      "end": 35.329998,
+      "confidence": 1.0,
+      "punctuated_word": "accounts"
+    },
+    {
+      "word": "too",
+      "start": 35.329998,
+      "end": 35.97,
+      "confidence": 0.95092773,
+      "punctuated_word": "too."
+    },
+    {
+      "word": "over",
+      "start": 36.13,
+      "end": 36.45,
+      "confidence": 1.0,
+      "punctuated_word": "Over"
+    },
+    {
+      "word": "long",
+      "start": 36.45,
+      "end": 36.77,
+      "confidence": 0.99902344,
+      "punctuated_word": "long"
+    },
+    {
+      "word": "careers",
+      "start": 36.77,
+      "end": 37.489998,
+      "confidence": 0.9880371,
+      "punctuated_word": "careers,"
+    },
+    {
+      "word": "some",
+      "start": 37.489998,
+      "end": 37.73,
+      "confidence": 1.0,
+      "punctuated_word": "some"
+    },
+    {
+      "word": "built",
+      "start": 37.73,
+      "end": 38.05,
+      "confidence": 0.9873047,
+      "punctuated_word": "built"
+    },
+    {
+      "word": "million",
+      "start": 38.05,
+      "end": 38.53,
+      "confidence": 0.98535156,
+      "punctuated_word": "million"
+    },
+    {
+      "word": "dollar",
+      "start": 38.53,
+      "end": 38.85,
+      "confidence": 0.99902344,
+      "punctuated_word": "dollar"
+    },
+    {
+      "word": "retirement",
+      "start": 38.85,
+      "end": 39.489998,
+      "confidence": 1.0,
+      "punctuated_word": "retirement"
+    },
+    {
+      "word": "balances",
+      "start": 39.489998,
+      "end": 39.89,
+      "confidence": 0.9975586,
+      "punctuated_word": "balances."
+    },
+    {
+      "word": "it's",
+      "start": 40.334373,
+      "end": 40.734375,
+      "confidence": 0.9975586,
+      "punctuated_word": "It's"
+    },
+    {
+      "word": "called",
+      "start": 40.734375,
+      "end": 40.974373,
+      "confidence": 1.0,
+      "punctuated_word": "called"
+    },
+    {
+      "word": "an",
+      "start": 40.974373,
+      "end": 41.214375,
+      "confidence": 0.9951172,
+      "punctuated_word": "an"
+    },
+    {
+      "word": "employee",
+      "start": 41.214375,
+      "end": 41.614372,
+      "confidence": 0.6879883,
+      "punctuated_word": "employee"
+    },
+    {
+      "word": "stock",
+      "start": 41.614372,
+      "end": 42.014374,
+      "confidence": 0.9980469,
+      "punctuated_word": "stock"
+    },
+    {
+      "word": "ownership",
+      "start": 42.014374,
+      "end": 42.574375,
+      "confidence": 1.0,
+      "punctuated_word": "ownership"
+    },
+    {
+      "word": "plan",
+      "start": 42.574375,
+      "end": 43.134373,
+      "confidence": 0.9128418,
+      "punctuated_word": "plan,"
+    },
+    {
+      "word": "an",
+      "start": 43.214375,
+      "end": 43.374374,
+      "confidence": 0.9863281,
+      "punctuated_word": "an"
+    },
+    {
+      "word": "esop",
+      "start": 43.374374,
+      "end": 44.174374,
+      "confidence": 0.99072266,
+      "punctuated_word": "ESOP."
+    },
+    {
+      "word": "wawa",
+      "start": 44.334373,
+      "end": 44.734375,
+      "confidence": 0.9404297,
+      "punctuated_word": "Wawa"
+    },
+    {
+      "word": "stayed",
+      "start": 44.734375,
+      "end": 45.134373,
+      "confidence": 0.9951172,
+      "punctuated_word": "stayed"
+    },
+    {
+      "word": "private",
+      "start": 45.134373,
+      "end": 45.694374,
+      "confidence": 1.0,
+      "punctuated_word": "private"
+    },
+    {
+      "word": "and",
+      "start": 45.694374,
+      "end": 46.014374,
+      "confidence": 0.8720703,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "shared",
+      "start": 46.014374,
+      "end": 46.334373,
+      "confidence": 0.99902344,
+      "punctuated_word": "shared"
+    },
+    {
+      "word": "part",
+      "start": 46.334373,
+      "end": 46.57437,
+      "confidence": 0.9970703,
+      "punctuated_word": "part"
+    },
+    {
+      "word": "of",
+      "start": 46.57437,
+      "end": 46.654373,
+      "confidence": 0.99902344,
+      "punctuated_word": "of"
+    },
+    {
+      "word": "the",
+      "start": 46.654373,
+      "end": 46.814373,
+      "confidence": 0.99902344,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "business",
+      "start": 46.814373,
+      "end": 47.054375,
+      "confidence": 1.0,
+      "punctuated_word": "business"
+    },
+    {
+      "word": "with",
+      "start": 47.054375,
+      "end": 47.294373,
+      "confidence": 0.99902344,
+      "punctuated_word": "with"
+    },
+    {
+      "word": "the",
+      "start": 47.294373,
+      "end": 47.454372,
+      "confidence": 0.99316406,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "people",
+      "start": 47.454372,
+      "end": 47.694374,
+      "confidence": 1.0,
+      "punctuated_word": "people"
+    },
+    {
+      "word": "working",
+      "start": 47.694374,
+      "end": 48.014374,
+      "confidence": 0.99902344,
+      "punctuated_word": "working"
+    },
+    {
+      "word": "in",
+      "start": 48.014374,
+      "end": 48.174374,
+      "confidence": 0.99609375,
+      "punctuated_word": "in"
+    },
+    {
+      "word": "it",
+      "start": 48.174374,
+      "end": 48.334373,
+      "confidence": 0.9506836,
+      "punctuated_word": "it."
+    }
+  ],
+  "metadata": {
+    "model": "deepgram-nova-3",
+    "language": "en",
+    "confidence": 0
+  }
+}

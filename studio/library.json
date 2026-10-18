@@ -1,4 +1,4 @@
-﻿{
+{
     "schemaVersion":  1,
     "masterInstructions":  "ODDLY_LOGICAL_MASTER.md",
     "launchCommands":  [
@@ -275,6 +275,16 @@
                                    ],
                        "status":  "implemented, rendered, and frame-reviewed; episode-specific",
                        "reuseNotes":  "Episode 04 pricing explainer composition. Reuses CutoutCharacter with SELLER_A/SELLER_B plus SkyScene, Sunburst, ProductBox, Storefront, TermCard, Coin, and motion helpers; includes an episode-local PriceTag prop. Audio and word timestamps are stored with the episode."
+                   },
+                   {
+                       "id":  "wawa-esop-episode-05",
+                       "path":  "src/episodes/wawaEsop/WawaEsop.tsx",
+                       "exports":  [
+                                       "WawaEsop",
+                                       "WAWA_ESOP_DURATION"
+                                   ],
+                       "status":  "implemented; audio-timed captions; render pending",
+                       "reuseNotes":  "Fresh Wawa ESOP episode; reuses Curious cutout characters and creates episode-specific storefront, stock certificates, account and retirement statement in Oddly Logical object-led flat-vector style."
                    }
                ],
     "optionalLibraries":  {

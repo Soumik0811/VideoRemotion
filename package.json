@@ -1,38 +1,39 @@
 {
-  "name": "finance-motion-engine",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Reusable flat 2D finance explainer generator using Remotion",
-  "scripts": {
-    "studio": "remotion studio src/index.tsx",
-    "render": "remotion render src/index.tsx BakeryEpisode01 out/episode-01/bakery-episode-01.mp4 --codec h264 --crf 18 --concurrency 2",
-    "still": "remotion still src/index.tsx BakeryEpisode01 out/episode-01/thumbnail.png --frame 2190",
-    "typecheck": "tsc --noEmit",
-    "check:story": "node tools/check-story.mjs",
-    "render:unit-economics": "remotion render src/index.tsx UnitEconomics03 out/episode-03/he-sold-500-products.mp4 --codec h264 --crf 18 --concurrency 2",
-    "render:left-digit": "remotion render src/index.tsx LeftDigitEffect04 out/episode-04/left-digit-effect.mp4 --codec h264 --crf 18 --concurrency 2",
-    "still:left-digit": "remotion still src/index.tsx LeftDigitEffect04 out/episode-04/thumbnail.png --frame 60",
-    "render:legacy": "remotion render src/index.tsx FinanceExplainer out/tshirt-explainer.mp4 --codec h264 --crf 18",
-    "still:legacy": "remotion still src/index.tsx FinanceExplainer out/thumbnail.png --frame 1500",
-    "check:bakery": "node tools/check-bakery.mjs",
-    "export:bakery": "node tools/export-bakery.mjs",
-    "render:giftcard": "remotion render src/index.tsx GiftCardBreakage02 out/episode-02/gift-card-breakage-02.mp4 --codec h264 --crf 18 --concurrency 2",
-    "still:giftcard": "remotion still src/index.tsx GiftCardBreakage02 out/episode-02/thumbnail.png --frame 2940",
-    "check:giftcard": "node tools/check-giftcard.mjs",
-    "export:giftcard": "node tools/export-giftcard.mjs",
-    "check:giftcard:v4": "node tools/check-giftcard-v4.mjs",
-    "review:giftcard": "node tools/review-giftcard.mjs"
-  },
-  "dependencies": {
-    "remotion": "^4.0.534",
-    "@remotion/cli": "^4.0.534",
-    "@remotion/media": "^4.0.534",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.8.3",
-    "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.0"
-  }
+    "name":  "finance-motion-engine",
+    "version":  "1.0.0",
+    "private":  true,
+    "description":  "Reusable flat 2D finance explainer generator using Remotion",
+    "scripts":  {
+                    "studio":  "remotion studio src/index.tsx",
+                    "render":  "remotion render src/index.tsx BakeryEpisode01 out/episode-01/bakery-episode-01.mp4 --codec h264 --crf 18 --concurrency 2",
+                    "still":  "remotion still src/index.tsx BakeryEpisode01 out/episode-01/thumbnail.png --frame 2190",
+                    "typecheck":  "tsc --noEmit",
+                    "check:story":  "node tools/check-story.mjs",
+                    "render:unit-economics":  "remotion render src/index.tsx UnitEconomics03 out/episode-03/he-sold-500-products.mp4 --codec h264 --crf 18 --concurrency 2",
+                    "render:left-digit":  "remotion render src/index.tsx LeftDigitEffect04 out/episode-04/left-digit-effect.mp4 --codec h264 --crf 18 --concurrency 2",
+                    "still:left-digit":  "remotion still src/index.tsx LeftDigitEffect04 out/episode-04/thumbnail.png --frame 60",
+                    "render:legacy":  "remotion render src/index.tsx FinanceExplainer out/tshirt-explainer.mp4 --codec h264 --crf 18",
+                    "still:legacy":  "remotion still src/index.tsx FinanceExplainer out/thumbnail.png --frame 1500",
+                    "check:bakery":  "node tools/check-bakery.mjs",
+                    "export:bakery":  "node tools/export-bakery.mjs",
+                    "render:giftcard":  "remotion render src/index.tsx GiftCardBreakage02 out/episode-02/gift-card-breakage-02.mp4 --codec h264 --crf 18 --concurrency 2",
+                    "still:giftcard":  "remotion still src/index.tsx GiftCardBreakage02 out/episode-02/thumbnail.png --frame 2940",
+                    "check:giftcard":  "node tools/check-giftcard.mjs",
+                    "export:giftcard":  "node tools/export-giftcard.mjs",
+                    "check:giftcard:v4":  "node tools/check-giftcard-v4.mjs",
+                    "review:giftcard":  "node tools/review-giftcard.mjs",
+                    "render:wawa-esop":  "remotion render src/index.tsx WawaEsop05 out/episode-05/wawa-esop.mp4 --codec h264 --crf 18 --concurrency 2"
+                },
+    "dependencies":  {
+                         "remotion":  "^4.0.534",
+                         "@remotion/cli":  "^4.0.534",
+                         "@remotion/media":  "^4.0.534",
+                         "react":  "^19.1.0",
+                         "react-dom":  "^19.1.0"
+                     },
+    "devDependencies":  {
+                            "typescript":  "^5.8.3",
+                            "@types/react":  "^19.1.0",
+                            "@types/react-dom":  "^19.1.0"
+                        }
 }
