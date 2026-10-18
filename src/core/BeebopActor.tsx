@@ -143,7 +143,7 @@ export const BeebopActor: React.FC<{ timeline: TimelineScene[]; segments?: LipSe
     <AbsoluteFill
       style={{
         pointerEvents: "none",
-        translate: "-633px 584.5px"
+        translate: "-740px 1190.5px"
       }}
     >
       <div

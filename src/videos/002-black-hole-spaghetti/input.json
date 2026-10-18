@@ -1,0 +1,564 @@
+{
+    "slug":  "002-black-hole-spaghetti",
+    "topic":  "What a black hole does to an astronaut",
+    "audio":  "videos/002-black-hole-spaghetti/narration.mp3",
+    "segments":  [
+                     {
+                         "start":  0,
+                         "end":  3.84,
+                         "text":  "Did you know falling into a *black* *hole* could turn you into spaghetti?",
+                         "words":  [
+                                       {
+                                           "w":  "Did",
+                                           "start":  0,
+                                           "end":  0.39999998
+                                       },
+                                       {
+                                           "w":  "you",
+                                           "start":  0.39999998,
+                                           "end":  0.56
+                                       },
+                                       {
+                                           "w":  "know",
+                                           "start":  0.56,
+                                           "end":  0.71999997
+                                       },
+                                       {
+                                           "w":  "falling",
+                                           "start":  0.71999997,
+                                           "end":  1.12
+                                       },
+                                       {
+                                           "w":  "into",
+                                           "start":  1.12,
+                                           "end":  1.4399999
+                                       },
+                                       {
+                                           "w":  "a",
+                                           "start":  1.4399999,
+                                           "end":  1.5999999
+                                       },
+                                       {
+                                           "w":  "*black*",
+                                           "start":  1.5999999,
+                                           "end":  1.8399999
+                                       },
+                                       {
+                                           "w":  "*hole*",
+                                           "start":  1.8399999,
+                                           "end":  2.08
+                                       },
+                                       {
+                                           "w":  "could",
+                                           "start":  2.08,
+                                           "end":  2.3999999
+                                       },
+                                       {
+                                           "w":  "turn",
+                                           "start":  2.3999999,
+                                           "end":  2.56
+                                       },
+                                       {
+                                           "w":  "you",
+                                           "start":  2.56,
+                                           "end":  2.72
+                                       },
+                                       {
+                                           "w":  "into",
+                                           "start":  2.72,
+                                           "end":  2.96
+                                       },
+                                       {
+                                           "w":  "spaghetti?",
+                                           "start":  2.96,
+                                           "end":  3.84
+                                       }
+                                   ]
+                     },
+                     {
+                         "start":  4.48,
+                         "end":  7.04,
+                         "text":  "Seriously, and *not* the *tasty* kind.",
+                         "words":  [
+                                       {
+                                           "w":  "Seriously,",
+                                           "start":  4.48,
+                                           "end":  5.12
+                                       },
+                                       {
+                                           "w":  "and",
+                                           "start":  5.3599997,
+                                           "end":  5.6
+                                       },
+                                       {
+                                           "w":  "*not*",
+                                           "start":  5.6,
+                                           "end":  5.8399997
+                                       },
+                                       {
+                                           "w":  "the",
+                                           "start":  5.8399997,
+                                           "end":  6
+                                       },
+                                       {
+                                           "w":  "*tasty*",
+                                           "start":  6,
+                                           "end":  6.3999996
+                                       },
+                                       {
+                                           "w":  "kind.",
+                                           "start":  6.3999996,
+                                           "end":  7.04
+                                       }
+                                   ]
+                     },
+                     {
+                         "start":  7.2,
+                         "end":  10.96,
+                         "text":  "Imagine falling *feet* first toward a smaller black hole. Gravity",
+                         "words":  [
+                                       {
+                                           "w":  "Imagine",
+                                           "start":  7.2,
+                                           "end":  7.6
+                                       },
+                                       {
+                                           "w":  "falling",
+                                           "start":  7.6,
+                                           "end":  8.08
+                                       },
+                                       {
+                                           "w":  "*feet*",
+                                           "start":  8.08,
+                                           "end":  8.4
+                                       },
+                                       {
+                                           "w":  "first",
+                                           "start":  8.4,
+                                           "end":  8.72
+                                       },
+                                       {
+                                           "w":  "toward",
+                                           "start":  8.72,
+                                           "end":  9.04
+                                       },
+                                       {
+                                           "w":  "a",
+                                           "start":  9.04,
+                                           "end":  9.28
+                                       },
+                                       {
+                                           "w":  "smaller",
+                                           "start":  9.28,
+                                           "end":  9.599999
+                                       },
+                                       {
+                                           "w":  "black",
+                                           "start":  9.599999,
+                                           "end":  9.92
+                                       },
+                                       {
+                                           "w":  "hole.",
+                                           "start":  9.92,
+                                           "end":  10.4
+                                       },
+                                       {
+                                           "w":  "Gravity",
+                                           "start":  10.559999,
+                                           "end":  10.96
+                                       }
+                                   ]
+                     },
+                     {
+                         "start":  10.96,
+                         "end":  13.28,
+                         "text":  "pulls harder on your *feet* than your *head,*",
+                         "words":  [
+                                       {
+                                           "w":  "pulls",
+                                           "start":  10.96,
+                                           "end":  11.28
+                                       },
+                                       {
+                                           "w":  "harder",
+                                           "start":  11.28,
+                                           "end":  11.679999
+                                       },
+                                       {
+                                           "w":  "on",
+                                           "start":  11.679999,
+                                           "end":  11.84
+                                       },
+                                       {
+                                           "w":  "your",
+                                           "start":  11.84,
+                                           "end":  12
+                                       },
+                                       {
+                                           "w":  "*feet*",
+                                           "start":  12,
+                                           "end":  12.24
+                                       },
+                                       {
+                                           "w":  "than",
+                                           "start":  12.24,
+                                           "end":  12.48
+                                       },
+                                       {
+                                           "w":  "your",
+                                           "start":  12.48,
+                                           "end":  12.639999
+                                       },
+                                       {
+                                           "w":  "*head,*",
+                                           "start":  12.639999,
+                                           "end":  13.28
+                                       }
+                                   ]
+                     },
+                     {
+                         "start":  13.36,
+                         "end":  18.455,
+                         "text":  "so your body *stretches* longer, *thinner,* until it tears apart.",
+                         "words":  [
+                                       {
+                                           "w":  "so",
+                                           "start":  13.36,
+                                           "end":  13.5199995
+                                       },
+                                       {
+                                           "w":  "your",
+                                           "start":  13.5199995,
+                                           "end":  13.759999
+                                       },
+                                       {
+                                           "w":  "body",
+                                           "start":  13.759999,
+                                           "end":  14
+                                       },
+                                       {
+                                           "w":  "*stretches*",
+                                           "start":  14,
+                                           "end":  15.039999
+                                       },
+                                       {
+                                           "w":  "longer,",
+                                           "start":  15.04,
+                                           "end":  15.679999
+                                       },
+                                       {
+                                           "w":  "*thinner,*",
+                                           "start":  15.975,
+                                           "end":  16.855
+                                       },
+                                       {
+                                           "w":  "until",
+                                           "start":  17.015,
+                                           "end":  17.255001
+                                       },
+                                       {
+                                           "w":  "it",
+                                           "start":  17.255001,
+                                           "end":  17.415
+                                       },
+                                       {
+                                           "w":  "tears",
+                                           "start":  17.415,
+                                           "end":  17.815
+                                       },
+                                       {
+                                           "w":  "apart.",
+                                           "start":  17.815,
+                                           "end":  18.455
+                                       }
+                                   ]
+                     },
+                     {
+                         "start":  18.775,
+                         "end":  21.255001,
+                         "text":  "Scientists call this *spaghettification.*",
+                         "words":  [
+                                       {
+                                           "w":  "Scientists",
+                                           "start":  18.775,
+                                           "end":  19.415
+                                       },
+                                       {
+                                           "w":  "call",
+                                           "start":  19.415,
+                                           "end":  19.655
+                                       },
+                                       {
+                                           "w":  "this",
+                                           "start":  19.655,
+                                           "end":  20.135
+                                       },
+                                       {
+                                           "w":  "*spaghettification.*",
+                                           "start":  20.135,
+                                           "end":  21.255001
+                                       }
+                                   ]
+                     },
+                     {
+                         "start":  21.655,
+                         "end":  23.415,
+                         "text":  "But here\u0027s the creepy *twist.*",
+                         "words":  [
+                                       {
+                                           "w":  "But",
+                                           "start":  21.655,
+                                           "end":  21.815
+                                       },
+                                       {
+                                           "w":  "here\u0027s",
+                                           "start":  21.815,
+                                           "end":  22.215
+                                       },
+                                       {
+                                           "w":  "the",
+                                           "start":  22.215,
+                                           "end":  22.295
+                                       },
+                                       {
+                                           "w":  "creepy",
+                                           "start":  22.295,
+                                           "end":  22.695
+                                       },
+                                       {
+                                           "w":  "*twist.*",
+                                           "start":  22.695,
+                                           "end":  23.415
+                                       }
+                                   ]
+                     },
+                     {
+                         "start":  23.735,
+                         "end":  28.295,
+                         "text":  "From far away, someone would see you *slow* down and *fade* near the edge.",
+                         "words":  [
+                                       {
+                                           "w":  "From",
+                                           "start":  23.735,
+                                           "end":  23.975
+                                       },
+                                       {
+                                           "w":  "far",
+                                           "start":  23.975,
+                                           "end":  24.295
+                                       },
+                                       {
+                                           "w":  "away,",
+                                           "start":  24.295,
+                                           "end":  24.935
+                                       },
+                                       {
+                                           "w":  "someone",
+                                           "start":  24.935001,
+                                           "end":  25.175
+                                       },
+                                       {
+                                           "w":  "would",
+                                           "start":  25.175,
+                                           "end":  25.415
+                                       },
+                                       {
+                                           "w":  "see",
+                                           "start":  25.415,
+                                           "end":  25.575
+                                       },
+                                       {
+                                           "w":  "you",
+                                           "start":  25.575,
+                                           "end":  25.735
+                                       },
+                                       {
+                                           "w":  "*slow*",
+                                           "start":  25.735,
+                                           "end":  26.135
+                                       },
+                                       {
+                                           "w":  "down",
+                                           "start":  26.135,
+                                           "end":  26.615
+                                       },
+                                       {
+                                           "w":  "and",
+                                           "start":  26.615,
+                                           "end":  26.935001
+                                       },
+                                       {
+                                           "w":  "*fade*",
+                                           "start":  26.935001,
+                                           "end":  27.335
+                                       },
+                                       {
+                                           "w":  "near",
+                                           "start":  27.335,
+                                           "end":  27.654999
+                                       },
+                                       {
+                                           "w":  "the",
+                                           "start":  27.654999,
+                                           "end":  27.815
+                                       },
+                                       {
+                                           "w":  "edge.",
+                                           "start":  27.815,
+                                           "end":  28.295
+                                       }
+                                   ]
+                     },
+                     {
+                         "start":  28.535,
+                         "end":  30.455,
+                         "text":  "But for you, *time* keeps moving.",
+                         "words":  [
+                                       {
+                                           "w":  "But",
+                                           "start":  28.535,
+                                           "end":  28.695
+                                       },
+                                       {
+                                           "w":  "for",
+                                           "start":  28.695,
+                                           "end":  28.935001
+                                       },
+                                       {
+                                           "w":  "you,",
+                                           "start":  28.935001,
+                                           "end":  29.415
+                                       },
+                                       {
+                                           "w":  "*time*",
+                                           "start":  29.575,
+                                           "end":  29.815
+                                       },
+                                       {
+                                           "w":  "keeps",
+                                           "start":  29.815,
+                                           "end":  30.135
+                                       },
+                                       {
+                                           "w":  "moving.",
+                                           "start":  30.135,
+                                           "end":  30.455
+                                       }
+                                   ]
+                     },
+                     {
+                         "start":  30.944187,
+                         "end":  34.144188,
+                         "text":  "Cross the event horizon and there\u0027s *no* coming *back.*",
+                         "words":  [
+                                       {
+                                           "w":  "Cross",
+                                           "start":  30.944187,
+                                           "end":  31.344187
+                                       },
+                                       {
+                                           "w":  "the",
+                                           "start":  31.344187,
+                                           "end":  31.504187
+                                       },
+                                       {
+                                           "w":  "event",
+                                           "start":  31.504187,
+                                           "end":  31.824188
+                                       },
+                                       {
+                                           "w":  "horizon",
+                                           "start":  31.824188,
+                                           "end":  32.304188
+                                       },
+                                       {
+                                           "w":  "and",
+                                           "start":  32.304188,
+                                           "end":  32.624187
+                                       },
+                                       {
+                                           "w":  "there\u0027s",
+                                           "start":  32.624187,
+                                           "end":  32.944187
+                                       },
+                                       {
+                                           "w":  "*no*",
+                                           "start":  32.944187,
+                                           "end":  33.264187
+                                       },
+                                       {
+                                           "w":  "coming",
+                                           "start":  33.264187,
+                                           "end":  33.584187
+                                       },
+                                       {
+                                           "w":  "*back.*",
+                                           "start":  33.584187,
+                                           "end":  34.144188
+                                       }
+                                   ]
+                     },
+                     {
+                         "start":  34.224186,
+                         "end":  39.0791836734698,
+                         "text":  "Congratulations. You went exploring the universe and became its *longest* *noodle.*",
+                         "words":  [
+                                       {
+                                           "w":  "Congratulations.",
+                                           "start":  34.224186,
+                                           "end":  35.104187
+                                       },
+                                       {
+                                           "w":  "You",
+                                           "start":  35.34419,
+                                           "end":  35.584187
+                                       },
+                                       {
+                                           "w":  "went",
+                                           "start":  35.584187,
+                                           "end":  35.82419
+                                       },
+                                       {
+                                           "w":  "exploring",
+                                           "start":  35.82419,
+                                           "end":  36.224186
+                                       },
+                                       {
+                                           "w":  "the",
+                                           "start":  36.224186,
+                                           "end":  36.384186
+                                       },
+                                       {
+                                           "w":  "universe",
+                                           "start":  36.384186,
+                                           "end":  37.024185
+                                       },
+                                       {
+                                           "w":  "and",
+                                           "start":  37.024185,
+                                           "end":  37.34419
+                                       },
+                                       {
+                                           "w":  "became",
+                                           "start":  37.34419,
+                                           "end":  37.66419
+                                       },
+                                       {
+                                           "w":  "its",
+                                           "start":  37.66419,
+                                           "end":  37.984188
+                                       },
+                                       {
+                                           "w":  "*longest*",
+                                           "start":  37.984188,
+                                           "end":  38.384186
+                                       },
+                                       {
+                                           "w":  "*noodle.*",
+                                           "start":  38.384186,
+                                           "end":  39.0791836734698
+                                       }
+                                   ]
+                     }
+                 ]
+}

@@ -1,0 +1,683 @@
+{
+  "transcript": "Did you know falling into a black hole could turn you into spaghetti? Seriously, and not the tasty kind. Imagine falling feet first toward a smaller black hole. Gravity pulls harder on your feet than your head, so your body stretches longer, thinner, until it tears apart. Scientists call this spaghettification. But here's the creepy twist. From far away, someone would see you slow down and fade near the edge. But for you, time keeps moving. Cross the event horizon and there's no coming back. Congratulations. You went exploring the universe and became its longest noodle.",
+  "duration": 0,
+  "words": [
+    {
+      "word": "did",
+      "start": 0.0,
+      "end": 0.39999998,
+      "confidence": 0.98291016,
+      "punctuated_word": "Did"
+    },
+    {
+      "word": "you",
+      "start": 0.39999998,
+      "end": 0.56,
+      "confidence": 1.0,
+      "punctuated_word": "you"
+    },
+    {
+      "word": "know",
+      "start": 0.56,
+      "end": 0.71999997,
+      "confidence": 0.99902344,
+      "punctuated_word": "know"
+    },
+    {
+      "word": "falling",
+      "start": 0.71999997,
+      "end": 1.12,
+      "confidence": 0.9873047,
+      "punctuated_word": "falling"
+    },
+    {
+      "word": "into",
+      "start": 1.12,
+      "end": 1.4399999,
+      "confidence": 0.9951172,
+      "punctuated_word": "into"
+    },
+    {
+      "word": "a",
+      "start": 1.4399999,
+      "end": 1.5999999,
+      "confidence": 0.99902344,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "black",
+      "start": 1.5999999,
+      "end": 1.8399999,
+      "confidence": 0.99902344,
+      "punctuated_word": "black"
+    },
+    {
+      "word": "hole",
+      "start": 1.8399999,
+      "end": 2.08,
+      "confidence": 1.0,
+      "punctuated_word": "hole"
+    },
+    {
+      "word": "could",
+      "start": 2.08,
+      "end": 2.3999999,
+      "confidence": 0.9892578,
+      "punctuated_word": "could"
+    },
+    {
+      "word": "turn",
+      "start": 2.3999999,
+      "end": 2.56,
+      "confidence": 1.0,
+      "punctuated_word": "turn"
+    },
+    {
+      "word": "you",
+      "start": 2.56,
+      "end": 2.72,
+      "confidence": 0.99902344,
+      "punctuated_word": "you"
+    },
+    {
+      "word": "into",
+      "start": 2.72,
+      "end": 2.96,
+      "confidence": 0.99902344,
+      "punctuated_word": "into"
+    },
+    {
+      "word": "spaghetti",
+      "start": 2.96,
+      "end": 3.84,
+      "confidence": 0.9921875,
+      "punctuated_word": "spaghetti?"
+    },
+    {
+      "word": "seriously",
+      "start": 4.48,
+      "end": 5.12,
+      "confidence": 0.83569336,
+      "punctuated_word": "Seriously,"
+    },
+    {
+      "word": "and",
+      "start": 5.3599997,
+      "end": 5.6,
+      "confidence": 0.96240234,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "not",
+      "start": 5.6,
+      "end": 5.8399997,
+      "confidence": 1.0,
+      "punctuated_word": "not"
+    },
+    {
+      "word": "the",
+      "start": 5.8399997,
+      "end": 6.0,
+      "confidence": 0.99902344,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "tasty",
+      "start": 6.0,
+      "end": 6.3999996,
+      "confidence": 1.0,
+      "punctuated_word": "tasty"
+    },
+    {
+      "word": "kind",
+      "start": 6.3999996,
+      "end": 7.04,
+      "confidence": 0.9667969,
+      "punctuated_word": "kind."
+    },
+    {
+      "word": "imagine",
+      "start": 7.2,
+      "end": 7.6,
+      "confidence": 0.99902344,
+      "punctuated_word": "Imagine"
+    },
+    {
+      "word": "falling",
+      "start": 7.6,
+      "end": 8.08,
+      "confidence": 0.9980469,
+      "punctuated_word": "falling"
+    },
+    {
+      "word": "feet",
+      "start": 8.08,
+      "end": 8.4,
+      "confidence": 0.99902344,
+      "punctuated_word": "feet"
+    },
+    {
+      "word": "first",
+      "start": 8.4,
+      "end": 8.72,
+      "confidence": 0.99902344,
+      "punctuated_word": "first"
+    },
+    {
+      "word": "toward",
+      "start": 8.72,
+      "end": 9.04,
+      "confidence": 0.92089844,
+      "punctuated_word": "toward"
+    },
+    {
+      "word": "a",
+      "start": 9.04,
+      "end": 9.28,
+      "confidence": 0.99902344,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "smaller",
+      "start": 9.28,
+      "end": 9.599999,
+      "confidence": 0.9980469,
+      "punctuated_word": "smaller"
+    },
+    {
+      "word": "black",
+      "start": 9.599999,
+      "end": 9.92,
+      "confidence": 1.0,
+      "punctuated_word": "black"
+    },
+    {
+      "word": "hole",
+      "start": 9.92,
+      "end": 10.4,
+      "confidence": 0.9675293,
+      "punctuated_word": "hole."
+    },
+    {
+      "word": "gravity",
+      "start": 10.559999,
+      "end": 10.96,
+      "confidence": 0.99902344,
+      "punctuated_word": "Gravity"
+    },
+    {
+      "word": "pulls",
+      "start": 10.96,
+      "end": 11.28,
+      "confidence": 1.0,
+      "punctuated_word": "pulls"
+    },
+    {
+      "word": "harder",
+      "start": 11.28,
+      "end": 11.679999,
+      "confidence": 1.0,
+      "punctuated_word": "harder"
+    },
+    {
+      "word": "on",
+      "start": 11.679999,
+      "end": 11.84,
+      "confidence": 1.0,
+      "punctuated_word": "on"
+    },
+    {
+      "word": "your",
+      "start": 11.84,
+      "end": 12.0,
+      "confidence": 0.99902344,
+      "punctuated_word": "your"
+    },
+    {
+      "word": "feet",
+      "start": 12.0,
+      "end": 12.24,
+      "confidence": 1.0,
+      "punctuated_word": "feet"
+    },
+    {
+      "word": "than",
+      "start": 12.24,
+      "end": 12.48,
+      "confidence": 0.9863281,
+      "punctuated_word": "than"
+    },
+    {
+      "word": "your",
+      "start": 12.48,
+      "end": 12.639999,
+      "confidence": 0.9790039,
+      "punctuated_word": "your"
+    },
+    {
+      "word": "head",
+      "start": 12.639999,
+      "end": 13.28,
+      "confidence": 0.79418945,
+      "punctuated_word": "head,"
+    },
+    {
+      "word": "so",
+      "start": 13.36,
+      "end": 13.5199995,
+      "confidence": 0.9970703,
+      "punctuated_word": "so"
+    },
+    {
+      "word": "your",
+      "start": 13.5199995,
+      "end": 13.759999,
+      "confidence": 0.9951172,
+      "punctuated_word": "your"
+    },
+    {
+      "word": "body",
+      "start": 13.759999,
+      "end": 14.0,
+      "confidence": 1.0,
+      "punctuated_word": "body"
+    },
+    {
+      "word": "stretches",
+      "start": 14.0,
+      "end": 15.039999,
+      "confidence": 1.0,
+      "punctuated_word": "stretches"
+    },
+    {
+      "word": "longer",
+      "start": 15.04,
+      "end": 15.679999,
+      "confidence": 0.95654297,
+      "punctuated_word": "longer,"
+    },
+    {
+      "word": "thinner",
+      "start": 15.975,
+      "end": 16.855,
+      "confidence": 0.8342285,
+      "punctuated_word": "thinner,"
+    },
+    {
+      "word": "until",
+      "start": 17.015,
+      "end": 17.255001,
+      "confidence": 0.9921875,
+      "punctuated_word": "until"
+    },
+    {
+      "word": "it",
+      "start": 17.255001,
+      "end": 17.415,
+      "confidence": 0.9980469,
+      "punctuated_word": "it"
+    },
+    {
+      "word": "tears",
+      "start": 17.415,
+      "end": 17.815,
+      "confidence": 1.0,
+      "punctuated_word": "tears"
+    },
+    {
+      "word": "apart",
+      "start": 17.815,
+      "end": 18.455,
+      "confidence": 0.9206543,
+      "punctuated_word": "apart."
+    },
+    {
+      "word": "scientists",
+      "start": 18.775,
+      "end": 19.415,
+      "confidence": 0.9880371,
+      "punctuated_word": "Scientists"
+    },
+    {
+      "word": "call",
+      "start": 19.415,
+      "end": 19.655,
+      "confidence": 0.9970703,
+      "punctuated_word": "call"
+    },
+    {
+      "word": "this",
+      "start": 19.655,
+      "end": 20.135,
+      "confidence": 0.99902344,
+      "punctuated_word": "this"
+    },
+    {
+      "word": "spaghettification",
+      "start": 20.135,
+      "end": 21.255001,
+      "confidence": 0.944043,
+      "punctuated_word": "spaghettification."
+    },
+    {
+      "word": "but",
+      "start": 21.655,
+      "end": 21.815,
+      "confidence": 0.9951172,
+      "punctuated_word": "But"
+    },
+    {
+      "word": "here's",
+      "start": 21.815,
+      "end": 22.215,
+      "confidence": 0.9875488,
+      "punctuated_word": "here's"
+    },
+    {
+      "word": "the",
+      "start": 22.215,
+      "end": 22.295,
+      "confidence": 0.99902344,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "creepy",
+      "start": 22.295,
+      "end": 22.695,
+      "confidence": 0.9980469,
+      "punctuated_word": "creepy"
+    },
+    {
+      "word": "twist",
+      "start": 22.695,
+      "end": 23.415,
+      "confidence": 0.9182129,
+      "punctuated_word": "twist."
+    },
+    {
+      "word": "from",
+      "start": 23.735,
+      "end": 23.975,
+      "confidence": 0.99902344,
+      "punctuated_word": "From"
+    },
+    {
+      "word": "far",
+      "start": 23.975,
+      "end": 24.295,
+      "confidence": 1.0,
+      "punctuated_word": "far"
+    },
+    {
+      "word": "away",
+      "start": 24.295,
+      "end": 24.935,
+      "confidence": 0.9133301,
+      "punctuated_word": "away,"
+    },
+    {
+      "word": "someone",
+      "start": 24.935001,
+      "end": 25.175,
+      "confidence": 0.99902344,
+      "punctuated_word": "someone"
+    },
+    {
+      "word": "would",
+      "start": 25.175,
+      "end": 25.415,
+      "confidence": 0.99902344,
+      "punctuated_word": "would"
+    },
+    {
+      "word": "see",
+      "start": 25.415,
+      "end": 25.575,
+      "confidence": 0.99902344,
+      "punctuated_word": "see"
+    },
+    {
+      "word": "you",
+      "start": 25.575,
+      "end": 25.735,
+      "confidence": 0.9970703,
+      "punctuated_word": "you"
+    },
+    {
+      "word": "slow",
+      "start": 25.735,
+      "end": 26.135,
+      "confidence": 0.98828125,
+      "punctuated_word": "slow"
+    },
+    {
+      "word": "down",
+      "start": 26.135,
+      "end": 26.615,
+      "confidence": 1.0,
+      "punctuated_word": "down"
+    },
+    {
+      "word": "and",
+      "start": 26.615,
+      "end": 26.935001,
+      "confidence": 0.95947266,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "fade",
+      "start": 26.935001,
+      "end": 27.335,
+      "confidence": 1.0,
+      "punctuated_word": "fade"
+    },
+    {
+      "word": "near",
+      "start": 27.335,
+      "end": 27.654999,
+      "confidence": 1.0,
+      "punctuated_word": "near"
+    },
+    {
+      "word": "the",
+      "start": 27.654999,
+      "end": 27.815,
+      "confidence": 1.0,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "edge",
+      "start": 27.815,
+      "end": 28.295,
+      "confidence": 0.94018555,
+      "punctuated_word": "edge."
+    },
+    {
+      "word": "but",
+      "start": 28.535,
+      "end": 28.695,
+      "confidence": 0.99902344,
+      "punctuated_word": "But"
+    },
+    {
+      "word": "for",
+      "start": 28.695,
+      "end": 28.935001,
+      "confidence": 0.99316406,
+      "punctuated_word": "for"
+    },
+    {
+      "word": "you",
+      "start": 28.935001,
+      "end": 29.415,
+      "confidence": 0.97094727,
+      "punctuated_word": "you,"
+    },
+    {
+      "word": "time",
+      "start": 29.575,
+      "end": 29.815,
+      "confidence": 1.0,
+      "punctuated_word": "time"
+    },
+    {
+      "word": "keeps",
+      "start": 29.815,
+      "end": 30.135,
+      "confidence": 1.0,
+      "punctuated_word": "keeps"
+    },
+    {
+      "word": "moving",
+      "start": 30.135,
+      "end": 30.455,
+      "confidence": 0.9914551,
+      "punctuated_word": "moving."
+    },
+    {
+      "word": "cross",
+      "start": 30.944187,
+      "end": 31.344187,
+      "confidence": 0.9980469,
+      "punctuated_word": "Cross"
+    },
+    {
+      "word": "the",
+      "start": 31.344187,
+      "end": 31.504187,
+      "confidence": 0.9980469,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "event",
+      "start": 31.504187,
+      "end": 31.824188,
+      "confidence": 0.9760742,
+      "punctuated_word": "event"
+    },
+    {
+      "word": "horizon",
+      "start": 31.824188,
+      "end": 32.304188,
+      "confidence": 0.99902344,
+      "punctuated_word": "horizon"
+    },
+    {
+      "word": "and",
+      "start": 32.304188,
+      "end": 32.624187,
+      "confidence": 0.6557617,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "there's",
+      "start": 32.624187,
+      "end": 32.944187,
+      "confidence": 0.9890137,
+      "punctuated_word": "there's"
+    },
+    {
+      "word": "no",
+      "start": 32.944187,
+      "end": 33.264187,
+      "confidence": 0.99902344,
+      "punctuated_word": "no"
+    },
+    {
+      "word": "coming",
+      "start": 33.264187,
+      "end": 33.584187,
+      "confidence": 1.0,
+      "punctuated_word": "coming"
+    },
+    {
+      "word": "back",
+      "start": 33.584187,
+      "end": 34.144188,
+      "confidence": 0.9914551,
+      "punctuated_word": "back."
+    },
+    {
+      "word": "congratulations",
+      "start": 34.224186,
+      "end": 35.104187,
+      "confidence": 0.77441406,
+      "punctuated_word": "Congratulations."
+    },
+    {
+      "word": "you",
+      "start": 35.34419,
+      "end": 35.584187,
+      "confidence": 0.99902344,
+      "punctuated_word": "You"
+    },
+    {
+      "word": "went",
+      "start": 35.584187,
+      "end": 35.82419,
+      "confidence": 0.98291016,
+      "punctuated_word": "went"
+    },
+    {
+      "word": "exploring",
+      "start": 35.82419,
+      "end": 36.224186,
+      "confidence": 0.98828125,
+      "punctuated_word": "exploring"
+    },
+    {
+      "word": "the",
+      "start": 36.224186,
+      "end": 36.384186,
+      "confidence": 0.99902344,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "universe",
+      "start": 36.384186,
+      "end": 37.024185,
+      "confidence": 0.984375,
+      "punctuated_word": "universe"
+    },
+    {
+      "word": "and",
+      "start": 37.024185,
+      "end": 37.34419,
+      "confidence": 0.92578125,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "became",
+      "start": 37.34419,
+      "end": 37.66419,
+      "confidence": 0.99316406,
+      "punctuated_word": "became"
+    },
+    {
+      "word": "its",
+      "start": 37.66419,
+      "end": 37.984188,
+      "confidence": 0.94628906,
+      "punctuated_word": "its"
+    },
+    {
+      "word": "longest",
+      "start": 37.984188,
+      "end": 38.384186,
+      "confidence": 1.0,
+      "punctuated_word": "longest"
+    },
+    {
+      "word": "noodle",
+      "start": 38.384186,
+      "end": 38.944187,
+      "confidence": 0.9904785,
+      "punctuated_word": "noodle."
+    }
+  ],
+  "metadata": {
+    "model": "deepgram-nova-3",
+    "language": "en",
+    "confidence": 0
+  }
+}
