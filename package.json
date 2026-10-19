@@ -23,6 +23,7 @@
                     "check:giftcard:v4":  "node tools/check-giftcard-v4.mjs",
                     "review:giftcard":  "node tools/review-giftcard.mjs",
                     "render:wawa-esop":  "remotion render src/index.tsx WawaEsop05 out/episode-05/wawa-esop.mp4 --codec h264 --crf 18 --concurrency 2"
+                    ,"render:mcdonalds-real-estate": "remotion render src/index.tsx McdonaldsRealEstate06 out/episode-06/mcdonalds-real-estate.mp4 --codec h264 --crf 18 --concurrency 2"
                 },
     "dependencies":  {
                          "remotion":  "^4.0.534",

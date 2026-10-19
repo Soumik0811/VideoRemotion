@@ -285,6 +285,16 @@
                                    ],
                        "status":  "implemented; audio-timed captions; render pending",
                        "reuseNotes":  "Fresh Wawa ESOP episode; reuses Curious cutout characters and creates episode-specific storefront, stock certificates, account and retirement statement in Oddly Logical object-led flat-vector style."
+                   },
+                   {
+                       "id":  "mcdonalds-real-estate-episode-06",
+                       "path":  "src/episodes/mcdonaldsRealEstate/McdonaldsRealEstate.tsx",
+                       "exports":  [
+                                           "McdonaldsRealEstate",
+                                           "MCDONALDS_REAL_ESTATE_DURATION"
+                                       ],
+                       "status":  "implemented; supplied word-timed narration; render pending",
+                       "reuseNotes":  "New McDonald's franchise real estate episode, using the Curious cutout characters, original restaurant/property graphics, object-flow reveals and supplied word timing."
                    }
                ],
     "optionalLibraries":  {
